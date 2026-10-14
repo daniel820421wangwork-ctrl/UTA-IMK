@@ -98,3 +98,56 @@ mark{background:#ffe38f;color:#222;padding:0 2px;border-radius:3px}
   .brand small{display:none}
 }
 @media print{.top,.sidebar,.pager,.tabs{display:none}.content{max-width:none}}
+
+/* ===== Skin: EVA (NERV / Unit-01) ===== */
+:root[data-skin="eva"]{
+  --bg:#0b0710; --surface:#150d1f; --ink:#e9e4f2; --muted:#a592bf; --line:#3a2a52;
+  --accent:#ff7a00; --accent-soft:#2a1740; --good:#7dff4f; --bad:#ff2d3d; --code:#1b1129;
+}
+[data-skin="eva"] body{
+  background:
+    repeating-linear-gradient(0deg,rgba(125,255,79,.025) 0 1px,transparent 1px 3px),
+    radial-gradient(1200px 500px at 85% -10%,#3b1a63 0,transparent 60%),
+    #0b0710;
+  font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+[data-skin="eva"] h1,[data-skin="eva"] h2,[data-skin="eva"] h3,[data-skin="eva"] .brand,[data-skin="eva"] .top-nav a{
+  font-family:"Noto Serif TC","Songti TC","Source Han Serif TC",serif;font-weight:900;letter-spacing:.04em}
+[data-skin="eva"] .top{border-bottom:2px solid var(--accent);background:#0b0710;box-shadow:0 2px 0 #5b2a86}
+[data-skin="eva"] .brand{color:var(--accent);text-transform:uppercase}
+[data-skin="eva"] .brand::before{content:"▲ ";color:var(--bad)}
+[data-skin="eva"] .brand small{color:var(--good);font-family:ui-monospace,Consolas,monospace;letter-spacing:.08em}
+[data-skin="eva"] .top-nav a:hover,[data-skin="eva"] .top-nav a.on{background:var(--accent);color:#000}
+[data-skin="eva"] .sidebar{border-right:2px solid #5b2a86;background:rgba(21,13,31,.7)}
+[data-skin="eva"] .sidebar a.on{background:var(--accent);color:#000}
+[data-skin="eva"] .sidebar .n{color:var(--good);font-family:ui-monospace,Consolas,monospace}
+[data-skin="eva"] .sidebar h4{color:var(--accent);font-family:ui-monospace,Consolas,monospace}
+[data-skin="eva"] .hero,[data-skin="eva"] .card,[data-skin="eva"] .q,[data-skin="eva"] .tip,[data-skin="eva"] .flash .face{
+  border:1px solid var(--accent);border-radius:0;
+  clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));
+  background:linear-gradient(135deg,#1c1030,#120a1c)}
+[data-skin="eva"] .hero{border-left:8px solid var(--accent)}
+[data-skin="eva"] .hero h1{color:var(--accent);text-shadow:0 0 14px rgba(255,122,0,.5)}
+[data-skin="eva"] .hero::after{content:"MAGI SYSTEM · CASPER-3 · 承認";display:block;margin-top:10px;font:700 .72rem ui-monospace,Consolas,monospace;color:var(--good);letter-spacing:.2em}
+[data-skin="eva"] .card:hover{border-color:var(--good);box-shadow:0 0 0 1px var(--good),0 0 18px rgba(125,255,79,.25)}
+[data-skin="eva"] .card.done{border-color:var(--good)}
+[data-skin="eva"] .card .meta{color:var(--good);font-family:ui-monospace,Consolas,monospace}
+[data-skin="eva"] .chip{background:var(--bad);color:#000;border-radius:0;font-weight:700}
+[data-skin="eva"] .lead{border-left:6px solid var(--bad);background:repeating-linear-gradient(135deg,#1c1030 0 14px,#251540 14px 28px);border-radius:0;color:#fff}
+[data-skin="eva"] .lead::before{content:"⚠ WARNING  ";color:var(--bad);font-family:ui-monospace,Consolas,monospace;letter-spacing:.12em}
+[data-skin="eva"] .tabs button{border-radius:0;border-color:var(--accent);color:var(--accent);background:transparent;font-weight:700}
+[data-skin="eva"] .tabs button.on{background:var(--accent);color:#000}
+[data-skin="eva"] .sec h2{border-bottom:2px solid var(--accent);color:var(--accent)}
+[data-skin="eva"] .sec h2::before{content:"■ ";color:var(--bad)}
+[data-skin="eva"] table.t th{background:#2a1740;color:var(--accent)}
+[data-skin="eva"] table.t th,[data-skin="eva"] table.t td{border-color:#5b2a86}
+[data-skin="eva"] .btn,[data-skin="eva"] .icon-btn,[data-skin="eva"] .opt,[data-skin="eva"] select,[data-skin="eva"] input.f,[data-skin="eva"] #search{border-radius:0;border-color:var(--accent)}
+[data-skin="eva"] .btn.primary{background:var(--accent);color:#000;font-weight:900}
+[data-skin="eva"] .btn.good{border-color:var(--good);color:var(--good)}
+[data-skin="eva"] .opt.ok{border-color:var(--good);background:rgba(125,255,79,.15)}
+[data-skin="eva"] .opt.no{border-color:var(--bad);background:rgba(255,45,61,.15)}
+[data-skin="eva"] .bar{border-radius:0;background:#2a1740}
+[data-skin="eva"] .bar i{background:repeating-linear-gradient(90deg,var(--accent) 0 8px,#ffb066 8px 10px)}
+[data-skin="eva"] .score{color:var(--good);font-family:ui-monospace,Consolas,monospace}
+[data-skin="eva"] mark{background:var(--accent);color:#000}
+[data-skin="eva"] a{color:#ffb066}

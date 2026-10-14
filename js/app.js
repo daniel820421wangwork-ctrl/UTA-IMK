@@ -25,6 +25,16 @@
     const n = dark ? 'light' : 'dark';
     root.setAttribute('data-theme', n); store.set('theme', n);
   };
+  // ---- skin ----
+  const SKINS = ['default', 'eva'];
+  const SKIN_NAME = { default: '預設', eva: 'EVA' };
+  let skin = store.get('skin', 'default');
+  const applySkin = () => {
+    if (skin === 'eva') root.setAttribute('data-skin', 'eva'); else root.removeAttribute('data-skin');
+    $('#skinBtn').textContent = '風格：' + SKIN_NAME[skin];
+  };
+  applySkin();
+  $('#skinBtn').onclick = () => { skin = SKINS[(SKINS.indexOf(skin) + 1) % SKINS.length]; store.set('skin', skin); applySkin(); };
   $('#menuBtn').onclick = () => document.body.classList.toggle('menu');
   $('#scrim').onclick = () => document.body.classList.remove('menu');
 
