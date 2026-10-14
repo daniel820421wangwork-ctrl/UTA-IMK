@@ -20,8 +20,10 @@
   const t = store.get('theme', null);
   if (t) root.setAttribute('data-theme', t);
   $('#themeBtn').onclick = () => {
-    const dark = root.getAttribute('data-theme') === 'dark' ||
-      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    // EVA defaults to dark when no explicit choice has been made
+    const cur = root.getAttribute('data-theme') ||
+      (root.getAttribute('data-skin') === 'eva' ? 'dark' : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    const dark = cur === 'dark';
     const n = dark ? 'light' : 'dark';
     root.setAttribute('data-theme', n); store.set('theme', n);
   };
