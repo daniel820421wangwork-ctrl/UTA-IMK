@@ -3,15 +3,15 @@
   title: "Pricing for cultural differences",
   authors: "Paul Hunt", year: 2012, source: "Financial Post（FP Executive），March 8, 2012",
   pages: "2 頁", difficulty: 1,
-  oneLiner: "國際定價不能只看成本與競爭：須考量文化對『感知價值』、折扣習慣與『定價心理』的影響。",
+  oneLiner: "國際定價不能只看成本與競爭：須考量文化對「感知價值」、折扣習慣與「定價心理」的影響。",
   summary: [
     "全球成長對定價經理意味著：除毛利、市佔與銷售目標外，還要理解顧客與文化。作者提出三個考量：<b>Perceived value（感知價值）</b>、<b>Discounting（折扣）</b>、<b>Pricing psychology（定價心理）</b>。"
   ],
   keyPoints: [
-    "玩具縮小包裝：義大利與西班牙消費者將『好禮物』等同於大包裝。",
+    "玩具縮小包裝：義大利與西班牙消費者將「好禮物」等同於大包裝。",
     "在地製造：北美溢價；中國反之，重視北美製造的國際品牌（嬰兒營養品）。",
     "天然成分的藥品：墨西哥願付溢價；巴西較不重視 → 溢價導致銷售下滑。",
-    "折扣：加拿大消費者預期折扣（等 50% off）；德國不常用 hi-low 促銷。",
+    "折扣：加拿大消費者預期一定會打折（看到 8 折還會再等 5 折）；德國很少用高低價促銷。",
     "數字：中國重視 8（好運）、避免 4（霉運）。",
     "議價文化：標價是起點還是定案？需知道底價與消費者所需折扣。"
   ],
@@ -25,9 +25,9 @@
   sections: [
     {title: "三個考量與案例", html: `
       <table class="t"><thead><tr><th>考量</th><th>案例</th><th>啟示</th></tr></thead><tbody>
-      <tr><td><b>Perceived value</b></td><td>玩具包裝（義、西）；在地製造（北美 vs. 中國）；天然成分（墨西哥 vs. 巴西）</td><td>區域定價不一定可行，但理解文化可精準預測銷售</td></tr>
-      <tr><td><b>Discounting</b></td><td>女裝品牌：加拿大 vs. 德國</td><td>採取平衡策略：降低日常價、減少折扣、僅用於季末清倉</td></tr>
-      <tr><td><b>Pricing psychology</b></td><td>中國數字 8 與 4；議價文化</td><td>價格尾數需避免負面聯想；為談判預留空間</td></tr></tbody></table>`}
+      <tr><td><b>感知價值</b><br><small>Perceived value</small></td><td>玩具包裝（義、西）；在地製造（北美 vs. 中國）；天然成分（墨西哥 vs. 巴西）</td><td>區域定價不一定可行，但理解文化可精準預測銷售</td></tr>
+      <tr><td><b>折扣</b><br><small>Discounting</small></td><td>女裝品牌：加拿大 vs. 德國</td><td>採取平衡策略：降低日常價、減少折扣、僅用於季末清倉</td></tr>
+      <tr><td><b>定價心理</b><br><small>Pricing psychology</small></td><td>中國數字 8 與 4；議價文化</td><td>價格尾數需避免負面聯想；為談判預留空間</td></tr></tbody></table>`}
   ],
   examTips: [
     "三個考量：感知價值、折扣、定價心理。",

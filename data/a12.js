@@ -3,7 +3,7 @@
   title: "Examining survey response styles in cross-cultural marketing research: A comparison between Mexican and South Korean respondents",
   authors: "Beuthner, Friedrich, Herbes & Ramme", year: 2018, source: "International Journal of Market Research, 60(3), 257–267",
   pages: "11 頁（實證論文）", difficulty: 2,
-  oneLiner: "不同文化的受訪者有不同的『作答風格』：墨西哥傾向極端回答、韓國傾向中間點與避免反對，直接比較問卷分數可能誤導。",
+  oneLiner: "不同文化的受訪者有不同的「作答風格」：墨西哥傾向極端回答、韓國傾向中間點與避免反對，直接比較問卷分數可能誤導。",
   summary: [
     "<b>Response style</b>：受訪者無論題目內容如何，都以某種固定方式作答。若不加以處理，跨國問卷比較會產生偏誤。",
     "作者用 Hofstede/Minkov 與 GLOBE 預測墨西哥與南韓的作答風格，並以一份關於綠色包裝的 28 題問卷（墨西哥 n = 500、南韓 n = 525）驗證。",
@@ -12,18 +12,18 @@
   keyPoints: [
     "五種風格：ERS、NERS、MRS、ARS、DRS。",
     "ERS = [f(1) + f(5)] / k；MRS = f(3)/k；ARS = [f(4)+f(5)]/k；DRS = [f(1)+f(2)]/k。",
-    "墨西哥：高權力距離、高陽剛、高 UA、低個人主義 → 預測高 ERS，結果證實。",
-    "南韓：高集體主義（特別是制度集體主義）、低性別平等 → 預測高 MRS、低 DRS。",
-    "兩國都高 ARS（高權力距離、不願說 no）。",
-    "問卷以 5 點量表，美式英文翻成韓文與西班牙文（parallel translation）。"
+    "墨西哥：高權力距離、高陽剛、高不確定性規避、低個人主義 → 預測極端作答（ERS）多，結果證實。",
+    "南韓：高集體主義（特別是制度集體主義）、GLOBE 的性別平等主義偏低 → 預測中間點作答（MRS）多、不同意作答（DRS）少。",
+    "兩國都有高同意傾向（ARS），因為權力距離高、文化上不願說「不」。",
+    "問卷使用 5 點量表，由美式英文以平行翻譯法（parallel translation）譯成韓文與西班牙文。"
   ],
   concepts: [
     {term: "Response style（作答風格）", def: "受訪者不管題目內容，習慣用某種固定方式作答，例如愛選極端或愛選中間。不同文化的作答風格不同，會讓跨國問卷分數失真。"},
-    {term: "ERS — Extreme Response Style（極端作答風格）", def: "傾向選量表兩端（5 點量表的 1 或 5）。本文中墨西哥受訪者約 48% 屬此類。"},
+    {term: "ERS — Extreme Response Style（極端作答風格）", def: "傾向選量表兩端（5 點量表的 1 或 5）。本文中墨西哥受訪者的所有答案裡，約 48% 是極端選項（韓國約 14%）。"},
     {term: "NERS — Non-extreme Response Style（非極端作答風格）", def: "避免選極端，偏好 2、3、4。"},
     {term: "MRS — Mid-point Response Style（中間點作答風格）", def: "偏好選正中間的選項（5 點量表的 3）。與 NERS 不同：NERS 是避開兩端，MRS 只指中間點。"},
-    {term: "ARS — Acquiescence Response Style（同意傾向，愛說 yes）", def: "不管題目內容，都傾向選「同意」或「非常同意」。可能因為不理解、疲勞、客氣或服從的文化規範。"},
-    {term: "DRS — Disacquiescence Response Style（不同意傾向，愛說 no）", def: "不管題目內容，都傾向選「不同意」或「非常不同意」。"},
+    {term: "ARS — Acquiescence Response Style（默許／附和作答風格，愛說 yes）", def: "不管題目內容，都傾向選「同意」或「非常同意」。可能因為不理解、疲勞、客氣或服從的文化規範。"},
+    {term: "DRS — Disacquiescence Response Style（否定作答風格，愛說 no）", def: "不管題目內容，都傾向選「不同意」或「非常不同意」。"},
     {term: "Ipsative rescaling（個人內標準化）", def: "把每位受訪者的答案，用他自己的平均與標準差重新換算，以消除個人愛選極端的傾向。由 Cunningham 等人建議。"},
     {term: "Parallel translation（平行翻譯）", def: "由母語者各自獨立翻譯問卷，再比對差異，以確保不同語言版本意思一致。"}
   ],
@@ -36,7 +36,7 @@
       <tr><td>DRS</td><td><b>18.1%</b></td><td>9.1%</td><td>韓國人不願表示反對</td></tr></tbody></table>`},
     {title: "影響作答風格的因素", html: `
       <ul>
-        <li><b>ARS</b>：模糊（同意是『我不知道』的替代）、疲勞、款待與服從的文化規範。</li>
+        <li><b>ARS</b>：模糊（同意是「我不知道」的替代）、疲勞、款待與服從的文化規範。</li>
         <li><b>MRS</b>：漠不關心或猶豫不決。</li>
         <li>人口特徵（性別、年齡、教育）：研究結果不一致。</li>
         <li>國家／文化：歐盟內地中海國家 ARS、ERS 較高；西語國家高 ERS/ARS；亞洲高 MRS（Harzing, 2006）。</li>
@@ -63,7 +63,7 @@
     "MRS 與 NERS 不同：MRS 只指中間點。"
   ],
   quiz: [
-    {q: "作答風格中，『MRS』指的是？", o: ["偏好 1 或 5", "偏好中間值（如 5 點量表的 3）", "總是同意", "總是反對"], a: 1, e: "Mid-point response style。"},
+    {q: "作答風格中，「MRS」指的是？", o: ["偏好 1 或 5", "偏好中間值（如 5 點量表的 3）", "總是同意", "總是反對"], a: 1, e: "Mid-point response style。"},
     {q: "哪一國家受訪者在此研究中表現出明顯較高的 ERS？", o: ["南韓", "墨西哥", "德國", "日本"], a: 1, e: "墨西哥 ERS 約 48%（韓國 14%）。"},
     {q: "此研究中兩國在哪一個作答風格上最為相似？", o: ["ERS", "MRS", "ARS（同意傾向）", "DRS"], a: 2, e: "兩國 ARS 都高（約 57–60%）。"},
     {q: "高 Power Distance 預測哪一種作答風格？", o: ["高 ARS", "低 ARS", "低 ERS 且低 ARS", "無關"], a: 0, e: "高權力距離與服從 → 較高的同意傾向。"},

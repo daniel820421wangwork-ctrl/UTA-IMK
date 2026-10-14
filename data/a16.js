@@ -3,19 +3,19 @@
   title: "A cross-cultural comparison of perceived hazard in response to warning components and configurations: US vs. China",
   authors: "Mary F. Lesch, Pei-Luen Patrick Rau, Zhengxuan Zhao & Chengyi Liu", year: 2009, source: "Applied Ergonomics, 40, 953–961",
   pages: "9 頁（實證論文）", difficulty: 2,
-  oneLiner: "美國 ANSI 的警示標準元素（顏色、警示字、符號）在中國的『危險感知』不同：中國受試者整體評分較低，黃色與 CAUTION／WARNING 的排序也不同，因此需要更強的警示。",
+  oneLiner: "美國 ANSI 的警示標準元素（顏色、警示用語、符號）在中國的「危險感知」不同：中國受試者整體評分較低，黃色與 CAUTION／WARNING 的排序也不同，因此需要更強的警示。",
   summary: [
-    "背景：國際警示標準 harmonization 的趨勢，使得需要檢驗 <b>ANSI Z535</b> 標準是否適用於不同文化。",
-    "實驗：40 位美國與 43 位中國大學生，對顏色（6 種）、警示字（6 個）、符號（3 種）與 11 種複合配置，以 1–9 評定『感知危險度（perceived hazard）』。",
-    "發現：<b>美國受試者全面給予較高評分</b>；顏色排序跨文化不同（中國：黃最低、橘高於紅）；警示字 WARNING vs. CAUTION 順序相反；複合配置的『相對』排序則在兩文化相似，但中國的『絕對』評分仍較低。"
+    "背景：國際警示標準走向統一（harmonization）的趨勢，使得需要檢驗 <b>ANSI Z535</b> 標準是否適用於不同文化。",
+    "實驗：40 位美國與 43 位中國大學生，對顏色（6 種）、警示用語（6 個）、符號（3 種）與 11 種複合配置，以 1–9 評定「感知危險度（perceived hazard）」。",
+    "發現：<b>美國受試者全面給予較高評分</b>；顏色排序跨文化不同（中國：黃最低、橘高於紅）；警示用語 WARNING 與 CAUTION 的高低順序相反；複合配置的「相對」排序則在兩文化相似，但中國的「絕對」評分仍較低。"
   ],
   keyPoints: [
     "ANSI 建議：DANGER（白字紅底）> WARNING（黑字橘底）> CAUTION（黑字黃底）；安全警示符號（三角驚嘆號）。",
-    "美國受試者顏色排序（低→高）：blue, green, yellow, black, orange, red；中國：yellow, blue, green, red, black, orange。",
+    "顏色的危險感排序（低 → 高）：美國為藍、綠、黃、黑、橘、紅；中國為黃、藍、綠、紅、黑、橘。",
     "中國受試者：黃色最低（2.9）；橘（7.2）高於紅（6.4）。",
-    "警示字：美國 BEWARE/WARNING > CAUTION；中國相反（CAUTION > WARNING）。",
-    "符號：美國最高為 cracked skull & crutches；中國最高為安全警示符號。",
-    "實務：對中國使用者需要『更強』的警示元素以達到同等感知危險。"
+    "警示用語：美國 BEWARE、WARNING > CAUTION；中國相反（CAUTION > WARNING）。",
+    "符號：美國受試者覺得「裂開的頭骨與拐杖」最危險；中國受試者覺得標準安全警示符號（三角驚嘆號）最危險。",
+    "實務：對中國使用者需要「更強」的警示元素以達到同等感知危險。"
   ],
   concepts: [
     {term: "Perceived hazard（感知危險度）", def: "使用者對警示標籤所傳達危險程度的主觀評估；被認為需要達到某閾值才會觸發遵從行為。"},
@@ -34,21 +34,21 @@
       <tr><td>中國</td><td>yellow → blue → green → red → black → orange</td><td>黃色最低（2.9）、橘 &gt; 紅；紅與黑無顯著差異</td></tr></tbody></table>`},
     {title: "警示字與符號", html: `
       <ul>
-        <li><b>警示字</b>：DEADLY 與 DANGER 最高、NOTICE 最低（兩國皆是）。美國：BEWARE、WARNING &gt; CAUTION；中國：CAUTION &gt; WARNING。美國平均 6.9，中國 5.3。</li>
-        <li><b>語言</b>：中國受試者對中文與英文警示字的整體評價相近，但 WARNING、DANGER 以英文寫時評分較高。</li>
+        <li><b>警示用語</b>：DEADLY 與 DANGER 最高、NOTICE 最低（兩國皆是）。美國：BEWARE、WARNING &gt; CAUTION；中國：CAUTION &gt; WARNING。美國平均 6.9，中國 5.3。</li>
+        <li><b>語言</b>：中國受試者對中文與英文警示用語的整體評價相近，但 WARNING、DANGER 以英文寫時評分較高。</li>
         <li><b>符號</b>：美國 skull & bones &lt; safety alert &lt; cracked skull & crutches；中國 cracked skull &lt; skull & bones &lt; safety alert。</li>
       </ul>`},
     {title: "複合配置與實務建議", html: `
       <ul>
-        <li>複合配置的『相對排序』兩國相似，且符合 ANSI 建議。</li>
+        <li>複合配置的「相對排序」兩國相似，且符合 ANSI 建議。</li>
         <li><b>black-DEADLY-skull & bones</b> 在兩文化皆高於 ANSI 的 red-DANGER-safety alert。</li>
         <li>替換符號（以 cracked skull & crutches 代 safety alert）可提升感知危險。</li>
-        <li>中國受試者整體絕對評分較低 → 需要『更強』的警示字、顏色與符號；中國的標準尚未完善且執行不一致。</li>
+        <li>中國受試者整體絕對評分較低 → 需要「更強」的警示用語、顏色與符號；中國的標準尚未完善且執行不一致。</li>
         <li>限制：大學生樣本；顏色在 CRT 螢幕呈現；樣本小。</li>
       </ul>`}
   ],
   examTips: [
-    "注意『相對排序』與『絕對評分』的區別：複合配置相對排序一致；但中國絕對較低。",
+    "注意「相對排序」與「絕對評分」的區別：複合配置相對排序一致；但中國絕對較低。",
     "顏色：中國黃色最低；橘高於紅。",
     "WARNING vs. CAUTION：美國 WARNING 較高；中國相反。",
     "實務：國際化產品需要在地化警示設計，而非直接套用 ANSI。"
