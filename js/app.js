@@ -34,7 +34,8 @@
     $('#skinBtn').innerHTML = '風格<span class="sn">：' + SKIN_NAME[skin] + '</span>';
   };
   applySkin();
-  $('#skinBtn').onclick = () => { skin = SKINS[(SKINS.indexOf(skin) + 1) % SKINS.length]; store.set('skin', skin); applySkin(); };
+  if (window.Music) window.Music.useSkin(skin, false);
+  $('#skinBtn').onclick = () => { skin = SKINS[(SKINS.indexOf(skin) + 1) % SKINS.length]; store.set('skin', skin); applySkin(); if (window.Music) window.Music.useSkin(skin, true); };
   $('#menuBtn').onclick = () => document.body.classList.toggle('menu');
   $('#scrim').onclick = () => document.body.classList.remove('menu');
 
