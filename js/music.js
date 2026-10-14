@@ -69,7 +69,10 @@
         playerVars: { playsinline: 1, rel: 0, modestbranding: 1, loop: 1, playlist: id, autoplay: autoplay ? 1 : 0 },
         events: {
           onReady: (e) => { e.target.setVolume(vol); if (autoplay) e.target.playVideo(); },
-          onStateChange: (e) => { playing = e.data === 1 || e.data === 3; sync(); },
+          onStateChange: (e) => {
+            if (e.data === 0) { e.target.seekTo(0); e.target.playVideo(); return; } // ended -> repeat
+            playing = e.data === 1 || e.data === 3; sync();
+          },
           onError: () => { playing = false; sync(); msg('這支影片不允許嵌入播放，請換一個連結'); }
         }
       });
