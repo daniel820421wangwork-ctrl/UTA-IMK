@@ -68,6 +68,7 @@
       <p>${esc(C.code)} · ${esc(C.instructor)} · ${esc(C.term)}</p>
       <p><b>期末考：</b>${esc(C.exam)}</p><p><b>評分：</b>${esc(C.grading)}</p>
       <p>已讀 ${d} / ${n} 篇　·　${terms.length} 個關鍵名詞　·　${questions.length} 題練習題</p>
+      <div class="sync"><span>SYNCHRONIZATION RATE</span><b>${(d / n * 100).toFixed(0)}%</b></div>
       <div class="bar"><i style="width:${(d / n * 100).toFixed(0)}%"></i></div></div>
       <div class="row"><a class="btn primary" href="#/quiz">全題庫隨機測驗</a><a class="btn" href="#/cards">名詞閃卡</a><a class="btn" href="#/glossary">名詞索引</a><a class="btn" href="#/syllabus">課綱與教科書範圍</a></div>`;
     Object.keys(byDay).forEach((dk) => {
@@ -99,7 +100,7 @@
     const a = A[i];
     tab = view || tab;
     const prev = A[i - 1], next = A[i + 1];
-    let h = `<article><div class="byline">${esc(C.days[a.day].label)} · ${esc(C.topics[a.topic] || a.topic)}</div>
+    let h = `<article><div class="ep">EPISODE : ${String(a.id).padStart(2, '0')}</div><div class="byline">${esc(C.days[a.day].label)} · ${esc(C.topics[a.topic] || a.topic)}</div>
       <h1>${esc(a.title)}</h1>
       <div class="byline">${esc(a.authors)}（${a.year}）· ${esc(a.source)} · ${esc(a.pages)} · 難度 ${'●'.repeat(a.difficulty)}${'○'.repeat(3 - a.difficulty)}</div>
       <div class="lead">${esc(a.oneLiner)}</div>
