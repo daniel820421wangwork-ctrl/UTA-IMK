@@ -1,0 +1,64 @@
+(window.ARTICLES = window.ARTICLES || []).push({
+  id: 4, day: 2, topic: "Cultural Frameworks",
+  title: "Cultural Intelligence",
+  authors: "P. Christopher Earley & Elaine Mosakowski", year: 2004, source: "Harvard Business Review, 82(10)",
+  pages: "8 頁", difficulty: 2,
+  oneLiner: "文化智商（CQ）由 Head（認知）、Body（身體）、Heart（情感／動機）三部分組成，可透過六步驟培養。",
+  summary: [
+    "CQ 是一個人面對陌生文化時，『像當地人一樣解讀曖昧行為』的能力。它與情緒智商相關，但<b>延伸其不足</b>：能分辨哪些行為是人類共通、哪些是個人特質、哪些是（介於兩者之間的）文化。",
+    "CQ 有三個來源：<b>Cognitive（Head）</b>、<b>Physical（Body）</b>、<b>Emotional/Motivational（Heart）</b>。三者缺一則整體受損。作者調查 60 國 2,000 位經理，並提出六種 CQ 檔案與六步驟培養流程。"
+  ],
+  keyPoints: [
+    "CQ 三要素：Head / Body / Heart。",
+    "六種管理者類型：provincial, analyst, natural, ambassador, mimic, chameleon（chameleon 約 5%）。",
+    "大多數人是混合型；最常見是 ambassador + analyst。",
+    "CQ 可以被培養（六步驟）。",
+    "CQ 以『暫緩判斷、先觀察模式』避免刻板印象。"
+  ],
+  concepts: [
+    {term: "Cognitive CQ（Head）", def: "學習策略與推論能力：觀察線索、從多個個體歸納共通模式，而非靠背誦禮儀清單。"},
+    {term: "Physical CQ（Body）", def: "以肢體、動作、表情、語氣『鏡像』對方習慣，展現你已進入其世界（握手、點咖啡、距離、目光）。"},
+    {term: "Emotional/Motivational CQ（Heart）", def: "相信自己能適應的自我效能（self-efficacy）與面對挫折再投入的動機。"},
+    {term: "Provincial（鄉土型）", def: "與背景相似者合作良好，但離開熟悉環境就遇到麻煩。例：Chevy 工程師在 Saturn。"},
+    {term: "Analyst（分析型）", def: "以系統化的學習策略一步步破解陌生文化規則。例：Deirdre 一對一訪談。"},
+    {term: "Natural（直覺型）", def: "靠直覺而非系統，第一印象常準，但遇到模糊多文化情境可能失靈。"},
+    {term: "Ambassador（大使型）", def: "對新文化所知不多，但自信地傳達『我屬於這裡』；最常見的類型；需謙遜避免低估差異。"},
+    {term: "Mimic（模仿型）", def: "能控制行為並模仿，讓人放鬆、建立信任，但對線索意義缺乏洞察；不同於『純模仿』（可能被視為嘲弄）。"},
+    {term: "Chameleon（變色龍）", def: "三要素皆高，極罕見（約 5%）；可能被誤認為本地人，甚至能達成本地人做不到的成果。例：Nigel in Lahore。"}
+  ],
+  sections: [
+    {title: "CQ 三要素與案例", html: `
+      <table class="t"><thead><tr><th>要素</th><th>關鍵能力</th><th>案例</th></tr></thead><tbody>
+      <tr><td><b>Head</b></td><td>學習策略；由觀察的個體歸納模式</td><td>Devin 觀察多位德國客戶代表，推論公司特質（準時、重期限、接受非傳統廣告）</td></tr>
+      <tr><td><b>Body</b></td><td>鏡像肢體與習慣</td><td>Henri 的貼面禮；Melanie 無法自在接受；洛杉磯社群領袖與近距離交談</td></tr>
+      <tr><td><b>Heart</b></td><td>自我效能、堅持</td><td>Hyong Moon 以過往成功經驗在跨部門團隊中堅持</td></tr></tbody></table>
+      <p>Peter（從 L.A. 調到 Lilly）的三困難：不了解環境改變（Head）、無法讓行為與周遭一致（Body）、受挫後氣餒（Heart）。</p>`},
+    {title: "Merrill Lynch × Mercury：三要素如何失敗", html: `
+      <p>Casual Friday 事件：抗拒的 Mercury 經理<b>不理解背後意圖（head）</b>、<b>無法改變穿著（body）</b>、<b>缺乏動機堅持（heart）</b>。</p>`},
+    {title: "六步驟培養 CQ", html: `
+      <ol>
+        <li>評估自己的 CQ 強弱（自評、模擬、360 度回饋）。</li>
+        <li>針對弱項選擇訓練（缺 physical → 表演課；缺 cognitive → 案例歸納）。</li>
+        <li>實際應用訓練（從簡單任務開始，如買報紙、問候）。</li>
+        <li>組織個人資源與組織支持。</li>
+        <li>進入實際文化情境，依自身強項協調他人。</li>
+        <li>重新評估成效（再次 360 回饋）。</li>
+      </ol>
+      <p>案例：Helmut（柏林 → 慕尼黑）motivational CQ 低；以異質小組討論與逐步升級的任務建立信心。</p>`}
+  ],
+  examTips: [
+    "Head / Body / Heart 對應 cognitive / physical / emotional-motivational。",
+    "六種類型的特徵是常見配對題；記住 chameleon 約 5%。",
+    "Mimic ≠ 純模仿；pure imitation 可能被視為嘲弄。",
+    "CQ vs. EQ：CQ 能區分『人類共通／個人／文化』。",
+    "CQ 強調『暫緩判斷』與避免刻板印象。"
+  ],
+  quiz: [
+    {q: "一位經理能完美模仿客戶的肢體與說話方式，但不理解其文化意涵。他最像哪一型？", o: ["Analyst", "Mimic", "Provincial", "Chameleon"], a: 1, e: "Mimic 對行為有高度控制，但對線索意義缺乏洞察。"},
+    {q: "Earley & Mosakowski 的調查中，約多少比例的經理屬於 chameleon？", o: ["約 5%", "約 25%", "約 50%", "約 80%"], a: 0, e: "僅約 5% 具備三要素皆高。"},
+    {q: "CQ 的 'Heart' 成分主要指？", o: ["學習策略", "肢體鏡像", "自我效能與動機", "語言能力"], a: 2, e: "Emotional/motivational：相信自己能夠適應並堅持。"},
+    {q: "下列何者最能說明 CQ 與情緒智商（EQ）的差異？", o: ["CQ 只關於語言", "CQ 能區分哪些行為是人類共通、個人特有、或文化特有", "EQ 只用於國內", "CQ 無法培養"], a: 1, e: "CQ 在 EQ 不足處延伸：辨識文化層次的行為。"},
+    {q: "只依靠直覺、不使用系統學習策略，在模糊多文化情境可能失靈的類型是？", o: ["Natural", "Analyst", "Ambassador", "Mimic"], a: 0, e: "Natural 依賴直覺，不曾需要自創學習策略。"},
+    {q: "下列何者是培養 CQ 的第一步？", o: ["進入目標文化", "評估自己的 CQ 強弱", "購買語言課程", "組織團隊資源"], a: 1, e: "Step 1：檢視 CQ 強弱作為起點。"}
+  ]
+});
