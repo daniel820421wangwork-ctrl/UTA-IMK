@@ -48,7 +48,7 @@
 
   // ---- sidebar ----
   function renderSide(cur) {
-    let h = '';
+    let h = '<div class="side-nav"><a href="#/">首頁</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a><a href="#/syllabus">課綱</a></div>';
     Object.keys(byDay).forEach((d) => {
       h += `<h4>${esc(C.days[d].label)}</h4>`;
       Object.keys(byDay[d]).forEach((tp) => {

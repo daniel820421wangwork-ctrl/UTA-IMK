@@ -97,6 +97,9 @@ mark{background:#ffe38f;color:#222;padding:0 2px;border-radius:3px}
   .content{padding:20px 16px 80px}
   .brand small{display:none}
 }
+@media (min-width:861px){.side-nav{display:none}}
+.side-nav{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.side-nav a{border:1px solid var(--line);padding:4px 10px}
 @media print{.top,.sidebar,.pager,.tabs{display:none}.content{max-width:none}}
 
 /* ===== Skin: EVA (NERV command console, redesigned) ===== */
