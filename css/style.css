@@ -292,3 +292,20 @@ mark{background:#ffe38f;color:#222;padding:0 2px;border-radius:3px}
 [data-skin="eva"][data-theme="light"] .top-nav a:hover,[data-skin="eva"][data-theme="light"] .top-nav a.on{color:#fff}
 [data-skin="eva"][data-theme="light"] #musicPanel{background:#fffdf8;color:#1b1030;border-color:#1b1030}
 [data-skin="eva"][data-theme="light"] .scrim{background:#1b103066}
+
+/* ===== Music playlist ===== */
+#musicPanel{max-height:calc(100vh - 72px);max-height:calc(100dvh - 72px);overflow-y:auto;overscroll-behavior:contain}
+#musicPanel .btn{padding:6px 10px;font-size:.8rem}
+#musicPanel .btn:disabled{opacity:.4;cursor:not-allowed}
+#musicPanel .mp-sec{border-top:1px solid var(--line);margin-top:10px;padding-top:8px}
+#musicPanel .mp-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+#mpList{list-style:decimal;margin:8px 0;padding-left:22px;max-height:180px;overflow-y:auto}
+#mpList li{display:flex;align-items:center;gap:4px;padding:2px 0}
+#mpList li.mp-empty{display:block;list-style:none;margin-left:-22px;color:var(--muted);font-size:.8rem}
+#mpList li.cur .mp-it{color:var(--accent);font-weight:700}
+#mpList .mp-it{flex:1;min-width:0;text-align:left;background:none;border:0;color:var(--ink);cursor:pointer;padding:4px 2px;font:inherit;font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mpList .mp-it:hover{text-decoration:underline}
+#mpList .mp-x{background:none;border:0;color:var(--muted);cursor:pointer;padding:4px 6px;font-size:.8rem}
+#mpList .mp-x:hover{color:var(--bad)}
+#musicPanel textarea.f{width:100%;box-sizing:border-box;margin-top:6px;font-size:.8rem;resize:vertical}
+#musicPanel .mp-note{font-size:.72rem;color:var(--muted);margin-top:4px}
