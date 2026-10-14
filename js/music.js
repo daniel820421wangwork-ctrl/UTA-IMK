@@ -2,8 +2,11 @@
    - Playback only starts from a user click (browser autoplay rules).
    - Each skin can have a default track; users can also paste any YouTube link. */
 (function () {
-  const TRACKS = { eva: 'V36Gz7cUbas', default: null };
-  const NAMES = { V36Gz7cUbas: 'Sin From Genesis — Shiro SAGISU（EVA 預設曲）' };
+  const TRACKS = { eva: 'V36Gz7cUbas', default: 'n61ULEU7CO0' };
+  const NAMES = {
+    V36Gz7cUbas: 'Sin From Genesis — Shiro SAGISU（EVA 預設曲）',
+    n61ULEU7CO0: 'Best of lofi hip hop — Lofi Girl（預設風格預設曲）'
+  };
   const $ = (s) => document.querySelector(s);
   const store = {
     get(k, d) { try { const v = localStorage.getItem('imk:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
