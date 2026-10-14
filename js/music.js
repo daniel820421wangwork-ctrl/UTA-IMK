@@ -5,8 +5,14 @@
   const TRACKS = { eva: 'V36Gz7cUbas', default: 'n61ULEU7CO0' };
   const NAMES = {
     V36Gz7cUbas: 'Sin From Genesis — Shiro SAGISU（EVA 預設曲）',
-    n61ULEU7CO0: 'Best of lofi hip hop — Lofi Girl（預設風格預設曲）'
+    n61ULEU7CO0: 'Best of lofi hip hop — Lofi Girl（預設風格預設曲）',
+    Ga8YU1fjspo: '洋楽 Playlist・重低音グルーヴ BGM — Chillight Pop'
   };
+  const PRESETS = [
+    ['n61ULEU7CO0', 'Lofi Girl · 放鬆讀書'],
+    ['Ga8YU1fjspo', '洋楽 Playlist · 重低音 BGM'],
+    ['V36Gz7cUbas', 'EVA · Sin From Genesis']
+  ];
   const $ = (s) => document.querySelector(s);
   const store = {
     get(k, d) { try { const v = localStorage.getItem('imk:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
@@ -33,6 +39,7 @@
       <button class="btn primary" id="mpToggle">▶ 播放</button>
       <label class="mp-vol">音量 <input id="mpVol" type="range" min="0" max="100" value="${vol}"></label>
     </div>
+    <div class="mp-row"><label class="mp-vol">曲目 <select id="mpPreset"><option value="">依風格自動選擇</option>${PRESETS.map((p) => `<option value="${p[0]}">${p[1]}</option>`).join('')}</select></label></div>
     <div class="mp-row">
       <input class="f" id="mpUrl" placeholder="貼上 YouTube 連結…" aria-label="YouTube 連結">
       <button class="btn" id="mpApply">套用</button>
@@ -100,9 +107,16 @@
   $('#mpApply').onclick = () => {
     const id = idOf($('#mpUrl').value);
     if (!id) { msg('這看起來不是 YouTube 連結'); return; }
-    custom = id; store.set('musicCustom', id); currentId = null; play(id);
+    custom = id; store.set('musicCustom', id); currentId = null; syncSel(); play(id);
   };
-  $('#mpReset').onclick = () => { custom = null; store.set('musicCustom', null); currentId = null; useSkin(window.__skin || 'default', true); };
+  const sel = $('#mpPreset');
+  const syncSel = () => { sel.value = custom && PRESETS.some((p) => p[0] === custom) ? custom : ''; };
+  sel.onchange = () => {
+    if (!sel.value) { $('#mpReset').click(); return; }
+    custom = sel.value; store.set('musicCustom', custom); currentId = null; play(custom);
+  };
+  syncSel();
+  $('#mpReset').onclick = () => { custom = null; store.set('musicCustom', null); currentId = null; syncSel(); useSkin(window.__skin || 'default', true); };
 
   // called by app.js when the skin changes (userGesture = true on clicks)
   function useSkin(skin, userGesture) {
