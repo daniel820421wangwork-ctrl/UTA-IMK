@@ -25,8 +25,8 @@
     {term: "Price mavenism", def: "樂於成為價格資訊來源並與他人分享者；本研究排除。"},
     {term: "Price–quality schema（價格—品質基模）", def: "相信價格越高、品質越高（『一分錢一分貨』）。"},
     {term: "Prestige sensitivity（聲望敏感度）", def: "高價傳達購買者地位與顯著性所帶來的偏好。"},
-    {term: "Measurement invariance（測量等值）", def: "不同文化下量表是否測量到相同的構念；是跨文化比較的前提。"},
-    {term: "Positive vs. negative price perception factors", def: "正面（促進購買）：價格—品質、聲望；負面（抑制購買）：價值意識、價格意識、促銷傾向等。"}
+    {term: "Measurement invariance（測量等值）", def: "同一份量表在不同文化中，是否真的測量到同一個概念。這是做跨文化比較前必須先確認的事，否則看到的差異可能只是量表的問題。"},
+    {term: "Positive vs. negative price perception factors（促進與抑制購買的價格知覺因素）", def: "促進購買：價格—品質基模（價高品質好）、聲望敏感度。抑制購買：價值意識、價格意識、促銷傾向等。"}
   ],
   sections: [
     {title: "價格知覺構面（Lichtenstein et al.）", html: `

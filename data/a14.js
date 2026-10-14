@@ -18,14 +18,14 @@
     "採 within-subjects『差異法』：以法國與巴西的回答差作為變數。"
   ],
   concepts: [
-    {term: "Country Image (CI)", def: "對一個國家的整體描述性、推論性與資訊性信念（不論具體產品）；又稱 macro country image。"},
-    {term: "Product-country image (PCI)", def: "對某國『全部或大部分產品』的整體知覺品質（如『義大利製品』）；又稱 micro country image。"},
-    {term: "Product category country image (PCatI)", def: "對某國特定產品類別的形象（如德國食品、法國香水）；更窄可至具體產品。"},
-    {term: "Cognitive vs. affective vs. conative", def: "認知＝資訊性信念；情感＝感受與情緒；意向＝行為意圖（是 CI 的結果，不應納入定義）。"},
-    {term: "Circular reasoning（循環推理）", def: "自變數（形象）的測量已包含依變數（產品品質）的評估，導致關係被人為放大。"},
-    {term: "Construct validity / content validity", def: "構念效度／內容效度：測量是否真正代表所定義的概念範圍。"},
-    {term: "Summary effect vs. halo effect", def: "Han (1989)：消費者對某國產品的經驗累積，反過來影響國家形象（summary）；或國家形象影響產品評價（halo）。"},
-    {term: "Within-subjects differences approach", def: "同一受訪者對兩國依序回答，取差值，消除受試者間變異、提高統計檢定力。"}
+    {term: "Country Image (CI)（國家形象）", def: "對「一個國家本身」的整體看法與印象（經濟、科技、人民等），不針對特定產品。又稱 macro country image。"},
+    {term: "Product-country image (PCI)（產品—國家形象）", def: "對「某國所有（或大多數）產品」的整體印象，例如「日本製產品」的品質印象。又稱 micro country image。"},
+    {term: "Product category country image (PCatI)（產品類別—國家形象）", def: "對某國「特定產品類別」的印象，例如德國汽車、法國香水；更窄可到具體產品。"},
+    {term: "Cognitive / Affective / Conative（認知／情感／意向）", def: "認知＝對國家的資訊與信念；情感＝感受與情緒；意向＝行為意圖（如想去旅遊）。意向是形象的「結果」，不應放進國家形象的定義。"},
+    {term: "Circular reasoning（循環推理）", def: "用來預測結果的量表，其實已經包含結果本身（例如國家形象量表已含產品品質題），導致兩者關係被人為放大。"},
+    {term: "Construct validity / Content validity（構念效度／內容效度）", def: "量表是否真的測到你想測的概念；以及題目是否涵蓋這個概念的合適範圍。"},
+    {term: "Summary effect vs. Halo effect（摘要效應 vs. 光環效應）", def: "Han（1989）的兩種看法。光環效應：對不熟悉的產品，消費者用「國家形象」去推測品質；摘要效應：熟悉後，消費者把對該國產品的經驗累積成「國家形象」。"},
+    {term: "Within-subjects differences approach（受試者內差異法）", def: "讓同一位受訪者依序評估兩個國家，再取兩者的差值。可消除個人差異、提高統計檢定力，缺點是受訪者容易疲勞。"}
   ],
   sections: [
     {title: "三層次 domain map", html: `

@@ -16,11 +16,11 @@
     "建議：維持道德標準、脫離負面刻板印象、長期改善同胞聲譽。"
   ],
   concepts: [
-    {term: "National stereotype（國家刻板印象）", def: "以國家形象作為判斷他國人行為的捷徑，用來降低模糊與不確定。"},
-    {term: "Ethically questionable tactics", def: "如虛假承諾（false promises）、不當蒐集資訊、說謊、賄賂。"},
-    {term: "Move toward each other ethically", def: "談判雙方依據對對方的刻板印象調整道德水準，形成相互影響。"},
-    {term: "Corruption Perception Index", def: "衡量各國腐敗感知的指數（0＝高度腐敗；100＝非常清廉）。"},
-    {term: "Reputation spillover", def: "國家聲譽影響對方是否會放寬或收緊道德標準。"}
+    {term: "National stereotype（國家刻板印象）", def: "用「某國人通常怎樣」的印象，快速預測對方會怎麼做，以降低面對陌生對手時的不確定感。"},
+    {term: "Ethically questionable tactics（有道德爭議的談判手段）", def: "例如虛假承諾、用不正當方式蒐集資訊、說謊、行賄。"},
+    {term: "Move toward each other ethically（道德標準向彼此靠攏）", def: "雙方依照對對方國家的刻板印象調整自己的道德尺度：對「被認為較不道德」的對手，自己也變得較願意用不道德手段。"},
+    {term: "Corruption Perception Index（清廉印象指數）", def: "衡量各國被感知的貪腐程度，0 分＝非常腐敗，100 分＝非常清廉。文中舉例：中國 36 分（175 國中第 100 名）、美國 74 分（第 17 名）。"},
+    {term: "國家聲譽的連帶效應", def: "你所屬國家的名聲會影響對方：名聲好，對方也較守道德；名聲差，對方可能放寬自己的標準。文章建議展現強烈道德準則，或長期改善同胞的行為來扭轉形象。"}
   ],
   sections: [
     {title: "三種情境與建議", html: `

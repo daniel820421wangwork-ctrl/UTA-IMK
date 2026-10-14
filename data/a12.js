@@ -18,14 +18,14 @@
     "問卷以 5 點量表，美式英文翻成韓文與西班牙文（parallel translation）。"
   ],
   concepts: [
-    {term: "Response style（作答風格）", def: "受訪者不管題目內容，以特定方式作答的傾向。"},
-    {term: "ERS — Extreme Response Style", def: "傾向選擇量表兩端（1 或 5）。"},
-    {term: "NERS — Non-extreme Response Style", def: "避免極端、偏好 2、3、4。"},
-    {term: "MRS — Mid-point Response Style", def: "偏好中間值（5 點量表中的 3）；常與 NERS 混淆但不同。"},
-    {term: "ARS — Acquiescence Response Style", def: "『同意傾向／yea-saying』，不論內容皆選 agree / strongly agree；可能源於模糊、疲勞、款待或服從的文化規範。"},
-    {term: "DRS — Disacquiescence Response Style", def: "『不同意傾向／nay-saying』，傾向選 disagree / strongly disagree。"},
-    {term: "Ipsative rescaling", def: "Cunningham 等人建議：以每位受訪者自己的平均與標準差標準化其答案以處理 ERS。"},
-    {term: "Parallel translation", def: "由母語者獨立翻譯的方法，用於將問卷翻成各語言。"}
+    {term: "Response style（作答風格）", def: "受訪者不管題目內容，習慣用某種固定方式作答，例如愛選極端或愛選中間。不同文化的作答風格不同，會讓跨國問卷分數失真。"},
+    {term: "ERS — Extreme Response Style（極端作答風格）", def: "傾向選量表兩端（5 點量表的 1 或 5）。本文中墨西哥受訪者約 48% 屬此類。"},
+    {term: "NERS — Non-extreme Response Style（非極端作答風格）", def: "避免選極端，偏好 2、3、4。"},
+    {term: "MRS — Mid-point Response Style（中間點作答風格）", def: "偏好選正中間的選項（5 點量表的 3）。與 NERS 不同：NERS 是避開兩端，MRS 只指中間點。"},
+    {term: "ARS — Acquiescence Response Style（同意傾向，愛說 yes）", def: "不管題目內容，都傾向選「同意」或「非常同意」。可能因為不理解、疲勞、客氣或服從的文化規範。"},
+    {term: "DRS — Disacquiescence Response Style（不同意傾向，愛說 no）", def: "不管題目內容，都傾向選「不同意」或「非常不同意」。"},
+    {term: "Ipsative rescaling（個人內標準化）", def: "把每位受訪者的答案，用他自己的平均與標準差重新換算，以消除個人愛選極端的傾向。由 Cunningham 等人建議。"},
+    {term: "Parallel translation（平行翻譯）", def: "由母語者各自獨立翻譯問卷，再比對差異，以確保不同語言版本意思一致。"}
   ],
   sections: [
     {title: "預測 vs. 結果", html: `

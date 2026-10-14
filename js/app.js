@@ -31,7 +31,7 @@
   let skin = store.get('skin', 'default');
   const applySkin = () => {
     if (skin === 'eva') root.setAttribute('data-skin', 'eva'); else root.removeAttribute('data-skin');
-    $('#skinBtn').textContent = '風格：' + SKIN_NAME[skin];
+    $('#skinBtn').innerHTML = '風格<span class="sn">：' + SKIN_NAME[skin] + '</span>';
   };
   applySkin();
   $('#skinBtn').onclick = () => { skin = SKINS[(SKINS.indexOf(skin) + 1) % SKINS.length]; store.set('skin', skin); applySkin(); };
@@ -48,7 +48,7 @@
 
   // ---- sidebar ----
   function renderSide(cur) {
-    let h = '<div class="side-nav"><a href="#/">首頁</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a><a href="#/syllabus">課綱</a></div>';
+    let h = '<div class="side-nav"><input id="search2" type="search" placeholder="搜尋…" aria-label="搜尋"><a href="#/">首頁</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a><a href="#/syllabus">課綱</a></div>';
     Object.keys(byDay).forEach((d) => {
       h += `<h4>${esc(C.days[d].label)}</h4>`;
       Object.keys(byDay[d]).forEach((tp) => {
@@ -59,6 +59,8 @@
       });
     });
     side.innerHTML = h;
+    const s2 = $('#search2');
+    if (s2) s2.addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target.value.trim()) location.hash = '#/s/' + encodeURIComponent(e.target.value.trim()); });
   }
 
   // ---- pages ----
@@ -185,7 +187,7 @@
       if (!deck.length) { $('#fc').innerHTML = '<p>沒有資料。</p>'; return; }
       const c = deck[k];
       $('#fc').innerHTML = `<div class="flash"><div class="face" id="face">${show
-        ? `<small>定義</small><div>${c.def}</div>` : `<small>名詞 · 文章 #${c.aid}</small><div class="term">${esc(c.term)}</div><small style="margin-top:14px">點擊翻面</small>`}</div></div>
+        ? `<small>${esc(c.term)}</small><div style="text-align:left;line-height:1.9">${c.def}</div>` : `<small>名詞 · 出自 EP.${c.aid}《${esc(c.atitle.length > 46 ? c.atitle.slice(0, 44) + '…' : c.atitle)}》</small><div class="term">${esc(c.term)}</div><small style="margin-top:14px">點擊翻面</small>`}</div></div>
         <div class="row"><button class="btn" id="pv">← 上一張</button><span>${k + 1} / ${deck.length}</span><button class="btn" id="nx">下一張 →</button><button class="btn" id="sh">洗牌</button><a class="btn" href="#/a/${c.aid}">看原文筆記</a></div>`;
       $('#face').onclick = () => { show = !show; draw(); };
       $('#pv').onclick = () => { k = (k - 1 + deck.length) % deck.length; show = false; draw(); };

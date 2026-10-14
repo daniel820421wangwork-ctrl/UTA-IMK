@@ -19,13 +19,13 @@
   ],
   concepts: [
     {term: "Price elasticity（價格彈性）", def: "價格上升 1% 所造成的需求變動百分比；中國案例大多落在 −8 至 −2；熱銷品彈性較高（−8 的 SKU 日購 22.5 次）。"},
-    {term: "Consumer decision model", def: "預測在自己與對手價格、庫存等因素下需求的公式；可簡可繁，需在 sophistication 與 scalability 間取捨。"},
-    {term: "Confounder（混淆因子）", def: "同時影響價格與需求但無法由歷史資料捕捉的因素（如針對性行銷活動）。"},
-    {term: "Constrained optimization", def: "在業務約束（如毛利下限、價格上下限）下最大化目標（營收）。"},
-    {term: "Counterfactual problem", def: "不知道『若不用新演算法會怎樣』；以對照組解決。"},
-    {term: "ABC classification", def: "依營收貢獻將 SKU 分三級；A 級用複雜模型、B/C 用簡化模型。"},
-    {term: "Electronic shelf labels", def: "電子貨架標籤；讓實體店也能動態定價。"},
-    {term: "Left-digit bias", def: "消費者過度重視價格左邊數字（$4.99 vs. $5.00）；部分人更看右邊數字。"}
+    {term: "Consumer decision model（消費者決策模型）", def: "用公式預測在「自己與對手價格、庫存等條件」下的需求量。可簡可繁，需在精細度與可擴展性之間取捨。"},
+    {term: "Confounder（混淆因子）", def: "同時影響價格與需求、但無法從歷史資料看出來的因素，例如針對某品牌的行銷活動，容易讓人誤以為「價格高、所以需求高」。"},
+    {term: "Constrained optimization（約束式最佳化）", def: "在業務限制條件下找最佳解，例如「在毛利率不低於 10% 的前提下，讓營收最大」。"},
+    {term: "Counterfactual problem（反事實問題）", def: "無法知道「如果沒有用新演算法，結果會怎樣」。解法是設對照組。"},
+    {term: "ABC classification（ABC 分類法）", def: "依營收貢獻把商品分三級：A＝佔 20% 品項、貢獻 80% 營收；B＝30% 品項、15% 營收；C＝50% 品項、5% 營收。A 用精細模型，B、C 用簡化模型。"},
+    {term: "Electronic shelf labels（電子貨架標籤）", def: "貨架上可遠端更新價格的電子標籤，讓實體店也能做動態定價。"},
+    {term: "Left-digit bias（左位數偏誤）", def: "消費者過度重視價格最左邊的數字，覺得 $4.99 比 $5.00 便宜很多；也有人會更注意最右邊的數字。"}
   ],
   sections: [
     {title: "七步驟", html: `

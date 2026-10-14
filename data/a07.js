@@ -20,11 +20,11 @@
   concepts: [
     {term: "Consumer animosity（消費者敵意）", def: "與過去或進行中的政治、軍事、經濟、外交事件有關的反感（antipathy），針對特定國家。"},
     {term: "Reluctance to buy（RTB）", def: "因敵意而不願購買某國產品的行為傾向，如『我會因為買美國貨而感到內疚』。"},
-    {term: "VAB model", def: "Value–Attitude–Behavior：價值觀影響態度，進而推動行為反應（Homer & Kahle, 1988）。"},
-    {term: "CVSCALE", def: "Yoo, Donthu & Lenartowicz (2011) 所建立，在個人層級測量 Hofstede 五構面的量表（26 題）。"},
-    {term: "Ecological fallacy", def: "把國家層級的構面分數直接套用到個人，造成推論錯誤。"},
-    {term: "Out-group bias", def: "對外團體的敵意或偏見；集體主義文化中較強。"},
-    {term: "SEM / AMOS", def: "結構方程模型，用於同時檢定測量模型與結構關係。"}
+    {term: "VAB model（價值—態度—行為模型）", def: "Value–Attitude–Behavior：個人的價值觀影響他的態度，態度再推動行為。本文中：文化價值 → 對美國的敵意 → 不願購買美國產品。"},
+    {term: "CVSCALE（個人層級文化價值量表）", def: "Yoo 等人（2011）發展的量表，用 26 題測量個人在 Hofstede 五個構面上的位置，避免把國家分數套用到個人。"},
+    {term: "Ecological fallacy（生態謬誤）", def: "把「整個國家的平均特徵」直接當成「該國每個人的特徵」，造成推論錯誤。"},
+    {term: "Out-group bias（外團體偏見）", def: "對「不屬於自己團體的人」抱持的敵意或偏見。集體主義文化中通常較強。"},
+    {term: "SEM / AMOS（結構方程模型／AMOS 軟體）", def: "SEM 是同時檢定多個變數之間關係的統計方法；AMOS 是常用的分析軟體。考試通常只需知道本文用它檢定假設。"}
   ],
   sections: [
     {title: "假設與結果", html: `

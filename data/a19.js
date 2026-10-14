@@ -18,15 +18,15 @@
     "全球貿易復甦速度：4 季回到衰退前，遠快於 2009（9 季）與 2015（13 季）。"
   ],
   concepts: [
-    {term: "Global value chain (GVC)", def: "跨國獨立但互聯公司的功能整合；由 lead firm（如 Apple、Ikea、Ferrero）主導。"},
-    {term: "Geographic scope", def: "GVC 支柱一：活動配置於何處；疫情顯示利用區位優勢會帶來脆弱性。依產品性質而異（手套留在海外；呼吸器、疫苗因國安受壓回流）。"},
-    {term: "Upgrading", def: "GVC 支柱二：供應商能力提升（產品、流程、功能升級，如 OEM → OBM）；未來重點由效率轉為資訊共享、可靠度、敏捷度。"},
-    {term: "Governance", def: "GVC 支柱三：lead firm 如何管理價值分配與關係（captive、relational、modular）；趨向更『發展型』與價值分享（ASML）。"},
-    {term: "State–firm relationships", def: "GVC 支柱四：國家作為促進者、監管者、買家、生產者；疫苗民族主義扭曲 GVC。"},
-    {term: "Reshoring / Nearshoring / Regionalization", def: "回流本國／近岸／區域化；多數主管預期三年內進行某種程度區域化。"},
-    {term: "Micro-supply chains", def: "有限、分散、敏捷的迷你營運模式，靠近購買點；作為並行補充，而非主要策略。"},
-    {term: "Redistributed manufacturing / Local Customizer", def: "3D 列印、微型工廠使在地客製化低成本生產成為可能。"},
-    {term: "Surveillance + collaboration", def: "企業同時加強監視供應商並與其合作強化能力的悖論式共演。"}
+    {term: "Global value chain (GVC)（全球價值鏈）", def: "一項產品從原料、製造到銷售，分散在多國由不同公司完成的整條鏈。通常由握有品牌的主導企業（如 Apple、Ikea）統籌。"},
+    {term: "Geographic scope（地理範圍）", def: "GVC 四支柱之一：各項活動要放在哪裡。疫情顯示過度追逐便宜產地會帶來脆弱性，但各產品不同：口罩手套仍在海外，呼吸器與疫苗則因國安被要求回流。"},
+    {term: "Upgrading（升級）", def: "GVC 四支柱之一：供應商提升自己的能力，例如從代工（OEM）升級為自有品牌（OBM）。未來重點由「效率」轉向資訊共享、可靠度與敏捷度。"},
+    {term: "Governance（治理）", def: "GVC 四支柱之一：主導企業如何管理價值分配與供應商關係。趨勢是更多協調、價值共享（如 ASML）。"},
+    {term: "State–firm relationships（國家與企業關係）", def: "GVC 四支柱之一：國家可以是促進者、監管者、買家或生產者。疫情中的疫苗民族主義扭曲了 GVC 的運作。"},
+    {term: "Reshoring / Nearshoring / Regionalization（回流／近岸／區域化）", def: "回流＝把生產搬回本國；近岸＝搬到鄰近國家；區域化＝供應鏈集中在同一區域。多數經理人預期三年內會做某種程度的區域化。"},
+    {term: "Micro-supply chains（微供應鏈）", def: "規模小、分散、靈活的迷你營運模式，靠近消費地點。作為主要供應鏈的補充，而非取代。"},
+    {term: "Redistributed manufacturing / Local Customizer（分散式製造／在地客製者）", def: "3D 列印、微型工廠等技術讓小量、客製化的生產可以在消費地附近完成，產生新的在地客製供應商。"},
+    {term: "Surveillance + collaboration（監視＋合作）", def: "企業一方面更嚴密地監看供應商，另一方面又與其合作強化能力，看似矛盾但同時並進。"}
   ],
   sections: [
     {title: "完美風暴四要素", html: `

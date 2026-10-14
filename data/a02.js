@@ -18,16 +18,16 @@
     "GLOBE 擴為 9 構面；Trompenaars 7 構面缺乏實證支持。"
   ],
   concepts: [
-    {term: "Power Distance（權力距離）", def: "較無權力的成員接受且預期權力分配不平等的程度（從『下位者』角度定義）。高：服從、老師為中心、階層代表存在性不平等；低：諮詢、學生為中心、階層只是角色方便。"},
-    {term: "Uncertainty Avoidance（不確定性規避）", def: "社會對模糊、未知情境的容忍度（≠ 風險規避）。高：嚴格規則、對異端不容忍、需要結構與明確；低：容忍模糊、可接受『我不知道』、換工作容易。"},
-    {term: "Individualism vs. Collectivism（個人主義／集體主義）", def: "個人被整合進群體的程度。個人：『I』意識、犯錯→罪惡感、任務優先；集體：『We』意識、犯錯→羞恥感、關係優先、內團體／外團體。"},
-    {term: "Masculinity vs. Femininity（陽剛／陰柔）", def: "價值觀在性別間的分配。陽剛：堅定、競爭、工作優先於家庭、性別角色明確；陰柔：謙虛、關懷、工作家庭平衡、同情弱者。"},
-    {term: "Long- vs. Short-Term Orientation（長期／短期導向）", def: "努力的焦點在未來或過去／現在。長期：堅持、節儉、依地位排序關係、傳統可調整（東亞）；短期：尊重傳統、保護面子、社會義務（美國、澳洲、拉美、非洲）。"},
-    {term: "Indulgence vs. Restraint（放縱／克制）", def: "對享樂與樂趣需求之滿足的允許程度。放縱：較快樂、重視休閒與言論自由（美洲、西歐）；克制：嚴格社會規範（東歐、亞洲、穆斯林世界）。"},
-    {term: "Confucian Work Dynamism", def: "Michael Bond 的 Chinese Value Survey 所發現的構面，後來被 Hofstede 改名為 Long-Term Orientation 並成為第五構面。"},
-    {term: "Ecological level analysis", def: "以國家平均分數而非個人分數做分析；個人層級與國家層級的相關模式可能完全不同。"},
-    {term: "High-context vs. Low-context（Hall, 1976）", def: "高情境文化訊息多為隱含；低情境文化幾乎一切明說。"},
-    {term: "GLOBE project", def: "Robert House 的大型研究（約 60 社會、17,000 位經理），擴展為 9 構面 × (as is / should be) = 18 分數。"}
+    {term: "Power Distance（權力距離）", def: "「較沒有權力的人」能接受權力分配不平等的程度。高：習慣服從、老師說了算、階層代表人天生不平等；低：重視被諮詢、學生為中心、階層只是分工方便。"},
+    {term: "Uncertainty Avoidance（不確定性規避）", def: "一個社會對「模糊、沒把握、沒有規則」的情況有多不自在（不等於不敢冒險）。高：規則多、不容許異議、需要明確答案；低：能接受「我不知道」、對變動較自在。"},
+    {term: "Individualism vs. Collectivism（個人主義／集體主義）", def: "個人和群體綁在一起的程度。個人主義：重視「我」、犯錯會感到罪惡、做事優先；集體主義：重視「我們」、犯錯會感到羞恥、關係優先，並區分「自己人」與「外人」。"},
+    {term: "Masculinity vs. Femininity（陽剛／陰柔）", def: "社會價值偏向競爭還是關懷。陽剛：強調堅定、競爭、成就，工作優先於家庭，性別角色分明；陰柔：強調謙虛、關懷、生活品質，工作與家庭平衡。這是社會價值的描述，不是在說男或女。"},
+    {term: "Long- vs. Short-Term Orientation（長期／短期導向）", def: "努力的重心放在未來還是過去／現在。長期（東亞較多）：重視堅持、節儉、為未來打算，傳統可以調整；短期（美國、澳洲、拉美、非洲）：重視傳統、保住面子、履行社會義務。"},
+    {term: "Indulgence vs. Restraint（放縱／克制）", def: "社會允許人們享受生活、滿足慾望的程度。放縱（美洲、西歐）：較快樂、重視休閒與言論自由；克制（東歐、亞洲、穆斯林世界）：用嚴格的社會規範約束享樂。"},
+    {term: "Confucian Work Dynamism（儒家工作動力）", def: "Michael Bond 在華人價值調查中發現的構面，內容是堅持、節儉、依地位排序關係等。Hofstede 把它改名為「長期導向」，加進模型成為第五構面。"},
+    {term: "Ecological level analysis（以國家為單位的分析）", def: "Hofstede 的作法：不看每個人的答案，而是把同一國家所有人的答案取平均，再比較各國平均分數。這樣得出的規律，不能直接套用在單一個人身上。"},
+    {term: "High-context vs. Low-context（高情境／低情境文化，Hall, 1976）", def: "人類學家 Hall 的分類。高情境：很多意思藏在沒說出口的話、氣氛與關係裡（如東亞、中東）；低情境：幾乎所有意思都明確說出來（如美國）。"},
+    {term: "GLOBE project（GLOBE 全球領導與組織行為效能研究）", def: "Robert House 發起的大型研究，約 60 個社會、17,000 位經理人。把 Hofstede 構面擴充成 9 個，並分別問「現況（as is）」與「應該如何（should be）」，共 18 個分數。"}
   ],
   sections: [
     {title: "六大構面速查表", html: `

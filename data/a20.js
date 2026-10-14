@@ -17,10 +17,10 @@
   ],
   concepts: [
     {term: "Perceived value（感知價值）", def: "顧客依文化對產品屬性（尺寸、產地、成分）的評價；是定價核心。"},
-    {term: "Hi-low promotion", def: "高低價促銷策略：平時高價，週期性大折扣；德國不常見，加拿大預期。"},
-    {term: "Everyday pricing", def: "維持穩定、一致的日常價格，反映高端定位。"},
-    {term: "Pricing psychology", def: "價格尾數與數字象徵意義對知覺的影響。"},
-    {term: "Haggling culture", def: "有些文化將標價視為談判起點；需設定可議價空間而維持毛利。"}
+    {term: "Hi-low promotion（高低價促銷）", def: "平時標高價，定期做大折扣。加拿大消費者習慣等折扣；德國這種做法較少見。"},
+    {term: "Everyday pricing（天天一致的日常價）", def: "維持穩定一致的日常價格，不頻繁打折，用以維持高端品牌形象。"},
+    {term: "Pricing psychology（定價心理）", def: "價格的尾數與數字的文化象徵意義會影響感受。例如中國人喜歡 8（發）、避免 4（死）。"},
+    {term: "Haggling culture（議價文化）", def: "有些文化把標價當成談判起點。定價者要知道自己的底價，並預留顧客需要的折扣空間。"}
   ],
   sections: [
     {title: "三個考量與案例", html: `

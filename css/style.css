@@ -186,3 +186,22 @@ mark{background:#ffe38f;color:#222;padding:0 2px;border-radius:3px}
 [data-skin="eva"] mark{background:var(--accent);color:#000}
 [data-skin="eva"] a{color:#ffb000}
 [data-skin="eva"] .notice{font-family:var(--mono);border-top:1px solid var(--line)}
+
+/* ===== Mobile fixes: header overflow + drawer scroll ===== */
+.top{flex-wrap:nowrap;min-height:48px}
+.brand{overflow:hidden;text-overflow:ellipsis}
+.side-nav input{flex:1 1 100%;padding:8px 10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;font:inherit}
+@media (max-width:860px){
+  :root{--topH:48px}
+  .top{height:var(--topH);padding:0 10px;gap:8px}
+  .top #search{display:none}
+  #skinBtn .sn{display:none}
+  .icon-btn{padding:6px 10px;white-space:nowrap}
+  .brand{flex:1 1 auto;min-width:0;font-size:.95rem}
+  .sidebar{position:fixed;left:0;top:var(--topH);bottom:auto;height:calc(100vh - var(--topH));height:calc(100dvh - var(--topH));overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:96px}
+  body.menu{overflow:hidden}
+  body.menu .scrim{inset:var(--topH) 0 0 0}
+  [data-skin="eva"] .brand{padding:0 12px;display:flex;align-items:center;height:100%}
+  [data-skin="eva"] .top{padding:0}
+  [data-skin="eva"] #menuBtn{margin-left:8px}
+}

@@ -18,13 +18,13 @@
     "限制：偏誤（77% 受訪者擔心）、順序／措辭敏感、價格實驗的 confounding、嗅覺偏好難預測。"
   ],
   concepts: [
-    {term: "Synthetic data（合成資料）", def: "由 AI 產生、模擬真實人群行為與偏好的資料；可用於模擬顧客／競爭對手反應。81% 受訪者已用或計畫使用。"},
-    {term: "Digital twin（數位孿生）", def: "利用公開或專有資料建構的個別顧客虛擬複製；可在真人面前先測試與修正內容與銷售說詞。"},
-    {term: "AI-moderated interview", def: "AI 主持的訪談，能根據回答動態追問，兼具調查規模與訪談深度（如 Outset.ai）。"},
-    {term: "Confounding（混淆）", def: "未預期的變數同時與處理變數（如價格）及結果（購買）相關，使關係模糊；Gen AI 不易把價格視為隨機。"},
-    {term: "Evidenza 驗證", def: "與 EY 雙盲測試：>1000 個合成人格回答品牌調查，結論 95% 相同。"},
-    {term: "Small gen AI models", def: "公司在內部資料上訓練、完全掌控的小模型（如 Rockfish Data）；多限於結構化或半結構化資料。"},
-    {term: "Prompt sensitivity", def: "Gen AI 受選項順序與標示影響，研究者應像對真人一樣隨機化。"}
+    {term: "Synthetic data（合成資料）", def: "由 AI 產生、用來模擬真人行為與偏好的人造資料，可用來預測顧客或競爭對手的反應。調查中 81% 的受訪者已使用或計畫使用。"},
+    {term: "Digital twin（數位孿生）", def: "以公開或企業資料建立的「某位顧客的虛擬複製人」，可在面對真人之前，先測試與修正行銷內容與銷售說詞。"},
+    {term: "AI-moderated interview（AI 主持的訪談）", def: "由 AI 主持訪談，並依對方回答動態追問，兼具問卷的規模與訪談的深度（例：Outset.ai）。"},
+    {term: "Confounding（混淆）", def: "某個沒被考慮的變數同時影響「處理」（例如價格）與「結果」（例如購買），讓因果關係被混淆。Gen AI 不容易把價格視為隨機變動，所以模擬價格實驗常不準。"},
+    {term: "合成資料的驗證案例（Evidenza × EY）", def: "兩者雙盲測試：用超過 1,000 個合成人格回答品牌調查，結論與真人調查約 95% 相同。"},
+    {term: "Small gen AI models（企業自建的小型生成式 AI 模型）", def: "公司用自己的內部資料訓練、完全自己掌控的小模型（如 Rockfish Data），資料較安全，但多半只能處理結構化資料。"},
+    {term: "Prompt sensitivity（對提示敏感）", def: "Gen AI 的回答會受選項順序與標示影響，研究者要像對真人一樣隨機排列選項。"}
   ],
   sections: [
     {title: "四類機會一覽", html: `

@@ -18,13 +18,13 @@
     "使用 GLOBE『as is』分數而非 Hofstede。"
   ],
   concepts: [
-    {term: "Generalist retailer（通才型零售商）", def: "提供多樣不相關商品類別的零售商（如同時賣食品與非食品），提供一站購足；對採買『籃子』型消費者重要。"},
-    {term: "Specialist retailer（專才型零售商）", def: "專注於特定產品類別、定位獨特、提供專業資訊與服務；毛利可能較高但風險集中。"},
-    {term: "Width vs. depth of assortment", def: "寬度＝產品類別數量（G/S 決策）；深度＝每類別內的單品數量。"},
-    {term: "Institutional vs. in-group collectivism", def: "GLOBE 的兩種集體主義：制度性（鼓勵集體分配與行動）與內團體（對組織／家庭的忠誠與凝聚）。"},
-    {term: "Future orientation（未來導向）", def: "社會重視規劃與投資未來的程度；與 Hofstede 的 long-term orientation 相近。"},
-    {term: "Logistic regression & Nagelkerke R²", def: "二元依變數的迴歸；Nagelkerke R² 為配適程度指標。"},
-    {term: "Uppsala school", def: "國際化漸進學習理論：經驗增加使企業更有資訊與信心，可能改變組織文化與實務。"}
+    {term: "Generalist retailer（通才型零售商）", def: "同時賣食品與非食品、商品類別很多的零售商，像一站購足的超市。對一次要買很多類別的顧客很方便。"},
+    {term: "Specialist retailer（專才型零售商）", def: "只專注於某一類商品（只賣食品或只賣非食品）的零售商，提供專業資訊與服務；毛利可能較高，但風險也集中。"},
+    {term: "Width vs. depth of assortment（商品組合的寬度與深度）", def: "寬度＝賣幾種不同的商品類別（通才或專才的決策）；深度＝每一類別裡有多少品項可選。"},
+    {term: "Institutional vs. in-group collectivism（制度集體主義 vs. 內團體集體主義）", def: "GLOBE 把集體主義分兩種：制度性＝社會制度鼓勵集體分配與集體行動；內團體＝個人對家庭或組織的忠誠與凝聚。"},
+    {term: "Future orientation（未來導向）", def: "社會重視規劃、投資未來的程度，與 Hofstede 的「長期導向」相近。"},
+    {term: "Logistic regression & Nagelkerke R²（邏輯迴歸與配適指標）", def: "邏輯迴歸：預測「是／否」這類二分結果（例如是不是通才零售商）的統計方法；Nagelkerke R² 表示模型解釋力的大小。"},
+    {term: "Uppsala school（烏普薩拉學派）", def: "國際化的漸進學習理論：企業累積國際經驗後，資訊與信心增加，會逐步擴大海外投入。"}
   ],
   sections: [
     {title: "四個假設與結果", html: `

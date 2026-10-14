@@ -19,13 +19,13 @@
   ],
   concepts: [
     {term: "Perceived hazard（感知危險度）", def: "使用者對警示標籤所傳達危險程度的主觀評估；被認為需要達到某閾值才會觸發遵從行為。"},
-    {term: "Signal words", def: "NOTICE、CAUTION、WARNING、DANGER 等；ANSI 以它們表示可能性與傷害嚴重度。"},
-    {term: "ANSI Z535.4", def: "美國國家標準協會的產品安全標誌與標籤標準：DANGER=紅、WARNING=橘、CAUTION=黃。"},
-    {term: "ANSI Z535.2", def: "環境與設施安全標誌標準；藍色＋NOTICE 用於設備／財產損害。"},
-    {term: "Safety alert symbol", def: "含驚嘆號的三角形符號，表示人身傷害風險。研究指出其對感知危險影響有限。"},
-    {term: "Cracked skull & crutches", def: "Barnett & Wambaja 提議的替代符號；對美國受試者提升感知危險較有效。"},
-    {term: "Culture（Goldberger & Veroff）", def: "一套共享意義的系統，提供成員感知與建構現實的共同視角。"},
-    {term: "Compliance threshold", def: "感知危險需達到某閾值才能觸發遵從；若中國使用者感知偏低，可能未採取適當預防。"}
+    {term: "Signal words（警示用語）", def: "NOTICE、CAUTION、WARNING、DANGER、DEADLY 等標籤上的字，用來表達危險的可能性與嚴重度。"},
+    {term: "ANSI Z535.4（美國產品安全標誌標準）", def: "ANSI＝美國國家標準協會。規定 DANGER 用紅底白字、WARNING 用橘底黑字、CAUTION 用黃底黑字。"},
+    {term: "ANSI Z535.2（美國環境與設施安全標誌標準）", def: "另一份 ANSI 標準，規定藍色搭配 NOTICE，用於設備或財產損害的提醒。"},
+    {term: "Safety alert symbol（安全警示符號）", def: "內有驚嘆號的三角形，表示可能造成人身傷害。研究發現它對提升危險感的效果有限。"},
+    {term: "Cracked skull & crutches（裂開的頭骨與拐杖符號）", def: "研究者提議的替代警示符號。美國受試者認為它比標準安全警示符號更危險。"},
+    {term: "文化的定義（Goldberger & Veroff）", def: "文化是一套大家共享的意義系統，讓成員用同一個角度去理解與建構現實。"},
+    {term: "Compliance threshold（遵從門檻）", def: "人要感受到的危險程度達到某個門檻，才會真的照警示行動。中國受試者的危險感整體偏低，可能因此不夠謹慎。"}
   ],
   sections: [
     {title: "顏色排序（感知危險：低 → 高）", html: `

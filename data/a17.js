@@ -18,13 +18,13 @@
     "經銷商是策略的『執行者』，而不是各國市場的行銷部門。"
   ],
   concepts: [
-    {term: "Beachhead strategy（灘頭堡策略）", def: "以獨立在地經銷商低風險進入，之後視績效再收購或自建子公司的逐步策略。常是未經規劃的反應式做法。"},
-    {term: "Low-hanging fruit", def: "經銷商初期向既有客戶推銷核心產品的容易銷售；之後成長瓶頸出現。"},
-    {term: "Market fit vs. Company fit", def: "Market fit＝已有客戶與類似產品線；Company fit＝文化、策略、投資意願與支持度相容。長期以 company fit 為佳。"},
-    {term: "Distributor council", def: "各國經銷商之間的網路／委員會，分享想法、規劃新產品，並降低平行輸入風險。"},
-    {term: "Parallel importing", def: "同品牌產品從低價市場流入高價市場，破壞定價。"},
-    {term: "Global accounts", def: "由跨國企業直接服務的跨國大客戶；獨立經銷商仍適合服務在地中小客戶。"},
-    {term: "Regionalization of marketing", def: "行銷管理由區域層級統籌，減少國家層級的重複與提升策略控制。"}
+    {term: "Beachhead strategy（灘頭堡策略）", def: "先找一家獨立的在地經銷商低風險進入新市場，之後再視績效收購經銷權或自設子公司的做法。常是沒有事先規劃的反應式做法，過程混亂又昂貴。"},
+    {term: "Low-hanging fruit（低垂的果實）", def: "經銷商一開始很容易達成的銷售，例如把核心產品賣給原有客戶。之後要開拓新客戶或新產品就遇到瓶頸。"},
+    {term: "Market fit vs. Company fit（市場適配 vs. 公司適配）", def: "市場適配：經銷商已有客戶與類似產品線；公司適配：文化、策略、投資意願與支持度與你相容。長期而言，公司適配更重要。"},
+    {term: "Distributor council（經銷商委員會）", def: "把各國經銷商串連起來的網路，用來分享想法、一起規劃新產品，也降低平行輸入的風險。"},
+    {term: "Parallel importing（平行輸入）", def: "同品牌商品從低價市場被買走，轉賣到高價市場，破壞原本的定價。"},
+    {term: "Global accounts（全球性大客戶）", def: "在多國都有據點、由跨國企業直接服務的大客戶。獨立經銷商仍適合服務各地的中小客戶。"},
+    {term: "Regionalization of marketing（行銷管理區域化）", def: "把行銷決策放到區域層級統籌，減少各國重複的人力與資源，並提高策略控制。"}
   ],
   sections: [
     {title: "七條規則", html: `

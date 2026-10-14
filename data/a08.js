@@ -19,14 +19,14 @@
   ],
   concepts: [
     {term: "Populism（民粹主義）", def: "反建制、對抗菁英的政治風格，常以國族主義為伴、把全球化視為敵人。"},
-    {term: "Return of the interventionist state", def: "2008 金融危機後國家加大對經濟的介入（紓困、補貼、持股）；疫情進一步使其被社會接受。"},
-    {term: "Unilateralism vs. Multilateralism", def: "單邊行動 vs. 多邊合作；疫情中各國出口禁令、疫苗囤積削弱 WHO、GATT 等多邊機構的信譽。"},
-    {term: "Global value chains (GVCs) → Regional value chains", def: "疫情與保護主義促使 MNE 縮短供應鏈距離，形成更集中於區域內的價值鏈。"},
-    {term: "Just-in-time → Just-in-case", def: "從精實、低庫存、少數分散供應商（效率）轉向預備性與備援產能（韌性）。"},
+    {term: "Return of the interventionist state（干預型國家的回歸）", def: "2008 年金融危機後，各國政府更積極介入經濟（紓困、補貼、持股）。疫情後這種做法更被社會接受，也更容易走向保護主義。"},
+    {term: "Unilateralism vs. Multilateralism（單邊主義 vs. 多邊主義）", def: "單邊：各國只顧自己的利益行動；多邊：各國透過國際組織合作。疫情中各國出口禁令、囤積疫苗，削弱了 WHO、GATT 等多邊機構的信譽。"},
+    {term: "全球價值鏈（GVC）→ 區域價值鏈", def: "GVC 指產品從原料到成品，分散在世界各國生產的整條鏈。疫情與保護主義使企業縮短供應鏈距離，改以區域為範圍重組。"},
+    {term: "Just-in-time → Just-in-case（準時制 → 以防萬一制）", def: "準時制：低庫存、供應商少而分散，追求效率；以防萬一制：保留備援產能與庫存，追求韌性（抗中斷能力）。"},
     {term: "Commitment failure（承諾失敗）", def: "國際交易中一方未履行承諾（延遲出貨、毀約、欺詐等）；疫情使其更頻繁。"},
-    {term: "Organizational resilience", def: "組織預見、避免與適應環境衝擊的能力；來自學習、彈性、冗餘能力。"},
-    {term: "Hegemonic stability", def: "全球經濟整合需要霸權者建立並執行規則，同時開放自己的市場。"},
-    {term: "Digital protectionism", def: "各國補貼本國數位冠軍企業並對外國競爭設立障礙，導致數位世界的分割。"}
+    {term: "Organizational resilience（組織韌性）", def: "組織預見、避免並適應環境衝擊的能力，來自學習、彈性與備援能力。"},
+    {term: "Hegemonic stability（霸權穩定論）", def: "全球經濟要整合，需要一個強國（霸權）制定並執行規則，同時開放自己的市場，如歷史上的羅馬、英國、美國。"},
+    {term: "Digital protectionism（數位保護主義）", def: "各國補貼自家的數位企業、對外國數位服務設立障礙，使網路世界被分割成一塊塊。"}
   ],
   sections: [
     {title: "三大持久性力量", html: `

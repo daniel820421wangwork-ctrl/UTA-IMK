@@ -16,15 +16,15 @@
     "解法：提高團隊覺察、混合辦公室組成、輪調、聘用雙文化人才。"
   ],
   concepts: [
-    {term: "Communicating：explicit vs. implicit", def: "低情境（美國最明說）vs. 高情境（日本與東亞，要讀『沒說出的話』）。"},
-    {term: "Evaluating：direct vs. indirect negative feedback", def: "以色列、俄羅斯、荷蘭最直接；日本最間接；美國居中。"},
-    {term: "Persuading：deductive vs. inductive", def: "演繹（法、義：先理論概念）vs. 歸納（盎格魯撒克遜：先實際應用）。"},
-    {term: "Leading：egalitarian vs. hierarchical", def: "丹麥最平等；日本、韓國最階層；美國居中。"},
-    {term: "Deciding：consensual vs. top-down", def: "日本是階層領導但<b>共識式</b>決策（ringi）；中國是由上而下、快速決策。"},
-    {term: "Trusting：task vs. relationship", def: "美國：信任法律體系，任務導向；新興市場與西歐：重關係，因為不信任法律執行。"},
-    {term: "Disagreeing：confrontational vs. avoid confrontation", def: "與負面回饋類似但有差異，例：瑞典負面回饋直接，但避免公開衝突。"},
-    {term: "Scheduling：structured vs. flexible", def: "德、瑞士最精準；美國接近結構端；西歐、拉美較彈性；非洲、中東、印度極彈性。"},
-    {term: "Ringi system", def: "日本由下而上先在低層達成共識，再向上提案的決策方式。"}
+    {term: "Communicating：explicit vs. implicit", def: "溝通要說多明白。明確（低情境，美國最明確）：話都說清楚；含蓄（高情境，日本與東亞）：要靠聽出沒說出口的意思。"},
+    {term: "Evaluating：direct vs. indirect negative feedback", def: "給負面評價時直不直接。以色列、俄羅斯、荷蘭最直接；日本最委婉；美國在中間。"},
+    {term: "Persuading：deductive vs. inductive", def: "怎麼說服別人。演繹式（法國、義大利）：先講理論與概念，再談事實；歸納式（英美）：先講實際例子與應用，再歸納出原則。"},
+    {term: "Leading：egalitarian vs. hierarchical", def: "理想的領導者與下屬距離多大。平等式（丹麥最明顯）：老闆只是「比員工高兩階的人」；階層式（日本、韓國）：老闆應該遠高於員工。"},
+    {term: "Deciding：consensual vs. top-down", def: "怎麼做決定。共識式：大家討論到有共識才定案（日本）；由上而下：老闆拍板、快速執行（中國）。注意日本是「階層領導＋共識決策」。"},
+    {term: "Trusting：task vs. relationship", def: "信任建立在哪裡。任務導向（美國）：靠工作表現與法律契約；關係導向（許多新興市場、部分西歐）：靠私人交情，因為不太信任法律能保障契約。"},
+    {term: "Disagreeing：confrontational vs. avoid confrontation", def: "意見不同時，願不願意當面對質。和「負面回饋是否直接」相似但不完全相同，例如瑞典給回饋直接，但很避免公開衝突。"},
+    {term: "Scheduling：structured vs. flexible", def: "怎麼看待時間與進度。結構化（德國、瑞士最嚴格，美國也偏此端）：照計畫準時；彈性（西歐、拉美，非洲、中東、印度最彈性）：計畫可隨時調整。"},
+    {term: "Ringi system（稟議制度）", def: "日本的決策方式：先在中低階層取得共識，再一層層往上呈報核准。所以日本「領導是階層式的，但決策是共識式的」。"}
   ],
   sections: [
     {title: "八量表總覽", html: `
