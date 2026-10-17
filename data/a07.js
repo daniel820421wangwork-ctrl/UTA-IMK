@@ -1,68 +1,74 @@
 (window.ARTICLES = window.ARTICLES || []).push({
   id: 7, day: 2, topic: "Market Entry, Geopolitics",
-  title: "Individual Cultural Values and Consumer Animosity: Chinese Consumers' Attitude Toward American Products",
-  authors: "Latif, Pitafi, Malik & Latif", year: 2019, source: "SAGE Open, 9(3), 1–14",
-  pages: "14 頁（實證論文）", difficulty: 3,
-  oneLiner: "以 VAB 模型檢驗：中國消費者的個人文化價值（集體、陽剛、不確定性規避、權力距離）如何預測對美國的「消費者敵意」，進而造成「不願購買美國產品」。",
+  title: "The New Rules of Globalization",
+  authors: "Ian Bremmer", year: 2014, source: "Harvard Business Review, 92(1), 103–107",
+  pages: "5 頁", difficulty: 2,
+  emphasis: "說明國家權力、政治利益與經濟民族主義如何重塑全球化。",
+  oneLiner: "全球化進入「有所防備的全球化（guarded globalization）」：政府主導、國家資本主義崛起，企業須依產業的「策略重要性」調整進入策略。",
   summary: [
-    "背景：2018 年中美貿易戰。作者以 <b>Value–Attitude–Behavior（VAB）</b>模型：個人文化價值（V）→ 消費者敵意（A）→ 不願購買（RTB, B）。",
-    "使用 Yoo 等人的 <b>CVSCALE</b> 在「個人層級」測量 Hofstede 的五構面（避免 ecological fallacy），n = 303 的中國大學生（線上問卷）。以 AMOS 結構方程模型（SEM）檢定。",
-    "結果：集體主義、陽剛、不確定性規避 → <b>正向</b>預測敵意；權力距離 → <b>負向</b>預測敵意；長期導向 → 不顯著。敵意 → 強烈正向預測 RTB 美國產品（β = 0.498）。"
+    "2008 年金融危機後，新興市場政府不再無條件歡迎外資，而是<b>選擇國家、選擇產業、選擇扶持的本地（常為國營）企業</b>。Bremmer 稱此為 <b>guarded globalization</b>（慢、選擇性、帶民族主義與區域主義）。",
+    "判斷策略的核心是兩個問題：<b>(1) 我們的產業對目標國政府是否具策略重要性？(2) 對我們母國政府是否具策略重要性？</b> 以 2×2 矩陣定位，並依位置選擇因應策略。",
+    "同時，<b>國家資本主義（state capitalism）</b>在中國、俄羅斯、阿聯酋等興起：目標是「政治」（控制經濟發展、保住政權），而非追求經濟利潤最大化。"
   ],
   keyPoints: [
-    "Consumer animosity：對「過去或進行中的政治、軍事、經濟、外交事件」的敵意（Klein et al., 1998）。",
-    "VAB：Values → Attitudes → Behavior。",
-    "六個假設：H1 集體主義（正向）、H2 陽剛（正向）、H3 不確定性規避（正向）、H4 權力距離（負向）、H5 長期導向（負向，未獲支持）、H6 敵意 → 不願購買（正向）。",
-    "使用 CVSCALE 是為了在個人層級測量 Hofstede 構面。",
-    "限制：學生樣本（年輕、高學歷、男性多）、只用一種敵意、一般產品類別、情境性（貿易戰）。",
-    "行銷意涵：高集體主義、高陽剛、高不確定性規避、低權力距離的消費者，對來源國敵意較強，行銷時應考慮避開或調整訴求。"
+    "舊時代：「策略性產業 vs. 非策略性產業」容易分辨；新時代：<b>任何產業都可能變成策略性</b>。",
+    "Coca-Cola（兩個 No）vs. Lockheed Martin（兩個 Yes）是矩陣兩極。",
+    "國家資本主義的目的是政治控制，而非利潤。",
+    "國家資本主義的代價：創新與透明度下降。",
+    "中國成為國際商業規則的「制定者」而非追隨者。",
+    "Snowden 事件讓美國科技公司被視為「美國式國家資本主義」工具。"
   ],
   concepts: [
-    {term: "Consumer animosity（消費者敵意）", def: "與過去或進行中的政治、軍事、經濟、外交事件有關的反感（antipathy），針對特定國家。"},
-    {term: "Reluctance to buy（RTB，不願購買）", def: "因敵意而不願購買某國產品的行為傾向，如「我會因為買美國貨而感到內疚」。"},
-    {term: "VAB model（價值—態度—行為模型）", def: "Value–Attitude–Behavior：個人的價值觀影響他的態度，態度再推動行為。本文中：文化價值 → 對美國的敵意 → 不願購買美國產品。"},
-    {term: "CVSCALE（個人層級文化價值量表）", def: "Yoo 等人（2011）發展的量表，用 26 題測量個人在 Hofstede 五個構面上的位置，避免把國家分數套用到個人。"},
-    {term: "Ecological fallacy（生態謬誤）", def: "把「整個國家的平均特徵」直接當成「該國每個人的特徵」，造成推論錯誤。"},
-    {term: "Out-group bias（外團體偏見）", def: "對「不屬於自己團體的人」抱持的敵意或偏見。集體主義文化中通常較強。"},
-    {term: "SEM / AMOS（結構方程模型／AMOS 軟體）", def: "SEM 是同時檢定多個變數之間關係的統計方法；AMOS 是常用的分析軟體。本文用它檢定各項假設。"}
+    {term: "Guarded globalization（有所防備的全球化，亦譯受保護的全球化）", def: "2008 年金融危機後的全球化型態：新興市場國家政府會挑選要合作的國家、開放的產業與扶持的本地（常是國營）企業。全球化變得更慢、更有選擇性、帶有民族與區域色彩。"},
+    {term: "State capitalism（國家資本主義）", def: "由國家透過國營或政治上忠誠的企業主導經濟。目的不是追求利潤，而是掌控財富、鞏固政權。"},
+    {term: "Strategic sector（策略性產業）", def: "政府特別在意、不願輕易開放給外資的產業，例如軍火、能源、電信、金融、資訊科技、食品。"},
+    {term: "2×2 策略矩陣（兩個必問的問題）", def: "企業要問兩題：這個產業對「目標國政府」是否具策略重要性？對「自己母國政府」是否具策略重要性？兩個都「否」摩擦最小（如 Coca-Cola）；兩個都「是」由國安主導（如 Lockheed Martin）。"},
+    {term: "Build-operate-transfer（建設—營運—移轉，BOT）", def: "公私合作的基礎建設模式：民間先出資建造並營運一段時間，之後交還政府。外國企業通常只有在本地業者缺乏技術時才有利可圖。"}
   ],
   sections: [
-    {title: "假設與結果", html: `
-      <table class="t"><thead><tr><th>假設</th><th>內容</th><th>β</th><th>結果</th></tr></thead><tbody>
-      <tr><td>H1</td><td>集體主義 → 敵意 (+)</td><td>0.153</td><td>支持</td></tr>
-      <tr><td>H2</td><td>陽剛 → 敵意 (+)</td><td>0.192</td><td>支持</td></tr>
-      <tr><td>H3</td><td>不確定性規避 → 敵意 (+)</td><td>0.211</td><td>支持</td></tr>
-      <tr><td>H4</td><td>權力距離 → 敵意 (−)</td><td>−0.214</td><td>支持</td></tr>
-      <tr><td>H5</td><td>長期導向 → 敵意 (−)</td><td>−0.008 (ns)</td><td><b>不支持</b></td></tr>
-      <tr><td>H6</td><td>敵意 → RTB (+)</td><td>0.498</td><td>支持</td></tr></tbody></table>
-      <p>邏輯：集體→保護國家認同、外團體偏見；陽剛→對抗性、責備；UA→感受威脅、自保、內團體偏好；高 PD→接受不平等、不願批評強者，因此敵意較低。</p>`},
-    {title: "研究方法", html: `
+    {title: "為什麼進入 guarded globalization？（五因素）", html: `
+      <ol>
+        <li>政府覺得繼續開放產業給外資有風險（本地企業與消費者會抵制）。</li>
+        <li>有些國家外匯存底充足，不再急需外資。</li>
+        <li>國家安全被更廣義定義（金融不穩、網路間諜、糧食價格）→ 金融、IT、電信、食品被政治化。</li>
+        <li>中國即將成為最大經濟體，開始「制定」國際商業規則（中國特色社會主義的影響力擴大）。</li>
+        <li>各國創造不公平的競賽場，偏袒本地企業。</li>
+      </ol>`},
+    {title: "八種因應策略", html: `
+      <p><b>對母國政府具策略性的產業：</b></p>
       <ul>
-        <li>對象：中國大學生；2018 年 7–8 月線上問卷；n = 303（64% 男、65% 為 21–30 歲）。</li>
-        <li>量表：CVSCALE（5 構面）、Klein (2002) 敵意 3 題、Huang et al. (2010) RTB 3 題；5 點 Likert。</li>
-        <li>信效度：Cronbach's α 0.90–0.96；組合信度（CR）0.93–0.97；平均變異萃取量（AVE）0.71–0.92；無顯著共同方法偏誤（Harman 單因子 28.7%）。</li>
-        <li>配適：χ²/df = 1.62, RMSEA = 0.045, CFI = 0.975。</li>
+        <li><b>Stay home</b>：留在國內（國防業）；若進入需有「退場劇本」。</li>
+        <li><b>Become more "strategic" at home</b>：向母國政府強化自己的策略價值（如德國 E-Mail Made in Germany）。</li>
+        <li><b>Use the state to fight other states</b>：政府對政府外交（BP 案例：英國首相卡麥隆提議派英國皇家空軍戰機進駐阿聯酋，之後 BP 重獲投標機會）。</li>
+      </ul>
+      <p><b>對東道國政府具策略性的產業：</b></p>
+      <ul>
+        <li><b>Strike alliances</b>：與本地企業合資（Pfizer 與 Zhejiang Hisun、Jointown；電影與中國夥伴）。</li>
+        <li><b>Add value to the state</b>：替國家創造價值（IMAX 協助國營媒體）。</li>
+        <li><b>Become too diversified to fail</b>：多元投資（GE 在中國數十項投資）。</li>
+        <li><b>Build it so that you can stay</b>：在地雇用、在地採購、投入基礎建設與綠能。</li>
+        <li><b>Capitalize on state capitalism</b>：把國家政策轉為機會（巴西本地採購要求、中國綠能產業）。</li>
       </ul>`},
-    {title: "實務與研究意涵", html: `
-      <ul>
-        <li>國際行銷者應納入敵意對 RTB 的影響；市場區隔時考慮個人文化價值差異。</li>
-        <li>勿把推廣集中於高集體主義、高陽剛、高不確定性規避、低權力距離的消費者（這些人對來源國敵意較強）。</li>
-        <li>長期導向不顯著可能因樣本特性（年輕、高學歷、男性）。</li>
-        <li>未來研究：更多樣的樣本、其他構面（GLOBE）、其他類型敵意、特定產品類別、美國消費者對中國產品。</li>
-      </ul>`}
+    {title: "案例速覽", html: `
+      <table class="t"><thead><tr><th>公司</th><th>情境</th><th>重點</th></tr></thead><tbody>
+      <tr><td>Pfizer</td><td>印度撤銷 Sutent 專利；中國壓低藥價</td><td>與本地企業結盟，成為中國最大跨國藥廠</td></tr>
+      <tr><td>RIM (BlackBerry)</td><td>阿聯酋、沙烏地要求監控 BBM</td><td>與當地電信業者談判</td></tr>
+      <tr><td>BP</td><td>2012 UAE 排除 BP；英國政府介入</td><td>政府間關係解決問題</td></tr>
+      <tr><td>KFC</td><td>CCTV 報導抗生素；銷售下滑 40%</td><td>外企面臨國家媒體調查風險</td></tr>
+      <tr><td>GE</td><td>中國多元投資</td><td>Too diversified to fail</td></tr></tbody></table>`}
   ],
   examTips: [
-    "背熟：哪些價值觀「正向」、哪個「負向」、哪個不顯著。",
-    "Power distance 是唯一負向顯著的構面；long-term orientation 不顯著。",
-    "VAB 順序：Value → Attitude → Behavior；敵意是 Attitude，RTB 是 Behavior。",
-    "CVSCALE 的目的：避免 ecological fallacy。"
+    "兩個 2×2 問題要能背出。",
+    "Coca-Cola 與 Lockheed Martin 是矩陣兩極的經典例子。",
+    "國家資本主義的目的是「政治」，不是經濟。",
+    "策略可歸類為：留在母國 / 更策略化 / 政府對政府 / 結盟 / 增值 / 多元化 / 在地化 / 利用國家資本主義。"
   ],
   quiz: [
-    {q: "此研究中，哪一個文化價值與消費者敵意呈「負向」顯著關係？", o: ["集體主義", "陽剛", "權力距離", "不確定性規避"], a: 2, e: "H4：高權力距離者對敵意較低（β = −0.214）。"},
-    {q: "哪一個假設未獲支持？", o: ["集體主義→敵意", "長期導向→敵意", "敵意→RTB", "不確定性規避→敵意"], a: 1, e: "長期導向與敵意關係不顯著。"},
-    {q: "本研究的理論架構是？", o: ["Theory of Planned Behavior", "Value–Attitude–Behavior", "Porter's Five Forces", "Technology Acceptance Model"], a: 1, e: "VAB model。"},
-    {q: "為何作者採用 CVSCALE 而非 Hofstede 原始量表？", o: ["題目較少", "在個人層級測量文化價值，避免 ecological fallacy", "翻譯較容易", "與政治無關"], a: 1, e: "Hofstede 原量表為國家層級，用於個人會造成生態謬誤。"},
-    {q: "Consumer animosity 的定義最接近？", o: ["對低價商品的偏好", "與過去或進行中的政治、軍事、經濟事件有關的反感", "對品牌的忠誠", "對廣告的懷疑"], a: 1, e: "Klein et al. (1998) 的定義。"},
-    {q: "此研究的主要樣本限制是？", o: ["樣本太少（n<30）", "主要為年輕、高學歷的中國大學生", "只有女性", "只有 50 歲以上"], a: 1, e: "樣本非隨機，難以推及整體中國消費者。"}
+    {q: "Bremmer 稱後金融危機時代的全球化為？", o: ["Hyperglobalization", "Guarded globalization", "Deglobalization", "Open globalization"], a: 1, e: "guarded globalization：慢、選擇性、帶民族主義。"},
+    {q: "國家資本主義（state capitalism）的主要目標是？", o: ["利潤最大化", "政治控制與保護政權", "促進自由貿易", "降低稅收"], a: 1, e: "目標是政治：控制經濟發展以最大化當權者的存續。"},
+    {q: "兩個問題都回答 'No'（對東道國與母國政府皆非策略性）的公司最像？", o: ["Lockheed Martin", "Coca-Cola", "Huawei", "Petrobras"], a: 1, e: "Coke：全球化策略摩擦小。"},
+    {q: "Pfizer 在中國與 Zhejiang Hisun、Jointown 合作，屬於哪種策略？", o: ["Stay home", "Strike alliances", "Use the state to fight other states", "Become too diversified to fail"], a: 1, e: "結盟、與本地企業分享利潤換取安全通行。"},
+    {q: "國家資本主義經濟的主要副作用為何？", o: ["通膨過高", "創新與透明度下降", "失業率升高", "貨幣貶值"], a: 1, e: "官員無法比市場更好配置資源 → 創新與透明度降低。"},
+    {q: "BP 在阿聯酋案例中使用何種策略重新獲得機會？", o: ["提高價格", "政府對政府關係（母國政府協助）", "退出市場", "收購本地公司"], a: 1, e: "卡麥隆訪問阿聯酋並提議派英國皇家空軍戰機後，BP 被邀請參與另一個油田投標。"}
   ]
 });

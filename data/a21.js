@@ -1,62 +1,65 @@
 (window.ARTICLES = window.ARTICLES || []).push({
-  id: 21, day: 3, topic: "Pricing",
-  title: "A Step-by-Step Guide to Real-Time Pricing",
-  authors: "Marshall Fisher, Santiago Gallino & Jun Li", year: 2023, source: "Harvard Business Review, Nov–Dec 2023, 93–101",
-  pages: "9 頁", difficulty: 2,
-  oneLiner: "AI 動態定價的七步驟：聚焦 → 消費者決策模型 → 實驗 → 衡量 → 最佳化 → 測試與實施 → 重複；核心循環是「model, measure, maximize」。",
+  id: 21, day: 3, topic: "Marketing Communications",
+  title: "A cross-cultural comparison of perceived hazard in response to warning components and configurations: US vs. China",
+  authors: "Mary F. Lesch, Pei-Luen Patrick Rau, Zhengxuan Zhao & Chengyi Liu", year: 2009, source: "Applied Ergonomics, 40, 953–961",
+  pages: "9 頁（實證論文）", difficulty: 2,
+  emphasis: "跨文化溝通的應用：即使是警告標示這類功能性訊息，在不同文化中也可能被不同解讀。",
+  oneLiner: "美國 ANSI 的警示標準元素（顏色、警示用語、符號）在中國的「危險感知」不同：中國受試者整體評分較低，黃色與 CAUTION／WARNING 的排序也不同，因此需要更強的警示。",
   summary: [
-    "多數零售商只是爬取對手價格並以「比最低價低 X」的簡單規則定價，或用歷史資料的機器學習，平均只帶來 <b>≤ 1%</b> 的營收或利潤改善。",
-    "作者以兩家合作對象（中國母嬰線上零售商、美國線上家居零售商）示範七步驟流程：前者營收 +11%（奶瓶）至 +19%；後者 4 類別營收 +15%、利潤 +10%。",
-    "關鍵在於<b>價格彈性（price elasticity）</b>須透過「實驗」而非歷史資料取得，並用限制式最佳化與對照組檢驗效果。"
+    "背景：國際警示標準走向統一（harmonization）的趨勢，使得需要檢驗 <b>ANSI Z535</b> 標準是否適用於不同文化。",
+    "實驗：40 位美國與 43 位中國大學生，對顏色（6 種）、警示用語（6 個）、符號（3 種）與 11 種複合配置，以 1–9 評定「感知危險度（perceived hazard）」。",
+    "發現：<b>美國受試者全面給予較高評分</b>；顏色排序跨文化不同（中國：黃最低、橘高於紅）；警示用語 WARNING 與 CAUTION 的高低順序相反；複合配置的「相對」排序則在兩文化相似，但中國的「絕對」評分仍較低。"
   ],
   keyPoints: [
-    "七步驟：選定焦點 → 建立消費者決策模型 → 實驗 → 衡量 → 最佳化 → 測試與實施 → 重複。",
-    "ABC 分類：A＝20% SKU 佔 80% 營收；B＝30% 佔 15%；C＝50% 佔 5%。A 級用精細模型，B、C 級用可擴展的簡化模型。",
-    "為何要實驗：歷史價格變動太少，且有混淆變數（例如區域行銷活動）。",
-    "實驗價格變動約 3%、不超過 5%；每三天調整一次。",
-    "限制式最佳化：極大化營收，但毛利率不低於某下限。",
-    "設對照組並輪替處理組，以排除季節性影響（解決反事實問題）。"
+    "ANSI 建議：DANGER（白字紅底）> WARNING（黑字橘底）> CAUTION（黑字黃底）；安全警示符號（三角驚嘆號）。",
+    "顏色的危險感排序（低 → 高）：美國為藍、綠、黃、黑、橘、紅；中國為黃、藍、綠、紅、黑、橘。",
+    "中國受試者：黃色最低（2.9）；橘（7.2）高於紅（6.4）。",
+    "警示用語：美國 BEWARE、WARNING > CAUTION；中國相反（CAUTION > WARNING）。",
+    "符號：美國受試者覺得「裂開的頭骨與拐杖」最危險；中國受試者覺得標準安全警示符號（三角驚嘆號）最危險。",
+    "實務：對中國使用者需要「更強」的警示元素以達到同等感知危險。"
   ],
   concepts: [
-    {term: "Price elasticity（價格彈性）", def: "價格上升 1% 所造成的需求變動百分比；中國案例大多落在 −8 至 −2；熱銷品彈性較高（−8 的 SKU 日購 22.5 次）。"},
-    {term: "Consumer decision model（消費者決策模型）", def: "用公式預測在「自己與對手價格、庫存等條件」下的需求量。可簡可繁，需在精細度與可擴展性之間取捨。"},
-    {term: "Confounder（混淆變數）", def: "同時影響價格與需求、但無法從歷史資料看出來的因素，例如針對某品牌的行銷活動，容易讓人誤以為「價格高、所以需求高」。"},
-    {term: "Constrained optimization（限制式最佳化）", def: "在業務限制條件下找最佳解，例如「在毛利率不低於 10% 的前提下，讓營收最大」。"},
-    {term: "Counterfactual problem（反事實問題）", def: "無法知道「如果沒有用新演算法，結果會怎樣」。解法是設對照組。"},
-    {term: "ABC classification（ABC 分類法）", def: "依營收貢獻把商品分三級：A＝佔 20% 品項、貢獻 80% 營收；B＝30% 品項、15% 營收；C＝50% 品項、5% 營收。A 用精細模型，B、C 用簡化模型。"},
-    {term: "Electronic shelf labels（電子貨架標籤）", def: "貨架上可遠端更新價格的電子標籤，讓實體店也能做動態定價。"},
-    {term: "Left-digit bias（左位數偏誤）", def: "消費者過度重視價格最左邊的數字，覺得 $4.99 比 $5.00 便宜很多；也有人會更注意最右邊的數字。"}
+    {term: "Perceived hazard（感知危險度）", def: "使用者對警示標籤所傳達危險程度的主觀評估；被認為需要達到某閾值才會觸發遵從行為。"},
+    {term: "Signal words（警示用語）", def: "NOTICE、CAUTION、WARNING、DANGER、DEADLY 等標籤上的字，用來表達危險的可能性與嚴重度。"},
+    {term: "ANSI Z535.4（美國產品安全標誌標準）", def: "ANSI＝美國國家標準協會。規定 DANGER 用紅底白字、WARNING 用橘底黑字、CAUTION 用黃底黑字。"},
+    {term: "ANSI Z535.2（美國環境與設施安全標誌標準）", def: "另一份 ANSI 標準，規定藍色搭配 NOTICE，用於設備或財產損害的提醒。"},
+    {term: "Safety alert symbol（安全警示符號）", def: "內有驚嘆號的三角形，表示可能造成人身傷害。研究發現它對提升危險感的效果有限。"},
+    {term: "Cracked skull & crutches（裂開的頭骨與拐杖符號）", def: "研究者提議的替代警示符號。美國受試者認為它比標準安全警示符號更危險。"},
+    {term: "文化的定義（Goldberger & Veroff）", def: "文化是一套大家共享的意義系統，讓成員用同一個角度去理解與建構現實。"},
+    {term: "Compliance threshold（遵從門檻）", def: "人要感受到的危險程度達到某個門檻，才會真的照警示行動。中國受試者的危險感整體偏低，可能因此不夠謹慎。"}
   ],
   sections: [
-    {title: "七步驟", html: `
-      <table class="t"><thead><tr><th>#</th><th>步驟</th><th>重點</th></tr></thead><tbody>
-      <tr><td>1</td><td><b>選定焦點</b><br><small>Choose your focus</small></td><td>依銷售集中度選暢銷品、中段商品或長尾商品；在模型精細度與可擴展性間取捨；ABC 分類</td></tr>
-      <tr><td>2</td><td><b>建立消費者決策模型</b><br><small>Build a consumer decision model</small></td><td>納入品牌、庫存、對手價、星期效應、其他商品價格；中國：複雜；美國：簡化（規模化）</td></tr>
-      <tr><td>3</td><td><b>實驗</b><br><small>Experiment</small></td><td>系統性變動價格量測彈性；歷史資料不足；變動 ≈3%、≤5%；每三天</td></tr>
-      <tr><td>4</td><td><b>衡量</b><br><small>Measure</small></td><td>以資料校準參數；個別層級較難預測；找出哪些對手與缺貨最影響你</td></tr>
-      <tr><td>5</td><td><b>最佳化</b><br><small>Optimize</small></td><td>選擇營收／利潤或兩者；採限制式最佳化（如毛利 ≥ 10%）；高彈性商品比價</td></tr>
-      <tr><td>6</td><td><b>測試與實施</b><br><small>Test and implement</small></td><td>控制實驗：處理組 vs. 對照組；輪替處理以排除季節性</td></tr>
-      <tr><td>7</td><td><b>重複步驟 3–6</b><br><small>Repeat steps 3–6</small></td><td>每半年或視市場動態更新；納入行為因素與新型機器學習</td></tr></tbody></table>`},
-    {title: "兩個案例", html: `
+    {title: "顏色排序（感知危險：低 → 高）", html: `
+      <table class="t"><thead><tr><th>文化</th><th>排序</th><th>特徵</th></tr></thead><tbody>
+      <tr><td>美國</td><td>blue → green → yellow → black → orange → red</td><td>與 ANSI（yellow &lt; orange &lt; red）一致</td></tr>
+      <tr><td>中國</td><td>yellow → blue → green → red → black → orange</td><td>黃色最低（2.9）、橘 &gt; 紅；紅與黑無顯著差異</td></tr></tbody></table>`},
+    {title: "警示字與符號", html: `
       <ul>
-        <li><b>中國母嬰線上零售商</b>：原先手動為主、對手價格每日爬取；聚焦 30 個奶瓶 SKU（&gt;80% 營收）→ 營收 <b>+11%</b>（毛利不變）；其他類別最高 <b>+19%</b>。</li>
-        <li><b>美國線上家居零售商</b>：銷售分散；簡化模型快速擴展到 &gt;10,000 商品；一個月測試：營收 <b>+15%</b>、利潤 <b>+10%</b>（床、腳凳、咖啡桌、吧台椅）。</li>
-        <li>另一國際零售商引入「觀看過的商品」資訊，額外提升營收 5%。</li>
+        <li><b>警示用語</b>：DEADLY 與 DANGER 最高、NOTICE 最低（兩國皆是）。美國：BEWARE、WARNING &gt; CAUTION；中國：CAUTION &gt; WARNING。美國平均 6.9，中國 5.3。</li>
+        <li><b>語言</b>：中國受試者對中文與英文警示用語的整體評價相近，但 WARNING、DANGER 以英文寫時評分較高。</li>
+        <li><b>符號</b>：美國 skull & bones &lt; safety alert &lt; cracked skull & crutches；中國 cracked skull &lt; skull & bones &lt; safety alert。</li>
+      </ul>`},
+    {title: "複合配置與實務建議", html: `
+      <ul>
+        <li>複合配置的「相對排序」兩國相似，且符合 ANSI 建議。</li>
+        <li><b>black-DEADLY-skull & bones</b> 在兩文化皆高於 ANSI 的 red-DANGER-safety alert。</li>
+        <li>替換符號（以 cracked skull & crutches 代 safety alert）可提升感知危險。</li>
+        <li>中國受試者整體絕對評分較低 → 需要「更強」的警示用語、顏色與符號；中國的標準尚未完善且執行不一致。</li>
+        <li>限制：大學生樣本；顏色在 CRT 螢幕呈現；樣本小。</li>
       </ul>`}
   ],
   examTips: [
-    "七步驟順序與每步重點。",
-    "ABC 分類的百分比。",
-    "為何要「實驗」：歷史價格變異不足＋confounders。",
-    "「Model, measure, maximize」。",
-    "對照組的目的：解決 counterfactual 與季節性。"
+    "注意「相對排序」與「絕對評分」的區別：複合配置相對排序一致；但中國絕對較低。",
+    "顏色：中國黃色最低；橘高於紅。",
+    "WARNING vs. CAUTION：美國 WARNING 較高；中國相反。",
+    "實務：國際化產品需要在地化警示設計，而非直接套用 ANSI。"
   ],
   quiz: [
-    {q: "為何作者主張必須透過實驗來估計價格彈性？", o: ["歷史資料太昂貴", "歷史價格變異不足，且存在無法捕捉的 confounders", "實驗較快", "法規要求"], a: 1, e: "歷史資料常因價格跟隨對手而缺乏變異。"},
-    {q: "在 ABC 分類中，A 組是指？", o: ["50% SKU 佔 5% 營收", "30% SKU 佔 15% 營收", "20% SKU 佔 80% 營收", "全部 SKU"], a: 2, e: "A：20%→80%；B：30%→15%；C：50%→5%。"},
-    {q: "文中建議的價格實驗變動幅度大約是？", o: ["約 3%，且不超過 5%", "約 20%", "約 50%", "不得變動"], a: 0, e: "降低風險又足以捕捉消費者反應。"},
-    {q: "「Constrained optimization」在本文中的例子為何？", o: ["最大化營收且毛利不低於特定水準", "最小化廣告成本", "最大化庫存", "固定價格"], a: 0, e: "例：奶瓶類別維持毛利率 ≥ 10%。"},
-    {q: "使用對照組的主要目的是？", o: ["降低成本", "排除季節性等時間因素，衡量演算法的真實影響", "增加樣本", "符合法規"], a: 1, e: "解決 counterfactual 問題。"},
-    {q: "簡單的「比最低價低 X」策略最大問題是？", o: ["太複雜", "未考慮對手缺貨、需求與其他購買因素，平均改善僅約 1% 以下", "違法", "成本高"], a: 1, e: "忽略庫存與品質、品牌等驅動因素。"}
+    {q: "此研究中，總體而言哪一文化給予較高的感知危險評分？", o: ["中國", "美國", "兩者相同", "無法判斷"], a: 1, e: "美國參與者一致提供較高評分。"},
+    {q: "中國受試者對哪一個顏色的感知危險度最低？", o: ["藍色", "綠色", "黃色", "紅色"], a: 2, e: "黃色（M = 2.9）最低，且橘色高於紅色。"},
+    {q: "關於 WARNING 與 CAUTION 的相對評分，何者正確？", o: ["兩文化皆是 WARNING > CAUTION", "美國 WARNING > CAUTION，中國 CAUTION > WARNING", "兩文化皆是 CAUTION > WARNING", "兩者沒有差異"], a: 1, e: "兩文化排序相反。"},
+    {q: "此研究對國際產品警示設計的主要建議是？", o: ["統一使用美國標準即可", "對中國使用者可能需要更強的警示元素與在地化設計", "取消警示標籤", "僅用文字"], a: 1, e: "中國受試者絕對評分偏低，可能無法達到遵從閾值。"},
+    {q: "下列何者在兩文化中皆被評為比 red-DANGER-safety alert 更高的感知危險配置？", o: ["blue-NOTICE", "yellow-CAUTION-safety alert", "black-DEADLY-skull & bones", "green-BEWARE"], a: 2, e: "符合文中結論。"},
+    {q: "ANSI Z535.4 對 DANGER 的建議顏色為？", o: ["黃底黑字", "橘底黑字", "紅底白字", "藍底白字"], a: 2, e: "DANGER：white on red；WARNING：black on orange；CAUTION：black on yellow。"}
   ]
 });

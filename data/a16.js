@@ -1,64 +1,78 @@
 (window.ARTICLES = window.ARTICLES || []).push({
-  id: 16, day: 3, topic: "Marketing Communications",
-  title: "A cross-cultural comparison of perceived hazard in response to warning components and configurations: US vs. China",
-  authors: "Mary F. Lesch, Pei-Luen Patrick Rau, Zhengxuan Zhao & Chengyi Liu", year: 2009, source: "Applied Ergonomics, 40, 953–961",
-  pages: "9 頁（實證論文）", difficulty: 2,
-  oneLiner: "美國 ANSI 的警示標準元素（顏色、警示用語、符號）在中國的「危險感知」不同：中國受試者整體評分較低，黃色與 CAUTION／WARNING 的排序也不同，因此需要更強的警示。",
+  id: 16, day: 3, topic: "Products & Services",
+  title: "Culture-Sensitive Adaptation or Global Standardization — The Duration-of-Usage Hypothesis",
+  authors: "Martin van Mesdag", year: 2000, source: "International Marketing Review, 17(1), 74–84（研究短文）",
+  pages: "11 頁", difficulty: 1,
+  emphasis: "產品類別邏輯：說明為什麼有些產品或服務天生較受文化影響，因此較難標準化。",
+  oneLiner: "能不能全球標準化，首先取決於「產品類別」：在一個文化中被使用越久的產品（如麵包、葡萄酒）越難國際化，新近出現、符合現代生活的產品（如漢堡、牛仔褲）較容易全球化——但也有「跨文化跳躍」的例外。",
   summary: [
-    "背景：國際警示標準走向統一（harmonization）的趨勢，使得需要檢驗 <b>ANSI Z535</b> 標準是否適用於不同文化。",
-    "實驗：40 位美國與 43 位中國大學生，對顏色（6 種）、警示用語（6 個）、符號（3 種）與 11 種複合配置，以 1–9 評定「感知危險度（perceived hazard）」。",
-    "發現：<b>美國受試者全面給予較高評分</b>；顏色排序跨文化不同（中國：黃最低、橘高於紅）；警示用語 WARNING 與 CAUTION 的高低順序相反；複合配置的「相對」排序則在兩文化相似，但中國的「絕對」評分仍較低。"
+    "<b>國際行銷</b>指在多國經營、各國策略可能各自調整；<b>全球行銷</b>則刻意在大範圍國家之間標準化行銷策略——純粹的全球行銷並不存在，多數品牌是「全球在地化（glocal）」。企業想標準化是為了規模經濟、降低單位成本、庫存、行銷與研發成本。",
+    "作者提出<b>七項主張</b>：海外市場不比國內容易；除非有證據，否則假設國外一切都要做得不同；只能考慮「整個行銷組合」能否全球化，不能只看單一元素；必須先界定產品，才能設計其他行銷組合；不存在絕對的全球行銷組合；各產品類別的消費趨同速度差異很大；全球行銷不限於大企業。",
+    "最後提出<b>使用歷史假說（duration-of-usage hypothesis）</b>：食物是最難國際化的類別，原因有二——人們想「認得」自己吃的東西，以及使用歷史越長的習慣越難改變。但也有<b>跨文化跳躍（cross-cultural leap）</b>的例外：咖哩、義大利麵、披薩等傳統外國食物在英國流行。"
   ],
   keyPoints: [
-    "ANSI 建議：DANGER（白字紅底）> WARNING（黑字橘底）> CAUTION（黑字黃底）；安全警示符號（三角驚嘆號）。",
-    "顏色的危險感排序（低 → 高）：美國為藍、綠、黃、黑、橘、紅；中國為黃、藍、綠、紅、黑、橘。",
-    "中國受試者：黃色最低（2.9）；橘（7.2）高於紅（6.4）。",
-    "警示用語：美國 BEWARE、WARNING > CAUTION；中國相反（CAUTION > WARNING）。",
-    "符號：美國受試者覺得「裂開的頭骨與拐杖」最危險；中國受試者覺得標準安全警示符號（三角驚嘆號）最危險。",
-    "實務：對中國使用者需要「更強」的警示元素以達到同等感知危險。"
+    "能否標準化，第一個決定因素是產品或服務的類型。",
+    "Kapferer 調查：歐洲最大品牌商中 81% 偏好品牌標準化與全球化；但「100% 全球化是迷思」。",
+    "最全球化的元素：商標與標誌（95%）、品牌人物（90.5%）、品牌名稱（88.5%）；最不全球化：促銷（20%）、相對競爭者的定價（33%）、直效行銷（40%）。",
+    "可以「全球品牌＋各地調整的行銷組合」，如 Coca-Cola、Benetton、Kellogg、Mars、Danone；作者主張「產品應是品牌的函數」，而非相反。",
+    "看似細微的文化差異也會導致失敗：法國藥廠在德國賣肝病藥失敗（德國人不在意肝）；比利時法語區與荷語區互相排斥；荷蘭人視遲到為不可信任；Lego 在日本照搬促銷失敗。",
+    "全球行銷不只屬於大企業：Iona Technology（全球市佔 60%）、Ferrero、Smith Kendon（加油站喉糖）。",
+    "長使用歷史的食物（麵包、肉品切法、湯、葡萄酒、啤酒）各國差異大；新產品（優格、披薩、漢堡、零食、瓶裝水）已全球化——但零食的口味仍在地化。"
   ],
   concepts: [
-    {term: "Perceived hazard（感知危險度）", def: "使用者對警示標籤所傳達危險程度的主觀評估；被認為需要達到某閾值才會觸發遵從行為。"},
-    {term: "Signal words（警示用語）", def: "NOTICE、CAUTION、WARNING、DANGER、DEADLY 等標籤上的字，用來表達危險的可能性與嚴重度。"},
-    {term: "ANSI Z535.4（美國產品安全標誌標準）", def: "ANSI＝美國國家標準協會。規定 DANGER 用紅底白字、WARNING 用橘底黑字、CAUTION 用黃底黑字。"},
-    {term: "ANSI Z535.2（美國環境與設施安全標誌標準）", def: "另一份 ANSI 標準，規定藍色搭配 NOTICE，用於設備或財產損害的提醒。"},
-    {term: "Safety alert symbol（安全警示符號）", def: "內有驚嘆號的三角形，表示可能造成人身傷害。研究發現它對提升危險感的效果有限。"},
-    {term: "Cracked skull & crutches（裂開的頭骨與拐杖符號）", def: "研究者提議的替代警示符號。美國受試者認為它比標準安全警示符號更危險。"},
-    {term: "文化的定義（Goldberger & Veroff）", def: "文化是一套大家共享的意義系統，讓成員用同一個角度去理解與建構現實。"},
-    {term: "Compliance threshold（遵從門檻）", def: "人要感受到的危險程度達到某個門檻，才會真的照警示行動。中國受試者的危險感整體偏低，可能因此不夠謹慎。"}
+    {term: "International vs. global marketing（國際行銷 vs. 全球行銷）", def: "國際行銷：在多國經營、各國策略可依需要調整；全球行銷：在大範圍國家刻意標準化行銷策略，最純粹的形式並不存在。「跨國企業（multinational）」只描述擁有多國營運，不代表行銷策略。"},
+    {term: "Culture-sensitive adaptation（文化敏感調整）", def: "進入每個新市場時，依當地語言、通路、氣候、法規、文化等調整行銷組合；仍是多數國際行銷的主要做法。"},
+    {term: "Global standardization（全球標準化）", def: "盡可能讓行銷組合在各國一致，以取得規模經濟與降低成本。Levitt（1983）主張全球競爭者會不斷追求標準化。"},
+    {term: "Glocal（全球在地化）", def: "多數跨歐洲品牌既不是純全球也不是純在地；作者認為「glocal」已是企業能做到的極限。"},
+    {term: "Duration-of-usage hypothesis（使用歷史假說）", def: "一個產品類別在某文化中被使用的時間越長，消費習慣越根深蒂固、越難改變，因此越難國際化。"},
+    {term: "Recognizability（可辨識性）", def: "人們想知道、認得自己吃的是什麼；這是食物特有、幾乎普世的要求，阻礙食品跨國推廣（例：大豆加工食品很少人買）。"},
+    {term: "Cross-cultural leap（跨文化跳躍）", def: "使用歷史很長的外國傳統食物，經由餐飲業引介後被他國接受，如英國的咖哩、新鮮義大利麵、披薩、法式長棍麵包；是使用歷史假說的例外。"},
+    {term: "Convergence of consumption（消費趨同）", def: "各國消費模式逐漸相似；推力是品牌商想全球化，拉力是財富增加、移動性提高與通訊便利。趨同速度因產品類別而異。"},
+    {term: "Products as functions of the brand（產品是品牌的函數）", def: "作者主張品牌不該只是產品的附屬；企業可依各市場調整產品，只要彼此不衝突，仍可使用同一個全球品牌。"}
   ],
   sections: [
-    {title: "顏色排序（感知危險：低 → 高）", html: `
-      <table class="t"><thead><tr><th>文化</th><th>排序</th><th>特徵</th></tr></thead><tbody>
-      <tr><td>美國</td><td>blue → green → yellow → black → orange → red</td><td>與 ANSI（yellow &lt; orange &lt; red）一致</td></tr>
-      <tr><td>中國</td><td>yellow → blue → green → red → black → orange</td><td>黃色最低（2.9）、橘 &gt; 紅；紅與黑無顯著差異</td></tr></tbody></table>`},
-    {title: "警示字與符號", html: `
-      <ul>
-        <li><b>警示用語</b>：DEADLY 與 DANGER 最高、NOTICE 最低（兩國皆是）。美國：BEWARE、WARNING &gt; CAUTION；中國：CAUTION &gt; WARNING。美國平均 6.9，中國 5.3。</li>
-        <li><b>語言</b>：中國受試者對中文與英文警示用語的整體評價相近，但 WARNING、DANGER 以英文寫時評分較高。</li>
-        <li><b>符號</b>：美國 skull & bones &lt; safety alert &lt; cracked skull & crutches；中國 cracked skull &lt; skull & bones &lt; safety alert。</li>
-      </ul>`},
-    {title: "複合配置與實務建議", html: `
-      <ul>
-        <li>複合配置的「相對排序」兩國相似，且符合 ANSI 建議。</li>
-        <li><b>black-DEADLY-skull & bones</b> 在兩文化皆高於 ANSI 的 red-DANGER-safety alert。</li>
-        <li>替換符號（以 cracked skull & crutches 代 safety alert）可提升感知危險。</li>
-        <li>中國受試者整體絕對評分較低 → 需要「更強」的警示用語、顏色與符號；中國的標準尚未完善且執行不一致。</li>
-        <li>限制：大學生樣本；顏色在 CRT 螢幕呈現；樣本小。</li>
-      </ul>`}
+    {title: "七項主張", html: `
+      <ol>
+        <li>在海外市場建立同等規模的獲利事業，不比國內容易，通常更難、更貴（需要熟悉當地文化的人員與跨地域思考的管理者）。</li>
+        <li>不論採用何種國際策略，除非有確實證據，都應假設在國外每件事都要做得不同。</li>
+        <li>只有「完整建構的整個行銷組合」才值得考慮能否國際化；單看一個元素沒有意義（但品牌可以例外地全球化）。</li>
+        <li>必須先確定要在國外銷售的產品或服務，才能設計其他行銷組合元素。</li>
+        <li>絕對意義上的全球行銷組合不存在，必須保留調整空間。</li>
+        <li>各國消費模式確實在趨同，但趨同速度因產品類別差異極大，不能一概而論。</li>
+        <li>國際甚至全球行銷不必侷限於大企業。</li>
+      </ol>`},
+    {title: "泛歐品牌最全球化的元素（Kapferer, 1992b）", html: `
+      <table class="t"><thead><tr><th>元素</th><th>全球化比例</th></tr></thead><tbody>
+      <tr><td>商標與標誌</td><td>95%</td></tr>
+      <tr><td>品牌人物</td><td>90.5%</td></tr>
+      <tr><td>品牌名稱</td><td>88.5%</td></tr>
+      <tr><td>售後服務</td><td>83.5%</td></tr>
+      <tr><td>目標市場</td><td>77%</td></tr>
+      <tr><td>產品特色、品牌定位</td><td>72.5%</td></tr>
+      <tr><td>通路</td><td>67%</td></tr>
+      <tr><td>包裝</td><td>64%</td></tr>
+      <tr><td>廣告執行、媒體組合</td><td>43%</td></tr>
+      <tr><td>相對競爭者的定價</td><td>33%</td></tr>
+      <tr><td>促銷</td><td>20%</td></tr></tbody></table>
+      <p class="small">由 PDF 表格排列推得，數字順序請以原文為準。</p>`},
+    {title: "長使用歷史 vs. 新近產品", html: `
+      <table class="t"><thead><tr><th>長使用歷史（難國際化）</th><th>新近、符合現代生活（易全球化）</th></tr></thead><tbody>
+      <tr><td>麵包、肉品與切法、湯、蔬菜、魚、葡萄酒、啤酒、烈酒；手工具；正式服裝；手動打字機</td><td>優格、乳製甜點、披薩、漢堡、熱狗、零食、瓶裝水、奶酒、Mars 與 Ferrero 的糖果、麥當勞；電動工具；休閒服（牛仔褲、T 恤、球鞋）；電腦</td></tr></tbody></table>
+      <p>零食本身在全球化，但口味仍在地：荷蘭人喜歡紅椒粉口味，英國的鹽醋口味在國外不受歡迎。</p>`}
   ],
   examTips: [
-    "注意「相對排序」與「絕對評分」的區別：複合配置相對排序一致；但中國絕對較低。",
-    "顏色：中國黃色最低；橘高於紅。",
-    "WARNING vs. CAUTION：美國 WARNING 較高；中國相反。",
-    "實務：國際化產品需要在地化警示設計，而非直接套用 ANSI。"
+    "使用歷史假說的意思：使用越久的產品類別越難國際化；食物是最難的類別。",
+    "食物難國際化的兩個原因：可辨識性、使用歷史。",
+    "跨文化跳躍是例外（咖哩、披薩進入英國）。",
+    "七項主張中最重要的觀念：先看產品類別，且要看整個行銷組合。",
+    "最全球化的是品牌元素（標誌、名稱）；最不全球化的是促銷與定價。"
   ],
   quiz: [
-    {q: "此研究中，總體而言哪一文化給予較高的感知危險評分？", o: ["中國", "美國", "兩者相同", "無法判斷"], a: 1, e: "美國參與者一致提供較高評分。"},
-    {q: "中國受試者對哪一個顏色的感知危險度最低？", o: ["藍色", "綠色", "黃色", "紅色"], a: 2, e: "黃色（M = 2.9）最低，且橘色高於紅色。"},
-    {q: "關於 WARNING 與 CAUTION 的相對評分，何者正確？", o: ["兩文化皆是 WARNING > CAUTION", "美國 WARNING > CAUTION，中國 CAUTION > WARNING", "兩文化皆是 CAUTION > WARNING", "兩者沒有差異"], a: 1, e: "兩文化排序相反。"},
-    {q: "此研究對國際產品警示設計的主要建議是？", o: ["統一使用美國標準即可", "對中國使用者可能需要更強的警示元素與在地化設計", "取消警示標籤", "僅用文字"], a: 1, e: "中國受試者絕對評分偏低，可能無法達到遵從閾值。"},
-    {q: "下列何者在兩文化中皆被評為比 red-DANGER-safety alert 更高的感知危險配置？", o: ["blue-NOTICE", "yellow-CAUTION-safety alert", "black-DEADLY-skull & bones", "green-BEWARE"], a: 2, e: "符合文中結論。"},
-    {q: "ANSI Z535.4 對 DANGER 的建議顏色為？", o: ["黃底黑字", "橘底黑字", "紅底白字", "藍底白字"], a: 2, e: "DANGER：white on red；WARNING：black on orange；CAUTION：black on yellow。"}
+    {q: "van Mesdag 的「使用歷史假說」主張什麼？", o: ["使用越久的產品越容易全球化", "在一個文化中使用越久的產品類別，越難國際化", "所有產品都能完全標準化", "新產品一定會失敗"], a: 1, e: "長期形成的習慣越難改變，因此越難跨國趨同。"},
+    {q: "作者認為最難國際化的產品類別是？", o: ["電腦軟體", "食物", "休閒服", "電動工具"], a: 1, e: "食物歷史最悠久、規模最大，也最難國際化。"},
+    {q: "下列何者屬於「跨文化跳躍（cross-cultural leap）」的例子？", o: ["英國人開始喜歡咖哩與披薩等外國傳統食物", "全球都穿牛仔褲", "電動工具規格全球一致", "可口可樂全球同名"], a: 0, e: "使用歷史很長的外國傳統食物被他國接受，是假說的例外。"},
+    {q: "根據 Kapferer 的調查，泛歐品牌中最不全球化的行銷元素是？", o: ["商標與標誌", "品牌名稱", "促銷", "售後服務"], a: 2, e: "促銷最在地化；商標、品牌人物與名稱最全球化。"},
+    {q: "作者為什麼認為只研究「廣告」一個元素能否全球化沒有意義？", o: ["因為廣告不重要", "因為必須先知道是什麼產品，並考慮整個行銷組合", "因為廣告都是在地的", "因為法規禁止"], a: 1, e: "主張 3 與 4：先界定產品，再看整個行銷組合。"},
+    {q: "法國藥廠在德國銷售肝病藥失敗的例子說明了什麼？", o: ["德國法規太嚴", "細微的文化差異（各國特有的「國民病」）也可能導致失敗", "德國人不吃藥", "價格太高"], a: 1, e: "法國人常抱怨肝不舒服，德國人則從不在意肝，產品因此不相關。"}
   ]
 });

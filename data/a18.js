@@ -1,64 +1,70 @@
 (window.ARTICLES = window.ARTICLES || []).push({
-  id: 18, day: 3, topic: "Marketing Channels & Supply Chains",
-  title: "The relationship between national cultural dimensions and retail format strategies",
-  authors: "Michael Etgar & Dalia Rachman-Moore", year: 2011, source: "Journal of Retailing and Consumer Services, 18, 397–404",
-  pages: "8 頁（實證論文）", difficulty: 3,
-  oneLiner: "全球大型零售商的母國文化會影響其選擇「綜合型（generalist）」或「專業型（specialist）」零售模式。",
+  id: 18, day: 3, topic: "Products & Services",
+  title: "Quest for purposefully designed conceptualization of the country-of-origin image construct",
+  authors: "Jorge Carneiro & Flávio Faria", year: 2016, source: "Journal of Business Research, 69, 4411–4420",
+  pages: "10 頁（概念＋實證）", difficulty: 3,
+  emphasis: "原產國架構：釐清國家形象作為產品／品牌線索的意義與構面。",
+  oneLiner: "原產國形象（Country Image）研究結果不一致，主因是概念界定粗糙；應依研究情境「有目的地」界定概念範圍與分析層次，避免循環推理。",
   summary: [
-    "以 Deloitte 2005 年全球 250 大零售商（取 233 家）與 <b>GLOBE</b> 的五個文化構面，檢驗母國文化與零售形態策略的關聯。",
-    "<b>Generalist</b>：同時賣食品與非食品、商品類別多元（one-stop shop）；<b>Specialist</b>：只賣食品或只賣非食品、專注特定類別。34% 為綜合型，66% 為專業型。",
-    "結果（邏輯迴歸）：母國高 <b>不確定性規避</b>、高 <b>集體主義</b>（制度與內團體）、低 <b>未來導向</b>（較現在導向）、低 <b>權力距離</b> → 更可能為綜合型；相反則偏專業型。四個假設全部成立。"
+    "COO／CI 研究已超過 700 篇，但結果相互矛盾。作者認為主因是<b>構念（construct）的概念化不嚴謹</b>：搞不清楚在測量「國家」、「該國產品」還是「該國某產品類別」。",
+    "作者提出三個層次的概念範圍（domain map）：<b>CI（國家形象）</b>、<b>PCI（產品—國家形象）</b>、<b>PCatI（產品類別—國家形象）</b>，並主張「概念層次要和理論論證匹配」。",
+    "實證：315 位義大利消費者評估巴西與法國的冰箱與即食蝦餐。CI 以經濟、科技、人力／社會三面向的認知成分測量，對品質評估有顯著影響（冰箱 β = .70，解釋 49%；蝦餐 β = .45，解釋 20%）。"
   ],
   keyPoints: [
-    "模型：國家文化價值 → 組織文化與能力 → 零售業態策略（本研究只檢驗頭尾兩端）。",
-    "綜合型零售：較低策略風險、需要協調與分權；專業型零售：較高風險、需嚴守單一概念。",
-    "H1 不確定性規避（正向）、H2 集體主義（正向）、H3 未來導向（負向）、H4 權力距離（負向）。",
-    "控制變數：進入的區域數量（國際化程度）→ 不影響文化效果。",
-    "Nagelkerke R² = 0.29；分類正確率 72.5%。",
-    "使用 GLOBE「as is」分數而非 Hofstede。"
+    "三層次：CI / PCI / PCatI（再往下可到特定產品）。",
+    "CI 的組成：認知（beliefs）、情感（affect）；意向／行為（conative）是「結果」而非組成。",
+    "避免循環推理（circular reasoning）：若 CI 量表已含產品品質，就不能再用它預測產品品質。",
+    "本研究僅測認知成分：經濟、科技、人力／社會；排除政治、文化、宗教、歷史（與品質評估無關）。",
+    "二階因素（second-order）：三面向相關 ≥ .85，無法獨立估計。",
+    "採 within-subjects「差異法」：以法國與巴西的回答差作為變數。"
   ],
   concepts: [
-    {term: "Generalist retailer（綜合型零售商）", def: "同時賣食品與非食品、商品類別很多的零售商，像一站購足的超市。對一次要買很多類別的顧客很方便。"},
-    {term: "Specialist retailer（專業型零售商）", def: "只專注於某一類商品（只賣食品或只賣非食品）的零售商，提供專業資訊與服務；毛利可能較高，但風險也集中。"},
-    {term: "Width vs. depth of assortment（商品組合的寬度與深度）", def: "寬度＝賣幾種不同的商品類別（綜合型或專業型的決策）；深度＝每一類別裡有多少品項可選。"},
-    {term: "Institutional vs. in-group collectivism（制度集體主義 vs. 內團體集體主義）", def: "GLOBE 把集體主義分兩種：制度性＝社會制度鼓勵集體分配與集體行動；內團體＝個人對家庭或組織的忠誠與凝聚。"},
-    {term: "Future orientation（未來導向）", def: "社會重視規劃、投資未來的程度，與 Hofstede 的「長期導向」相近。"},
-    {term: "Logistic regression & Nagelkerke R²（邏輯迴歸與配適指標）", def: "邏輯迴歸：預測「是／否」這類二分結果（例如是不是綜合型零售商）的統計方法；Nagelkerke R² 表示模型解釋力的大小。"},
-    {term: "Uppsala school（烏普薩拉學派）", def: "國際化的漸進學習理論：企業累積國際經驗後，資訊與信心增加，會逐步擴大海外投入。"}
+    {term: "Country Image (CI)（國家形象）", def: "對「一個國家本身」的整體看法與印象（經濟、科技、人民等），不針對特定產品。又稱 macro country image。"},
+    {term: "Product-country image (PCI)（產品—國家形象）", def: "對「某國所有（或大多數）產品」的整體印象，例如「日本製產品」的品質印象。又稱 micro country image。"},
+    {term: "Product category country image (PCatI)（產品類別—國家形象）", def: "對某國「特定產品類別」的印象，例如德國汽車、法國香水；更窄可到具體產品。"},
+    {term: "Cognitive / Affective / Conative（認知／情感／意向）", def: "認知＝對國家的資訊與信念；情感＝感受與情緒；意向＝行為意圖（如想去旅遊）。意向是形象的「結果」，不應放進國家形象的定義。"},
+    {term: "Circular reasoning（循環推理）", def: "用來預測結果的量表，其實已經包含結果本身（例如國家形象量表已含產品品質題），導致兩者關係被人為放大。"},
+    {term: "Construct validity / Content validity（構念效度／內容效度）", def: "量表是否真的測到你想測的概念；以及題目是否涵蓋這個概念的合適範圍。"},
+    {term: "Summary effect vs. Halo effect（摘要效應 vs. 光環效應）", def: "Han（1989）的兩種看法。光環效應：對不熟悉的產品，消費者用「國家形象」去推測品質；摘要效應：熟悉後，消費者把對該國產品的經驗累積成「國家形象」。"},
+    {term: "Within-subjects differences approach（受試者內差異法）", def: "讓同一位受訪者依序評估兩個國家，再取兩者的差值。可消除個人差異、提高統計檢定力，缺點是受訪者容易疲勞。"}
   ],
   sections: [
-    {title: "四個假設與結果", html: `
-      <table class="t"><thead><tr><th>文化構面</th><th>預測綜合型機率</th><th>理由</th><th>b</th></tr></thead><tbody>
-      <tr><td><b>Uncertainty avoidance ↑</b></td><td>↑</td><td>綜合型可擴張／收縮不同品類，降低策略風險；不確定性規避者偏好低風險業態</td><td>+4.19***</td></tr>
-      <tr><td><b>Collectivism ↑</b></td><td>↑</td><td>綜合型需高度團隊合作與協調；集體文化培養凝聚與合作</td><td>+1.69** / +2.55***</td></tr>
-      <tr><td><b>Future orientation ↑</b></td><td>↓</td><td>專業型面臨較高風險、需為未來威脅做準備；未來導向文化更適合專業型</td><td>−3.45**</td></tr>
-      <tr><td><b>Power distance ↑</b></td><td>↓</td><td>綜合型需分權、自主決策；專業型需嚴格遵守單一概念，少授權，與高權力距離相容</td><td>−1.96*</td></tr></tbody></table>`},
-    {title: "研究設計", html: `
+    {title: "三層次概念範圍（domain map）", html: `
+      <table class="t"><thead><tr><th>層次</th><th>內容</th><th>例子</th></tr></thead><tbody>
+      <tr><td><b>CI</b></td><td>國家本身（經濟、科技、人民、政治…）</td><td>對德國的整體看法</td></tr>
+      <tr><td><b>PCI</b></td><td>該國產品的整體形象</td><td>德國製商品</td></tr>
+      <tr><td><b>PCatI</b></td><td>該國特定品類</td><td>德國家電、德國香腸；可再細至特定產品</td></tr></tbody></table>
+      <p>Laroche 例：伊朗地毯品質被公認良好，但伊朗整體形象不佳——層次會彼此脫鉤，因此必須分開界定。</p>`},
+    {title: "現有研究的缺陷", html: `
       <ul>
-        <li><b>資料</b>：Deloitte 2005 全球零售商 250 大（Stores 雜誌）；GLOBE 提供其中 233 家母國文化。</li>
-        <li><b>依變數</b>：綜合型＝1（食品與非食品皆有）；專業型＝0。</li>
-        <li><b>控制變數</b>：目標區域數量（九大區域）。</li>
-        <li><b>方法</b>：多層次分析顯示國家層級變異不顯著，故採一般邏輯迴歸。</li>
+        <li>缺乏管理意涵（managerial relevance）。</li>
+        <li>隨意界定構念，未明示定義。</li>
+        <li>可行性凌駕科學與管理價值（多用學生、本國樣本）。</li>
+        <li>混用層次：例如 Häubl (1996) 同時包含 CI、PCI、PCatI；Martin & Eroglu 的量表含產品品質而混淆 PCI。</li>
+        <li>把意向（conative）當成形象的一部分，如 Papadopoulos & Heslop 的「想要更緊密關係」。</li>
       </ul>`},
-    {title: "管理意涵與限制", html: `
+    {title: "本研究的設計", html: `
       <ul>
-        <li>零售管理者應先分析母國文化價值，才能預測最合適的零售形態策略。</li>
-        <li>綜合型業態可視為一種降低不確定性的策略，與特許加盟、產品適應等風險降低手段競爭。</li>
-        <li>限制：僅檢驗首尾變項；僅大型零售商；母國多元化使國家文化較難界定；未檢驗中介的組織文化。</li>
+        <li><b>樣本</b>：315 位義大利成人（具代表性，非學生）；產地：巴西、法國（巴西在文獻中很少被研究，僅約 2%）。</li>
+        <li><b>產品</b>：冰箱、即食蝦餐（兩者都以「功能性／utilitarian」品質評估）。</li>
+        <li><b>CI 測量</b>：經濟（發展程度、生活水準、平均薪資）、科技（科技發展、工業化）、人力／社會（教育程度、勞動力技能）。</li>
+        <li><b>結果</b>：CI → 品質評估（冰箱 .70；蝦餐 .45）。法國 CI 平均 1.69，巴西約 0（差 1.70）→ 巴西冰箱廠商在與法國競爭時宜淡化原產國。</li>
+        <li><b>限制</b>：CI 為單一線索；未納入 PCI/PCatI 可能高估效果；模型配適未達理想（CFI = .91）。</li>
       </ul>`}
   ],
   examTips: [
-    "記住方向：不確定性規避、集體主義越高 → 越可能是綜合型；未來導向、權力距離越高 → 越可能是專業型。",
-    "綜合型定義：同時有食品與非食品。",
-    "此研究使用 GLOBE 而非 Hofstede 分數（但構面對應）。",
-    "進入區域數量不改變文化效果。"
+    "CI / PCI / PCatI 的差別與例子。",
+    "Conative 不屬於 CI 的定義（是結果）。",
+    "「循環推理」的概念：形象量表若已含產品品質評估，就不能用於預測品質。",
+    "此論文的貢獻主要是概念性的（conceptual contribution）。",
+    "管理意涵：CI 對耐久消費品（冰箱）影響大於食品（蝦餐）。"
   ],
   quiz: [
-    {q: "本研究如何定義「generalist retailer」？", o: ["營收超過 100 億美元", "同時販售食品與非食品", "有電商通路", "有超過 10 個國家的店面"], a: 1, e: "Carries both food and non-food product lines。"},
-    {q: "下列哪一種母國文化特徵會提高零售商成為綜合型的機率？", o: ["低不確定性規避", "高未來導向", "高集體主義", "高權力距離"], a: 2, e: "H2：集體主義正向；不確定性規避正向；未來導向負向；權力距離負向。"},
-    {q: "為什麼高權力距離與專業型零售較為相容？", o: ["專業型需要更多資金", "專業型依賴嚴守單一概念，少授權；高權力距離偏集權", "專業型店面較大", "專業型較國際化"], a: 1, e: "專業型的概念通常由特定個人發展，需嚴格遵守。"},
-    {q: "本研究的控制變數為？", o: ["零售商成立年數", "零售商進入的區域數量（國際化程度）", "員工人數", "營收"], a: 1, e: "Number of target regions。"},
-    {q: "文化價值與零售形態之間的概念模型，中介變數是？", o: ["消費者偏好", "組織文化與技能", "政府政策", "科技水準"], a: 1, e: "National culture → organizational culture/skills → format strategy。"},
-    {q: "在 233 家零售商中，綜合型約佔多少？", o: ["約 34%", "約 50%", "約 66%", "約 90%"], a: 0, e: "34% 為綜合型、66% 為專業型。"}
+    {q: "「German home appliances」的形象屬於哪一個層次？", o: ["CI", "PCI", "PCatI", "Brand image"], a: 2, e: "特定產品類別的國家形象。"},
+    {q: "下列何者「不應」被納入國家形象（CI）的概念定義？", o: ["對經濟發展的信念", "對人民教育程度的信念", "對該國的情感", "造訪該國的意願（conative）"], a: 3, e: "意向是 CI 的結果。"},
+    {q: "作者所指的「循環推理」問題是？", o: ["樣本重複", "形象量表已含產品品質評估，再用它預測產品品質", "問卷順序", "翻譯錯誤"], a: 1, e: "自變數與依變數的測量重疊。"},
+    {q: "此研究中，CI 對哪項產品的品質評估解釋力最大？", o: ["即食蝦餐", "冰箱", "香水", "葡萄酒"], a: 1, e: "冰箱 β = .70（49%）；蝦餐 β = .45（20%）。"},
+    {q: "為何作者將 CI 的三個面向整合為二階（second-order）構念？", o: ["題目太少", "面向間高度相關，無法獨立估計各自影響", "為了節省時間", "因為樣本太大"], a: 1, e: "面向間相關 ≥ .85，區別效度不足。"},
+    {q: "此研究選擇「品質評估」而非「購買意圖」作為依變數的主要理由是？", o: ["品質評估較易測量", "較少受敵意、民族中心主義、價格等其他因素干擾", "法規要求", "因為購買意圖不存在"], a: 1, e: "控制其他干擾因素。"}
   ]
 });

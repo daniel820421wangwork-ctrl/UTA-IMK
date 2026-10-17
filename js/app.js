@@ -11,9 +11,9 @@
     get(k, d) { try { const v = localStorage.getItem('imk:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem('imk:' + k, JSON.stringify(v)); } catch (e) {} }
   };
-  let read = store.get('read', {});
-  let best = store.get('best', {});
-  const markRead = (id, on) => { if (on) read[id] = 1; else delete read[id]; store.set('read', read); };
+  let read = store.get('read2', {});
+  let best = store.get('best2', {});
+  const markRead = (id, on) => { if (on) read[id] = 1; else delete read[id]; store.set('read2', read); };
 
   // ---- theme ----
   const root = document.documentElement;
@@ -109,6 +109,8 @@
       <h1>${esc(a.title)}</h1>
       <div class="byline">${esc(a.authors)}（${a.year}）· ${esc(a.source)} · ${esc(a.pages)} · 難度 ${'●'.repeat(a.difficulty)}${'○'.repeat(3 - a.difficulty)}</div>
       <div class="lead">${esc(a.oneLiner)}</div>
+      ${a.emphasis ? `<div class="tip"><b>老師提示重點：</b>${esc(a.emphasis)}</div>` : ''}
+      ${a.fileNote ? `<p class="small">※ ${esc(a.fileNote)}</p>` : ''}
       <div class="tabs">
         <button data-t="preview" class="${tab === 'preview' ? 'on' : ''}">預習（5 分鐘）</button>
         <button data-t="review" class="${tab === 'review' ? 'on' : ''}">複習（完整筆記）</button>
@@ -155,7 +157,7 @@
       });
       if (done) {
         const s = qs.filter((q, qi) => ans[qi] === q.a).length;
-        if (!best[bestKey] || s / qs.length > best[bestKey]) { best[bestKey] = s / qs.length; store.set('best', best); }
+        if (!best[bestKey] || s / qs.length > best[bestKey]) { best[bestKey] = s / qs.length; store.set('best2', best); }
         h += `<div class="score">得分：${s} / ${qs.length}（${Math.round(s / qs.length * 100)}%）</div><button class="btn primary" id="again">再做一次</button>`;
       }
       box.innerHTML = h;
@@ -169,7 +171,7 @@
 
   function quizPage() {
     let h = `<h1>全題庫測驗</h1><div class="row"><label>範圍
-      <select id="qs"><option value="all">全部文章</option><option value="2">Day 2（文章 1–13）</option><option value="3">Day 3（文章 14–22）</option>${A.map((a) => `<option value="a${a.id}">#${a.id} ${esc(a.title.slice(0, 36))}</option>`).join('')}</select></label>
+      <select id="qs"><option value="all">全部文章</option><option value="2">Day 2（文章 1–15）</option><option value="3">Day 3（文章 16–28）</option>${A.map((a) => `<option value="a${a.id}">#${a.id} ${esc(a.title.slice(0, 36))}</option>`).join('')}</select></label>
       <label>題數 <select id="qn"><option>10</option><option>20</option><option>30</option></select></label>
       <button class="btn primary" id="go">開始</button></div><div id="qbox"></div>`;
     app.innerHTML = h; renderSide(null);

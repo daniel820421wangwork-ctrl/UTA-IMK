@@ -1,73 +1,65 @@
 (window.ARTICLES = window.ARTICLES || []).push({
-  id: 5, day: 2, topic: "Market Entry, Geopolitics",
-  title: "The New Rules of Globalization",
-  authors: "Ian Bremmer", year: 2014, source: "Harvard Business Review, 92(1), 103–107",
-  pages: "5 頁", difficulty: 2,
-  oneLiner: "全球化進入「有所防備的全球化（guarded globalization）」：政府主導、國家資本主義崛起，企業須依產業的「策略重要性」調整進入策略。",
+  id: 5, day: 2, topic: "Cultural Frameworks",
+  title: "Cultural Intelligence",
+  authors: "P. Christopher Earley & Elaine Mosakowski", year: 2004, source: "Harvard Business Review, 82(10)",
+  pages: "8 頁", difficulty: 2,
+  emphasis: "聚焦經理人如何在不同文化情境中調適並有效運作。",
+  oneLiner: "文化智商（CQ）由 Head（認知）、Body（身體）、Heart（情感／動機）三部分組成，可透過六步驟培養。",
   summary: [
-    "2008 年金融危機後，新興市場政府不再無條件歡迎外資，而是<b>選擇國家、選擇產業、選擇扶持的本地（常為國營）企業</b>。Bremmer 稱此為 <b>guarded globalization</b>（慢、選擇性、帶民族主義與區域主義）。",
-    "判斷策略的核心是兩個問題：<b>(1) 我們的產業對目標國政府是否具策略重要性？(2) 對我們母國政府是否具策略重要性？</b> 以 2×2 矩陣定位，並依位置選擇因應策略。",
-    "同時，<b>國家資本主義（state capitalism）</b>在中國、俄羅斯、阿聯酋等興起：目標是「政治」（控制經濟發展、保住政權），而非追求經濟利潤最大化。"
+    "CQ 是一個人面對陌生文化時，「像當地人一樣解讀曖昧行為」的能力。它與情緒智商相關，但<b>延伸其不足</b>：能分辨哪些行為是人類共通、哪些是個人特質、哪些是（介於兩者之間的）文化。",
+    "CQ 有三個來源：<b>Cognitive（Head）</b>、<b>Physical（Body）</b>、<b>Emotional/Motivational（Heart）</b>。三者缺一則整體受損。作者調查 60 國 2,000 位經理人，歸納出六種 CQ 類型（profiles），並提出六步驟培養流程。"
   ],
   keyPoints: [
-    "舊時代：「策略性產業 vs. 非策略性產業」容易分辨；新時代：<b>任何產業都可能變成策略性</b>。",
-    "Coca-Cola（兩個 No）vs. Lockheed Martin（兩個 Yes）是矩陣兩極。",
-    "國家資本主義的目的是政治控制，而非利潤。",
-    "國家資本主義的代價：創新與透明度下降。",
-    "中國成為國際商業規則的「制定者」而非追隨者。",
-    "Snowden 事件讓美國科技公司被視為「美國式國家資本主義」工具。"
+    "CQ 三要素：Head / Body / Heart。",
+    "六種管理者類型：provincial, analyst, natural, ambassador, mimic, chameleon（chameleon 約 5%）。",
+    "大多數人是混合型；最常見是 ambassador + analyst。",
+    "CQ 可以被培養（六步驟）。",
+    "CQ 以「暫緩判斷、先觀察模式」避免刻板印象。"
   ],
   concepts: [
-    {term: "Guarded globalization（有所防備的全球化，亦譯受保護的全球化）", def: "2008 年金融危機後的全球化型態：新興市場國家政府會挑選要合作的國家、開放的產業與扶持的本地（常是國營）企業。全球化變得更慢、更有選擇性、帶有民族與區域色彩。"},
-    {term: "State capitalism（國家資本主義）", def: "由國家透過國營或政治上忠誠的企業主導經濟。目的不是追求利潤，而是掌控財富、鞏固政權。"},
-    {term: "Strategic sector（策略性產業）", def: "政府特別在意、不願輕易開放給外資的產業，例如軍火、能源、電信、金融、資訊科技、食品。"},
-    {term: "2×2 策略矩陣（兩個必問的問題）", def: "企業要問兩題：這個產業對「目標國政府」是否具策略重要性？對「自己母國政府」是否具策略重要性？兩個都「否」摩擦最小（如 Coca-Cola）；兩個都「是」由國安主導（如 Lockheed Martin）。"},
-    {term: "Build-operate-transfer（建設—營運—移轉，BOT）", def: "公私合作的基礎建設模式：民間先出資建造並營運一段時間，之後交還政府。外國企業通常只有在本地業者缺乏技術時才有利可圖。"}
+    {term: "Cognitive CQ（認知型文化智商，「頭」）", def: "用腦袋理解新文化的能力：觀察線索，從好幾個人的行為歸納出共同模式，而不是只背禮儀清單。"},
+    {term: "Physical CQ（身體型文化智商，「身體」）", def: "用肢體與行為「鏡像」對方的能力：握手、點餐、距離、眼神、說話語氣都能調整成對方習慣的樣子，表示你已走進他們的世界。"},
+    {term: "Emotional/Motivational CQ（情感動機型文化智商，「心」）", def: "相信自己能適應新文化的信心（自我效能），以及遇到挫折時願意再試的動力。"},
+    {term: "Provincial（鄉土型管理者，亦譯地方型）", def: "跟背景相似的人合作很順，但一離開熟悉環境就遇到困難。例：原本在 Chevy 表現很好的工程師，到作風完全不同的 Saturn 就不適應。"},
+    {term: "Analyst（分析型管理者）", def: "用有系統的方法一步步摸索陌生文化的規則，例如一對一訪談了解抗拒原因。"},
+    {term: "Natural（直覺型管理者）", def: "不靠系統方法，只憑直覺判斷，第一印象通常很準；但在複雜、模糊的多文化情境可能失靈。"},
+    {term: "Ambassador（大使型管理者）", def: "對新文化了解不多，但能很有自信地表現「我屬於這裡」。是最常見的類型，需要謙虛，避免低估文化差異。"},
+    {term: "Mimic（模仿型管理者）", def: "能控制並模仿對方的行為，讓人放鬆、建立信任，但不一定懂行為背後的意義。與「純粹照抄」不同，後者可能被當成嘲弄。"},
+    {term: "Chameleon（變色龍型管理者）", def: "頭、身體、心三項能力都高，非常罕見（約 5%）。可能被誤認為本地人，甚至做到本地人做不到的事。例：Nigel 在拉合爾。"}
   ],
   sections: [
-    {title: "為什麼進入 guarded globalization？（五因素）", html: `
+    {title: "CQ 三要素與案例", html: `
+      <table class="t"><thead><tr><th>要素</th><th>關鍵能力</th><th>案例</th></tr></thead><tbody>
+      <tr><td><b>Head</b></td><td>學習策略；由觀察的個體歸納模式</td><td>Devin 觀察多位德國客戶代表，推論公司特質（準時、重期限、接受非傳統廣告）</td></tr>
+      <tr><td><b>Body</b></td><td>鏡像肢體與習慣</td><td>Henri 的貼面禮；Melanie 無法自在接受；洛杉磯社群領袖與近距離交談</td></tr>
+      <tr><td><b>Heart</b></td><td>自我效能、堅持</td><td>Hyong Moon 以過往成功經驗在跨部門團隊中堅持</td></tr></tbody></table>
+      <p>Peter（從加州被調到 Eli Lilly 印第安納波利斯總部）的三個困難：不了解環境改變（Head）、無法讓行為與周遭一致（Body）、受挫後氣餒（Heart）。</p>`},
+    {title: "Merrill Lynch × Mercury：三要素如何失敗", html: `
+      <p>Casual Friday 事件：抗拒的 Mercury 經理<b>不理解背後意圖（head）</b>、<b>無法改變穿著（body）</b>、<b>缺乏動機堅持（heart）</b>。</p>`},
+    {title: "六步驟培養 CQ", html: `
       <ol>
-        <li>政府覺得繼續開放產業給外資有風險（本地企業與消費者會抵制）。</li>
-        <li>有些國家外匯存底充足，不再急需外資。</li>
-        <li>國家安全被更廣義定義（金融不穩、網路間諜、糧食價格）→ 金融、IT、電信、食品被政治化。</li>
-        <li>中國即將成為最大經濟體，開始「制定」國際商業規則（中國特色社會主義的影響力擴大）。</li>
-        <li>各國創造不公平的競賽場，偏袒本地企業。</li>
-      </ol>`},
-    {title: "八種因應策略", html: `
-      <p><b>對母國政府具策略性的產業：</b></p>
-      <ul>
-        <li><b>Stay home</b>：留在國內（國防業）；若進入需有「退場劇本」。</li>
-        <li><b>Become more "strategic" at home</b>：向母國政府強化自己的策略價值（如德國 E-Mail Made in Germany）。</li>
-        <li><b>Use the state to fight other states</b>：政府對政府外交（BP 案例：英國首相卡麥隆提議派英國皇家空軍戰機進駐阿聯酋，之後 BP 重獲投標機會）。</li>
-      </ul>
-      <p><b>對東道國政府具策略性的產業：</b></p>
-      <ul>
-        <li><b>Strike alliances</b>：與本地企業合資（Pfizer 與 Zhejiang Hisun、Jointown；電影與中國夥伴）。</li>
-        <li><b>Add value to the state</b>：替國家創造價值（IMAX 協助國營媒體）。</li>
-        <li><b>Become too diversified to fail</b>：多元投資（GE 在中國數十項投資）。</li>
-        <li><b>Build it so that you can stay</b>：在地雇用、在地採購、投入基礎建設與綠能。</li>
-        <li><b>Capitalize on state capitalism</b>：把國家政策轉為機會（巴西本地採購要求、中國綠能產業）。</li>
-      </ul>`},
-    {title: "案例速覽", html: `
-      <table class="t"><thead><tr><th>公司</th><th>情境</th><th>重點</th></tr></thead><tbody>
-      <tr><td>Pfizer</td><td>印度撤銷 Sutent 專利；中國壓低藥價</td><td>與本地企業結盟，成為中國最大跨國藥廠</td></tr>
-      <tr><td>RIM (BlackBerry)</td><td>阿聯酋、沙烏地要求監控 BBM</td><td>與當地電信業者談判</td></tr>
-      <tr><td>BP</td><td>2012 UAE 排除 BP；英國政府介入</td><td>政府間關係解決問題</td></tr>
-      <tr><td>KFC</td><td>CCTV 報導抗生素；銷售下滑 40%</td><td>外企面臨國家媒體調查風險</td></tr>
-      <tr><td>GE</td><td>中國多元投資</td><td>Too diversified to fail</td></tr></tbody></table>`}
+        <li>評估自己的 CQ 強弱（自評、模擬、360 度回饋）。</li>
+        <li>針對弱項選擇訓練（缺 physical → 表演課；缺 cognitive → 案例歸納）。</li>
+        <li>實際應用訓練（從簡單任務開始，如買報紙、問候）。</li>
+        <li>盤點個人資源與組織支持（可用的訓練人員、時間）。</li>
+        <li>進入實際文化情境，依自己的強項與他人協調行動。</li>
+        <li>重新評估成效（再次 360 回饋）。</li>
+      </ol>
+      <p>案例：Helmut（北德人，被派到南德的工廠）動機型 CQ 低；以異質小組討論與逐步升級的任務建立信心。</p>`}
   ],
   examTips: [
-    "兩個 2×2 問題要能背出。",
-    "Coca-Cola 與 Lockheed Martin 是矩陣兩極的經典例子。",
-    "國家資本主義的目的是「政治」，不是經濟。",
-    "策略可歸類為：留在母國 / 更策略化 / 政府對政府 / 結盟 / 增值 / 多元化 / 在地化 / 利用國家資本主義。"
+    "Head / Body / Heart 對應 cognitive / physical / emotional-motivational。",
+    "六種類型的特徵是常見配對題；記住 chameleon 約 5%。",
+    "Mimic ≠ 純模仿；pure imitation 可能被視為嘲弄。",
+    "CQ vs. EQ：CQ 能區分「人類共通／個人／文化」。",
+    "CQ 強調「暫緩判斷」與避免刻板印象。"
   ],
   quiz: [
-    {q: "Bremmer 稱後金融危機時代的全球化為？", o: ["Hyperglobalization", "Guarded globalization", "Deglobalization", "Open globalization"], a: 1, e: "guarded globalization：慢、選擇性、帶民族主義。"},
-    {q: "國家資本主義（state capitalism）的主要目標是？", o: ["利潤最大化", "政治控制與保護政權", "促進自由貿易", "降低稅收"], a: 1, e: "目標是政治：控制經濟發展以最大化當權者的存續。"},
-    {q: "兩個問題都回答 'No'（對東道國與母國政府皆非策略性）的公司最像？", o: ["Lockheed Martin", "Coca-Cola", "Huawei", "Petrobras"], a: 1, e: "Coke：全球化策略摩擦小。"},
-    {q: "Pfizer 在中國與 Zhejiang Hisun、Jointown 合作，屬於哪種策略？", o: ["Stay home", "Strike alliances", "Use the state to fight other states", "Become too diversified to fail"], a: 1, e: "結盟、與本地企業分享利潤換取安全通行。"},
-    {q: "國家資本主義經濟的主要副作用為何？", o: ["通膨過高", "創新與透明度下降", "失業率升高", "貨幣貶值"], a: 1, e: "官員無法比市場更好配置資源 → 創新與透明度降低。"},
-    {q: "BP 在阿聯酋案例中使用何種策略重新獲得機會？", o: ["提高價格", "政府對政府關係（母國政府協助）", "退出市場", "收購本地公司"], a: 1, e: "卡麥隆訪問阿聯酋並提議派英國皇家空軍戰機後，BP 被邀請參與另一個油田投標。"}
+    {q: "一位經理能完美模仿客戶的肢體與說話方式，但不理解其文化意涵。他最像哪一型？", o: ["Analyst", "Mimic", "Provincial", "Chameleon"], a: 1, e: "Mimic 對行為有高度控制，但對線索意義缺乏洞察。"},
+    {q: "Earley & Mosakowski 的調查中，約多少比例的經理屬於 chameleon？", o: ["約 5%", "約 25%", "約 50%", "約 80%"], a: 0, e: "僅約 5% 具備三要素皆高。"},
+    {q: "CQ 的 'Heart' 成分主要指？", o: ["學習策略", "肢體鏡像", "自我效能與動機", "語言能力"], a: 2, e: "Emotional/motivational：相信自己能夠適應並堅持。"},
+    {q: "下列何者最能說明 CQ 與情緒智商（EQ）的差異？", o: ["CQ 只關於語言", "CQ 能區分哪些行為是人類共通、個人特有、或文化特有", "EQ 只用於國內", "CQ 無法培養"], a: 1, e: "CQ 在 EQ 不足處延伸：辨識文化層次的行為。"},
+    {q: "只依靠直覺、不使用系統學習策略，在模糊多文化情境可能失靈的類型是？", o: ["Natural", "Analyst", "Ambassador", "Mimic"], a: 0, e: "Natural 依賴直覺，不曾需要自創學習策略。"},
+    {q: "下列何者是培養 CQ 的第一步？", o: ["進入目標文化", "評估自己的 CQ 強弱", "購買語言課程", "組織團隊資源"], a: 1, e: "Step 1：檢視 CQ 強弱作為起點。"}
   ]
 });

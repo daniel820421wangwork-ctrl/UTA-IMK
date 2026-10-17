@@ -1,60 +1,79 @@
 (window.ARTICLES = window.ARTICLES || []).push({
   id: 3, day: 2, topic: "Cultural Frameworks",
-  title: "These 8 Scales Reveal Everything You Should Know About Different Cultures",
-  authors: "Gus Lubin（整理自 Erin Meyer《The Culture Map》）", year: 2015, source: "Business Insider",
-  pages: "約 11 張投影片", difficulty: 1,
-  oneLiner: "Erin Meyer 的 Culture Map：用八條光譜（溝通、評估、說服、領導、決策、信任、異議、時間）定位各國文化。",
+  title: "Global Versus Local Consumer Culture: Theory, Measurement, and Future Research Directions",
+  authors: "Jan-Benedict E. M. Steenkamp", year: 2019, source: "Journal of International Marketing, 27(1), 1–19",
+  pages: "19 頁（文獻整理＋新實證）", difficulty: 3,
+  emphasis: "說明全球與在地消費文化如何並存，並影響市場行為。",
+  oneLiner: "消費者面對「全球消費文化（GCC）」與「在地消費文化（LCC）」會有四種反應：全球化、在地化、全球在地化、文化疏離；企業可據此選擇全球或在地的品牌定位。",
   summary: [
-    "Meyer 提出八條「從一個極端到另一個極端」的文化量表，讓你知道自己與國際夥伴各落在哪裡。最基本的解法是：<b>保持覺察（awareness）</b>。",
-    "文章以 Valeo（法國公司，在德、日、中都有據點）的案例說明：中國與日本在直接回饋與衝突上相近，但在<b>決策（共識 vs. 由上而下）</b>與<b>時間（結構 vs. 彈性）</b>上差異很大，日本反而更像德國。"
+    "過去數十年出現了<b>全球消費文化（global consumer culture, GCC）</b>，但近年英國脫歐、美國優先、貿易爭端等使全球化放緩，<b>在地消費文化（local consumer culture, LCC）</b>重新受到重視。作者整理 20 年研究並以 28 國、13,112 位受訪者的資料提出新發現。",
+    "理論基礎有三：<b>消費文化理論</b>、<b>文化全球化理論</b>（社會層級）、<b>文化適應理論</b>（個人層級）。綜合後，消費者對全球與在地力量有四種典型反應：<b>全球化、在地化、全球在地化（glocalization）、文化疏離（glalienation）</b>，可由「對 GCC 的態度（AGCC）」與「對 LCC 的態度（ALCC）」的正負組合來區分。",
+    "管理應用：品牌可採<b>全球消費文化定位（GCCP）</b>、<b>在地消費文化定位（LCCP）</b>或<b>外國消費文化定位（FCCP）</b>。年輕、高學歷、菁英、世界主義者適合 GCCP 與標準化行銷；年長、低學歷、鄉村、民族中心主義者適合 LCCP 與高度在地調整。"
   ],
   keyPoints: [
-    "八量表是「相對位置」，不是絕對標籤。",
-    "美國：溝通最明確（低情境），但給負面回饋的直接程度只在中間。",
-    "日本：階層式領導 ＋ 共識式決策（稟議制度，ringi）。",
-    "文化多元可能是「斷層線」也可能是「優勢」。",
-    "解法：提高團隊覺察、讓各據點人員混編、輪調、聘用雙文化人才。"
+    "四種反應 = AGCC × ALCC 的 2×2：全球化（GCC＋、LCC−）、在地化（GCC−、LCC＋）、全球在地化（兩者皆＋）、文化疏離（兩者皆−）。",
+    "全球在地化與在地化最「容易」被選，全球化最難 → 在地文化仍是強大力量，但多數人也想加入全球元素。",
+    "最能反映消費文化態度的領域：生活風格與服裝；最不具區辨力：食物與娛樂。",
+    "AGCC 最強的相關因素是「消費者民族中心主義」（負相關）；年齡與教育兩項就能解釋 12.7% 的 AGCC 差異（年輕、高學歷較高）。",
+    "國家層級：Inglehart 的「世俗理性 vs. 傳統」構面最能解釋各國差異；國家文化對 ALCC 的解釋力遠大於 AGCC。",
+    "品牌被感知為「全球品牌」（perceived brand globalness）對購買可能性的總效果，大於被感知為「在地代表品牌」。",
+    "約七分之一受訪者以「文化疏離」為主要反應，但研究很少。"
   ],
   concepts: [
-    {term: "Communicating：explicit vs. implicit", def: "溝通要說多明白。明確（低情境，美國最明確）：話都說清楚；含蓄（高情境，日本與東亞）：要靠聽出沒說出口的意思。"},
-    {term: "Evaluating：direct vs. indirect negative feedback", def: "給負面評價時直不直接。以色列、俄羅斯、荷蘭最直接；日本最委婉；美國在中間。"},
-    {term: "Persuading：deductive vs. inductive", def: "怎麼說服別人。演繹式（法國、義大利）：先講理論與概念，再談事實；歸納式（英美）：先講實際例子與應用，再歸納出原則。"},
-    {term: "Leading：egalitarian vs. hierarchical", def: "理想的領導者與下屬距離多大。平等式（丹麥最明顯）：老闆只是「比員工高兩階的人」；階層式（日本、韓國）：老闆應該遠高於員工。"},
-    {term: "Deciding：consensual vs. top-down", def: "怎麼做決定。共識式：大家討論到有共識才定案（日本）；由上而下：老闆拍板、快速執行（中國）。注意日本是「階層領導＋共識決策」。"},
-    {term: "Trusting：task vs. relationship", def: "信任建立在哪裡。任務導向（美國）：靠工作表現與法律契約；關係導向（許多新興市場、部分西歐）：靠私人交情，因為不太信任法律能保障契約。"},
-    {term: "Disagreeing：confrontational vs. avoid confrontation", def: "意見不同時，願不願意當面對質。和「負面回饋是否直接」相似但不完全相同，例如瑞典給回饋直接，但很避免公開衝突。"},
-    {term: "Scheduling：structured vs. flexible", def: "怎麼看待時間與進度。結構化（德國、瑞士最嚴格，美國也偏此端）：照計畫準時；彈性（西歐、拉美，非洲、中東、印度最彈性）：計畫可隨時調整。"},
-    {term: "Ringi system（稟議制度）", def: "日本的決策方式：先在中低階層取得共識，再一層層往上呈報核准。所以日本「領導是階層式的，但決策是共識式的」。"}
+    {term: "Global consumer culture, GCC（全球消費文化）", def: "以全球為範圍形成、透過去地域化的全球市場傳遞的消費文化，例如全球通行的品牌、娛樂與生活風格。"},
+    {term: "Local consumer culture, LCC（在地消費文化）", def: "根植於特定地方、透過在地市場傳遞的消費文化，例如在地飲食、傳統娛樂與在地品牌。"},
+    {term: "AGCC / ALCC（對全球／在地消費文化的態度）", def: "Attitude toward GCC／LCC。作者把兩者視為兩個獨立的態度，可以同時正向或同時負向，而不是同一條線的兩端。"},
+    {term: "Globalization response（全球化反應）", def: "偏好全球化的消費選擇、排斥在地選擇（AGCC 正、ALCC 負）。"},
+    {term: "Localization response（在地化反應）", def: "想保留在地消費文化、排斥被視為全球的影響（AGCC 負、ALCC 正）。"},
+    {term: "Glocalization（全球在地化）", def: "把全球元素融入在地文化，兩邊都接受（AGCC 與 ALCC 皆正）；又稱混合化、克里奧化。"},
+    {term: "Glalienation（文化疏離）", def: "對全球、混合與在地的文化符號都排斥或不感興趣（AGCC 與 ALCC 皆負），常伴隨低文化認同。"},
+    {term: "Acculturation theory（文化適應理論）", def: "研究個人接觸另一種文化後的改變。Berry 的四種反應：同化、整合、分離、邊緣化，分別對應全球化、全球在地化、在地化、文化疏離。"},
+    {term: "GCCP / LCCP / FCCP（三種消費文化定位）", def: "全球消費文化定位：把品牌連結到全球意義、去地域化的場景；在地消費文化定位：連結在地文化與在地人；外國消費文化定位：連結特定外國文化（如日本電子、德國汽車、法國香水）。"},
+    {term: "Perceived brand globalness, PBG（品牌全球性知覺）", def: "消費者認為某品牌在許多國家銷售、使用全球文化符號的程度；會提高知覺品質、聲望、信任與購買意願。"},
+    {term: "Perceived local iconness, PLI（在地代表性知覺）", def: "消費者認為某品牌代表在地文化、傳統與國家認同的程度；有效果，但總效果小於品牌全球性知覺。"},
+    {term: "Consumer ethnocentrism（消費者民族中心主義）", def: "認為應該購買本國產品、購買外國貨不妥的信念。是 AGCC（負向）與 ALCC（正向）最強的個人層級相關因素。"}
   ],
   sections: [
-    {title: "八量表總覽", html: `
-      <table class="t"><thead><tr><th>#</th><th>面向</th><th>一端</th><th>另一端</th><th>例子</th></tr></thead><tbody>
-      <tr><td>1</td><td>Communicating</td><td>Explicit（低情境）</td><td>Implicit（高情境）</td><td>美國 ↔ 日本</td></tr>
-      <tr><td>2</td><td>Evaluating</td><td>Direct negative feedback</td><td>Indirect</td><td>以、俄、荷 ↔ 日</td></tr>
-      <tr><td>3</td><td>Persuading</td><td>Deductive</td><td>Inductive</td><td>法、義 ↔ 英美</td></tr>
-      <tr><td>4</td><td>Leading</td><td>Egalitarian</td><td>Hierarchical</td><td>丹麥 ↔ 日、韓</td></tr>
-      <tr><td>5</td><td>Deciding</td><td>Consensual</td><td>Top-down</td><td>日本 ↔ 中國</td></tr>
-      <tr><td>6</td><td>Trusting</td><td>Task-based</td><td>Relationship-based</td><td>美國 ↔ 新興市場</td></tr>
-      <tr><td>7</td><td>Disagreeing</td><td>Confrontational</td><td>Avoids confrontation</td><td>瑞典（回饋直接、異議迴避）</td></tr>
-      <tr><td>8</td><td>Scheduling</td><td>Linear / structured</td><td>Flexible</td><td>德、瑞士 ↔ 印度、中東</td></tr></tbody></table>`},
-    {title: "Valeo 案例：中、日、德、法", html: `
+    {title: "四種反應（AGCC × ALCC）", html: `
+      <table class="t"><thead><tr><th></th><th>對全球消費文化：負向</th><th>對全球消費文化：正向</th></tr></thead><tbody>
+      <tr><td><b>對在地消費文化：負向</b></td><td>文化疏離（glalienation）</td><td>全球化（globalization）</td></tr>
+      <tr><td><b>對在地消費文化：正向</b></td><td>在地化（localization）</td><td>全球在地化（glocalization）</td></tr></tbody></table>
+      <p>測量方式：在六個消費領域（生活風格、娛樂、居家布置、食物、服裝、品牌）各給四個選項，要求受訪者強迫選一個，以避免作答風格與社會期許偏誤。</p>`},
+    {title: "誰比較擁抱全球／在地消費文化？", html: `
+      <table class="t"><thead><tr><th></th><th>AGCC 高的人</th><th>ALCC 高的人</th></tr></thead><tbody>
+      <tr><td>人口特徵</td><td>年輕、高學歷、社會階層較高</td><td>較年長（人口特徵影響較弱，分布較廣）</td></tr>
+      <tr><td>價值觀</td><td>重視刺激、權力、普世主義；較不重傳統與從眾</td><td>重視傳統、從眾、安全</td></tr>
+      <tr><td>特質</td><td>開放、創新、物質主義、愛探索；民族中心主義與懷舊較低；對廣告較負面</td><td>民族中心主義高、隨和、品牌忠誠、易受規範影響、重視健康與環境</td></tr>
+      <tr><td>國家層級</td><td>長期導向、知識自主、世俗理性較高</td><td>權力距離與階層較高、較集體主義、較傳統與重生存</td></tr></tbody></table>`},
+    {title: "品牌策略對照（Table 5 整理）", html: `
+      <table class="t"><thead><tr><th>要素</th><th>運用全球消費文化</th><th>運用在地消費文化</th></tr></thead><tbody>
+      <tr><td>核心過程</td><td>GCCP → 品牌全球性知覺 → 購買可能性</td><td>LCCP → 在地代表性知覺 → 購買可能性</td></tr>
+      <tr><td>品牌聯想</td><td>品質、聲望、全球公民、現代與進步</td><td>傳統、真實性、懷舊、在地價值、聲望</td></tr>
+      <tr><td>消費者關係</td><td>嚮往（新興市場尤其明顯）</td><td>認同</td></tr>
+      <tr><td>目標客群</td><td>AGCC 高、年輕人、菁英、世界主義者</td><td>ALCC 高、年長與低學歷、鄉村、民族主義者</td></tr>
+      <tr><td>行銷組合</td><td>全球同一品牌名；產品、包裝、價格、通路高度標準化</td><td>考慮在地品牌名；產品、包裝、價格、通路高度調整</td></tr></tbody></table>
+      <p>Alden 等人（1999）研究七國電視廣告：在地定位占 59.0%、全球定位 22.4%、外國定位 3.8%；高科技耐久品較常用全球定位，食物較少。</p>`},
+    {title: "未來研究方向", html: `
       <ul>
-        <li><b>相近</b>：中、日都不習慣直接回饋與公開異議；法、德偏另一端。</li>
-        <li><b>衝突點</b>：決策與時間。日本＝共識式、慢、計畫周全、準時（像德國）；中國＝老闆決定、快、常改計畫、重彈性。</li>
-        <li><b>解方</b>：提高覺察（團隊聚餐討論）、混合各地據點人員、輪調、聘雙文化人才、依任務特性善用差異。</li>
+        <li>全球消費文化目前以西方為主；印度、中國、巴西參與後會怎麼變？是否存在多個全球消費文化（如全球青年文化、全球菁英文化）？</li>
+        <li>全球在地化有三種可能形式：切換、融入、融合，需要區分。</li>
+        <li>文化疏離者為何疏離？功能導向、反物質主義或經濟邊緣化？</li>
+        <li>需要長期追蹤資料，並連結到實際購買行為。</li>
       </ul>`}
   ],
   examTips: [
-    "八量表名稱與兩端要能默寫。",
-    "日本＝階層領導 ＋ 共識決策（最常考的「反直覺」點）。",
-    "Meyer 的核心建議：awareness。",
-    "「Just as a fish doesn't know it's in water」— 比較後才看見自己的文化。"
+    "四種反應與 AGCC／ALCC 正負組合要能對應。",
+    "GCCP、LCCP、FCCP 的差別與適合的目標客群。",
+    "全球品牌知覺（PBG）的效果大於在地代表性知覺（PLI）。",
+    "消費者民族中心主義是最強的相關因素；年輕、高學歷者 AGCC 較高。",
+    "國家文化較能解釋 ALCC，不太能解釋 AGCC。"
   ],
   quiz: [
-    {q: "下列哪一組最能描述日本在 Meyer 量表上的特徵？", o: ["平等領導 ＋ 由上而下決策", "階層領導 ＋ 共識式決策", "平等領導 ＋ 共識式決策", "階層領導 ＋ 由上而下決策"], a: 1, e: "日本的 ringi system：階層的領導但共識的決策。"},
-    {q: "哪一個文化在給負面回饋上屬於最直接的族群之一？", o: ["日本", "以色列", "韓國", "泰國"], a: 1, e: "以色列、俄羅斯、荷蘭最直接；日本最間接。"},
-    {q: "在 Meyer 的「Persuading」量表中，法國與義大利傾向？", o: ["歸納式：先看實務應用", "演繹式：先理論與概念", "不使用論證", "完全依賴權威"], a: 1, e: "法、義偏 deductive；盎格魯撒克遜偏 inductive。"},
-    {q: "在 Valeo 案例中，造成中日團隊摩擦的主要面向是？", o: ["溝通明確度", "負面回饋", "決策與時間排程", "信任基礎"], a: 2, e: "日本共識式＋結構化時間；中國由上而下＋彈性。"},
-    {q: "Meyer 認為處理文化差異最基本的第一步是？", o: ["統一公司規則", "保持覺察（awareness）", "只聘用本地人", "避免跨文化團隊"], a: 1, e: "「最基本的解法就是保持覺察」。"}
+    {q: "一位消費者同時喜愛全球與在地的消費選擇，屬於哪一種反應？", o: ["全球化", "在地化", "全球在地化（glocalization）", "文化疏離（glalienation）"], a: 2, e: "AGCC 與 ALCC 皆為正向，即全球在地化。"},
+    {q: "「文化疏離（glalienation）」對應的態度組合是？", o: ["AGCC 正、ALCC 正", "AGCC 正、ALCC 負", "AGCC 負、ALCC 正", "AGCC 負、ALCC 負"], a: 3, e: "對全球與在地文化都缺乏興趣或排斥。"},
+    {q: "下列哪一類消費者最適合「全球消費文化定位（GCCP）」？", o: ["年長、鄉村、民族主義者", "年輕、高學歷、世界主義者", "低學歷的保守消費者", "高度品牌忠誠的在地消費者"], a: 1, e: "年輕、高學歷、菁英與世界主義者的 AGCC 較高。"},
+    {q: "與對全球消費文化態度（AGCC）關係最強的個人因素是？", o: ["性別", "家庭人數", "消費者民族中心主義", "健康意識"], a: 2, e: "民族中心主義可解釋超過 10% 的 AGCC 差異（負相關）。"},
+    {q: "下列何者最能描述「外國消費文化定位（FCCP）」？", o: ["品牌與特定外國文化連結，如法國香水的優雅", "品牌不提任何國家", "強調在地傳統與懷舊", "只在本國銷售"], a: 0, e: "FCCP 把品牌連結到特定外國的消費文化。"},
+    {q: "研究顯示，對購買可能性總效果較大的是？", o: ["在地代表性知覺（PLI）", "品牌全球性知覺（PBG）", "兩者完全相同", "兩者都沒有效果"], a: 1, e: "Steenkamp 等人與 Xie 等人皆發現 PBG 的總效果較大。"}
   ]
 });

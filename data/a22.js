@@ -1,71 +1,65 @@
 (window.ARTICLES = window.ARTICLES || []).push({
-  id: 22, day: 3, topic: "Pricing",
-  title: "Cross-cultural equivalence of price perceptions across American, Chinese, and Japanese consumers",
-  authors: "Juan (Gloria) Meng & Suzanne Altobello Nasco", year: 2009, source: "Journal of Product & Brand Management, 18(7), 506–516",
-  pages: "11 頁（實證論文）", difficulty: 3,
-  oneLiner: "Lichtenstein 的價格知覺量表（精簡為 21 題、5 構面）可跨美、中、日使用；中國消費者價格與聲望敏感度較高，美國消費者較易受促銷影響。",
+  id: 22, day: 3, topic: "Marketing Channels & Supply Chains",
+  title: "The relationship between national cultural dimensions and retail format strategies",
+  authors: "Michael Etgar & Dalia Rachman-Moore", year: 2011, source: "Journal of Retailing and Consumer Services, 18, 397–404",
+  pages: "8 頁（實證論文）", difficulty: 3,
+  emphasis: "把國家文化與零售業態策略連結起來。",
+  oneLiner: "全球大型零售商的母國文化會影響其選擇「綜合型（generalist）」或「專業型（specialist）」零售模式。",
   summary: [
-    "檢驗 <b>Lichtenstein et al. (1993)</b> 價格知覺模型在美（n=172）、中（236）、日（158）學生樣本的「測量不變性（measurement invariance）」。移除「優惠券傾向」（亞洲少用）與「價格達人傾向」，保留 5 個構面。",
-    "以 SEM 逐步加嚴限制（因素負荷、誤差相關、因素變異與相關），得到 21 題的精簡量表，具跨文化良好配適。",
-    "平均數比較：<b>價值意識與價格—品質基模無顯著差異</b>；<b>價格意識、聲望敏感度、促銷傾向</b>有顯著差異：中國最高的價格與聲望敏感度；美國最高的促銷傾向。"
+    "以 Deloitte 2005 年全球 250 大零售商（取 233 家）與 <b>GLOBE</b> 的五個文化構面，檢驗母國文化與零售形態策略的關聯。",
+    "<b>Generalist</b>：同時賣食品與非食品、商品類別多元（one-stop shop）；<b>Specialist</b>：只賣食品或只賣非食品、專注特定類別。34% 為綜合型，66% 為專業型。",
+    "結果（邏輯迴歸）：母國高 <b>不確定性規避</b>、高 <b>集體主義</b>（制度與內團體）、低 <b>未來導向</b>（較現在導向）、低 <b>權力距離</b> → 更可能為綜合型；相反則偏專業型。四個假設全部成立。"
   ],
   keyPoints: [
-    "原模型 7 構面 42 題；本研究 5 構面（31 題→純化為 21 題）。",
-    "先確認測量不變性，才能做文化間比較（避免測量偏誤）。",
-    "H1、H4、H5 完全支持；H2、H3 部分支持（部分因素負荷與誤差不等值）。",
-    "無差異：價值意識、價格—品質基模。",
-    "有差異：價格意識、聲望敏感度（中國高於美、日）；促銷傾向（美國高於中、日）。",
-    "美國與日本在價格與聲望敏感度上相似；不可假設亞洲消費者彼此一致。"
+    "模型：國家文化價值 → 組織文化與能力 → 零售業態策略（本研究只檢驗頭尾兩端）。",
+    "綜合型零售：較低策略風險、需要協調與分權；專業型零售：較高風險、需嚴守單一概念。",
+    "H1 不確定性規避（正向）、H2 集體主義（正向）、H3 未來導向（負向）、H4 權力距離（負向）。",
+    "控制變數：進入的區域數量（國際化程度）→ 不影響文化效果。",
+    "Nagelkerke R² = 0.29；分類正確率 72.5%。",
+    "使用 GLOBE「as is」分數而非 Hofstede。"
   ],
   concepts: [
-    {term: "Value consciousness（價值意識）", def: "在意「花這些錢，得到的品質值不值得」，也就是重視性價比。"},
-    {term: "Price consciousness（價格意識）", def: "只在意付最低的價格，其他因素（如品質）都不太考慮的程度。"},
-    {term: "Sale proneness（促銷傾向）", def: "只要價格以「特價、折扣」的形式呈現（例如原價 $1.99、特價 $1.29），就更想購買的傾向。"},
-    {term: "Coupon proneness（優惠券傾向）", def: "因為有優惠券而更想購買的傾向。亞洲消費者很少使用優惠券，本研究因此排除。"},
-    {term: "Price mavenism（價格達人傾向）", def: "喜歡掌握各地價格資訊、主動告訴別人哪裡便宜的傾向。本研究排除這個構面。"},
-    {term: "Price–quality schema（價格—品質基模）", def: "相信價格越高、品質越高（「一分錢一分貨」）。"},
-    {term: "Prestige sensitivity（聲望敏感度）", def: "因為高價能向別人展現身分地位，而偏好買高價品的傾向。"},
-    {term: "Measurement invariance（測量不變性）", def: "同一份量表在不同文化中，是否真的測量到同一個概念。這是做跨文化比較前必須先確認的事，否則看到的差異可能只是量表的問題。"},
-    {term: "Positive vs. negative price perception factors（促進與抑制購買的價格知覺因素）", def: "促進購買：價格—品質基模（價高品質好）、聲望敏感度。抑制購買：價值意識、價格意識、促銷傾向等。"}
+    {term: "Generalist retailer（綜合型零售商）", def: "同時賣食品與非食品、商品類別很多的零售商，像一站購足的超市。對一次要買很多類別的顧客很方便。"},
+    {term: "Specialist retailer（專業型零售商）", def: "只專注於某一類商品（只賣食品或只賣非食品）的零售商，提供專業資訊與服務；毛利可能較高，但風險也集中。"},
+    {term: "Width vs. depth of assortment（商品組合的寬度與深度）", def: "寬度＝賣幾種不同的商品類別（綜合型或專業型的決策）；深度＝每一類別裡有多少品項可選。"},
+    {term: "Institutional vs. in-group collectivism（制度集體主義 vs. 內團體集體主義）", def: "GLOBE 把集體主義分兩種：制度性＝社會制度鼓勵集體分配與集體行動；內團體＝個人對家庭或組織的忠誠與凝聚。"},
+    {term: "Future orientation（未來導向）", def: "社會重視規劃、投資未來的程度，與 Hofstede 的「長期導向」相近。"},
+    {term: "Logistic regression & Nagelkerke R²（邏輯迴歸與配適指標）", def: "邏輯迴歸：預測「是／否」這類二分結果（例如是不是綜合型零售商）的統計方法；Nagelkerke R² 表示模型解釋力的大小。"},
+    {term: "Uppsala school（烏普薩拉學派）", def: "國際化的漸進學習理論：企業累積國際經驗後，資訊與信心增加，會逐步擴大海外投入。"}
   ],
   sections: [
-    {title: "價格知覺構面（Lichtenstein et al.）", html: `
-      <table class="t"><thead><tr><th>方向</th><th>構面</th><th>本研究是否保留</th></tr></thead><tbody>
-      <tr><td rowspan="5">負面（抑制購買意圖）</td><td>價值意識<br><small>Value consciousness</small></td><td>保留</td></tr>
-      <tr><td>價格意識<br><small>Price consciousness</small></td><td>保留</td></tr>
-      <tr><td>優惠券傾向<br><small>Coupon proneness</small></td><td>排除（亞洲少用）</td></tr>
-      <tr><td>促銷傾向<br><small>Sales proneness</small></td><td>保留</td></tr>
-      <tr><td>價格達人傾向<br><small>Price mavenism</small></td><td>排除</td></tr>
-      <tr><td rowspan="2">正面（促進購買意圖）</td><td>價格—品質基模<br><small>Price–quality schema</small></td><td>保留</td></tr>
-      <tr><td>聲望敏感度<br><small>Prestige sensitivity</small></td><td>保留</td></tr></tbody></table>`},
-    {title: "測量不變性檢定與假設", html: `
-      <table class="t"><thead><tr><th>假設</th><th>檢定內容</th><th>結果</th></tr></thead><tbody>
-      <tr><td>H1</td><td>五構面在各文化皆存在（形貌不變性，configural）</td><td>支持</td></tr>
-      <tr><td>H2</td><td>因素負荷相等</td><td>部分支持（完全限制被拒；部分限制接受）</td></tr>
-      <tr><td>H3</td><td>誤差相關相等</td><td>部分支持</td></tr>
-      <tr><td>H4</td><td>潛在變數相關相等</td><td>支持</td></tr>
-      <tr><td>H5</td><td>潛在變數變異相等</td><td>支持</td></tr></tbody></table>`},
-    {title: "平均數結果（5 點量表）", html: `
-      <table class="t"><thead><tr><th>構面</th><th>美國</th><th>中國</th><th>日本</th><th>差異</th></tr></thead><tbody>
-      <tr><td>價值意識<br><small>Value</small></td><td>3.92</td><td>3.94</td><td>3.80</td><td>無</td></tr>
-      <tr><td>價格意識<br><small>Price consciousness</small></td><td>2.64</td><td><b>3.31</b></td><td>2.52</td><td>中國 &gt; 美、日</td></tr>
-      <tr><td>促銷傾向<br><small>Sales proneness</small></td><td><b>3.39</b></td><td>3.13</td><td>3.04</td><td>美國 &gt; 中、日</td></tr>
-      <tr><td>價格—品質基模<br><small>Price–quality</small></td><td>3.41</td><td>3.28</td><td>3.21</td><td>無</td></tr>
-      <tr><td>聲望敏感度<br><small>Prestige</small></td><td>2.42</td><td><b>2.71</b></td><td>2.49</td><td>中國 &gt; 美、日</td></tr></tbody></table>
-      <p><b>實務意涵</b>：價值與品質訴求適用三地；價格與聲望訴求在中國更有效；促銷活動在美國更有效；不要假設所有亞洲消費者相似。</p>`}
+    {title: "四個假設與結果", html: `
+      <table class="t"><thead><tr><th>文化構面</th><th>預測綜合型機率</th><th>理由</th><th>b</th></tr></thead><tbody>
+      <tr><td><b>Uncertainty avoidance ↑</b></td><td>↑</td><td>綜合型可擴張／收縮不同品類，降低策略風險；不確定性規避者偏好低風險業態</td><td>+4.19***</td></tr>
+      <tr><td><b>Collectivism ↑</b></td><td>↑</td><td>綜合型需高度團隊合作與協調；集體文化培養凝聚與合作</td><td>+1.69** / +2.55***</td></tr>
+      <tr><td><b>Future orientation ↑</b></td><td>↓</td><td>專業型面臨較高風險、需為未來威脅做準備；未來導向文化更適合專業型</td><td>−3.45**</td></tr>
+      <tr><td><b>Power distance ↑</b></td><td>↓</td><td>綜合型需分權、自主決策；專業型需嚴格遵守單一概念，少授權，與高權力距離相容</td><td>−1.96*</td></tr></tbody></table>`},
+    {title: "研究設計", html: `
+      <ul>
+        <li><b>資料</b>：Deloitte 2005 全球零售商 250 大（Stores 雜誌）；GLOBE 提供其中 233 家母國文化。</li>
+        <li><b>依變數</b>：綜合型＝1（食品與非食品皆有）；專業型＝0。</li>
+        <li><b>控制變數</b>：目標區域數量（九大區域）。</li>
+        <li><b>方法</b>：多層次分析顯示國家層級變異不顯著，故採一般邏輯迴歸。</li>
+      </ul>`},
+    {title: "管理意涵與限制", html: `
+      <ul>
+        <li>零售管理者應先分析母國文化價值，才能預測最合適的零售形態策略。</li>
+        <li>綜合型業態可視為一種降低不確定性的策略，與特許加盟、產品適應等風險降低手段競爭。</li>
+        <li>限制：僅檢驗首尾變項；僅大型零售商；母國多元化使國家文化較難界定；未檢驗中介的組織文化。</li>
+      </ul>`}
   ],
   examTips: [
-    "哪些構面有差異、哪些沒差異：價格意識、聲望敏感度、促銷傾向有；價值意識、價格—品質無。",
-    "中國：價格與聲望敏感度最高；美國：促銷傾向最高。",
-    "為何排除 coupon proneness 與 price mavenism。",
-    "測量不變性是跨文化比較的前提。"
+    "記住方向：不確定性規避、集體主義越高 → 越可能是綜合型；未來導向、權力距離越高 → 越可能是專業型。",
+    "綜合型定義：同時有食品與非食品。",
+    "此研究使用 GLOBE 而非 Hofstede 分數（但構面對應）。",
+    "進入區域數量不改變文化效果。"
   ],
   quiz: [
-    {q: "哪一個文化的消費者在價格意識（price consciousness）上顯著較高？", o: ["美國", "中國", "日本", "三者相同"], a: 1, e: "中國 M = 3.31，高於美國與日本。"},
-    {q: "下列何者在三文化間「沒有」顯著差異？", o: ["Sales proneness", "Prestige sensitivity", "Value consciousness", "Price consciousness"], a: 2, e: "價值意識與價格—品質基模無顯著差異。"},
-    {q: "為何本研究排除 coupon proneness？", o: ["題目太長", "優惠券概念在許多亞洲文化中不太適用", "資料不足", "與價格無關"], a: 1, e: "亞洲消費者少用優惠券。"},
-    {q: "哪一文化的受訪者促銷傾向（sales proneness）最高？", o: ["美國", "中國", "日本", "皆相同"], a: 0, e: "美國可能因促銷頻繁。"},
-    {q: "進行跨文化比較前，為什麼必須先檢定「測量不變性」？", o: ["減少樣本數", "確保差異來自真實構念差異而非測量偏誤", "加快分析", "符合出版格式"], a: 1, e: "否則無法判定差異的來源。"},
-    {q: "對國際行銷人員的建議，下列何者正確？", o: ["所有亞洲市場可採同一策略", "價格與聲望訴求在中國可能比美國與日本更有效", "促銷在日本最有效", "價值訴求在三地都無效"], a: 1, e: "且不應假設亞洲消費者彼此相似。"}
+    {q: "本研究如何定義「generalist retailer」？", o: ["營收超過 100 億美元", "同時販售食品與非食品", "有電商通路", "有超過 10 個國家的店面"], a: 1, e: "Carries both food and non-food product lines。"},
+    {q: "下列哪一種母國文化特徵會提高零售商成為綜合型的機率？", o: ["低不確定性規避", "高未來導向", "高集體主義", "高權力距離"], a: 2, e: "H2：集體主義正向；不確定性規避正向；未來導向負向；權力距離負向。"},
+    {q: "為什麼高權力距離與專業型零售較為相容？", o: ["專業型需要更多資金", "專業型依賴嚴守單一概念，少授權；高權力距離偏集權", "專業型店面較大", "專業型較國際化"], a: 1, e: "專業型的概念通常由特定個人發展，需嚴格遵守。"},
+    {q: "本研究的控制變數為？", o: ["零售商成立年數", "零售商進入的區域數量（國際化程度）", "員工人數", "營收"], a: 1, e: "Number of target regions。"},
+    {q: "文化價值與零售形態之間的概念模型，中介變數是？", o: ["消費者偏好", "組織文化與技能", "政府政策", "科技水準"], a: 1, e: "National culture → organizational culture/skills → format strategy。"},
+    {q: "在 233 家零售商中，綜合型約佔多少？", o: ["約 34%", "約 50%", "約 66%", "約 90%"], a: 0, e: "34% 為綜合型、66% 為專業型。"}
   ]
 });

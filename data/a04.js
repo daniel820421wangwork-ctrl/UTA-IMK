@@ -1,64 +1,53 @@
 (window.ARTICLES = window.ARTICLES || []).push({
   id: 4, day: 2, topic: "Cultural Frameworks",
-  title: "Cultural Intelligence",
-  authors: "P. Christopher Earley & Elaine Mosakowski", year: 2004, source: "Harvard Business Review, 82(10)",
-  pages: "8 頁", difficulty: 2,
-  oneLiner: "文化智商（CQ）由 Head（認知）、Body（身體）、Heart（情感／動機）三部分組成，可透過六步驟培養。",
+  title: "When Does Culture Matter in Marketing?",
+  authors: "Alice LaPlante", year: 2005, source: "Stanford Business (研究者：Briley & Aaker)",
+  pages: "3 頁", difficulty: 1,
+  emphasis: "說明文化在某些消費者判斷與決策情境中比其他情境更重要。",
+  oneLiner: "文化只在消費者「快速、直覺」處理資訊時才強烈影響判斷；仔細思考時，文化差異會消失。",
   summary: [
-    "CQ 是一個人面對陌生文化時，「像當地人一樣解讀曖昧行為」的能力。它與情緒智商相關，但<b>延伸其不足</b>：能分辨哪些行為是人類共通、哪些是個人特質、哪些是（介於兩者之間的）文化。",
-    "CQ 有三個來源：<b>Cognitive（Head）</b>、<b>Physical（Body）</b>、<b>Emotional/Motivational（Heart）</b>。三者缺一則整體受損。作者調查 60 國 2,000 位經理人，歸納出六種 CQ 類型（profiles），並提出六步驟培養流程。"
+    "本文報導 Donnel Briley 與 Jennifer Aaker 的四個實驗：消費者的購買判斷並不是「隨時都受文化支配」，而是取決於<b>資訊處理的深度</b>。",
+    "當人只花幾秒鐘、憑直覺處理資訊（例如開車時瞄到看板）時，會把「文化規範」當預設值；當人有時間深思（例如上網比較）時，會動用<b>個人知識</b>，文化的影響就變弱，廣告中的文化訴求效果也下降。",
+    "因此行銷者不只要知道「如何」針對文化量身訂做訊息，更要知道「何時」文化訴求最有效。"
   ],
   keyPoints: [
-    "CQ 三要素：Head / Body / Heart。",
-    "六種管理者類型：provincial, analyst, natural, ambassador, mimic, chameleon（chameleon 約 5%）。",
-    "大多數人是混合型；最常見是 ambassador + analyst。",
-    "CQ 可以被培養（六步驟）。",
-    "CQ 以「暫緩判斷、先觀察模式」避免刻板印象。"
+    "文化效果出現在 <b>cursory & spontaneous（粗略、自發）</b>的資訊處理情境。",
+    "深思熟慮（deliberate）時，文化差異消失 → 廣告的文化訴求較不奏效。",
+    "關鍵變項：使用<b>文化知識（cultural knowledge）</b>還是<b>個人知識（personal knowledge）</b>。",
+    "實驗：Welch's 葡萄汁廣告；白人主流（Anglo）美國學生 vs. 亞裔美國學生；促進型 vs. 預防型訴求。",
+    "跨產品類別、美國 vs. 香港比較都得到相同模式。"
   ],
   concepts: [
-    {term: "Cognitive CQ（認知型文化智商，「頭」）", def: "用腦袋理解新文化的能力：觀察線索，從好幾個人的行為歸納出共同模式，而不是只背禮儀清單。"},
-    {term: "Physical CQ（身體型文化智商，「身體」）", def: "用肢體與行為「鏡像」對方的能力：握手、點餐、距離、眼神、說話語氣都能調整成對方習慣的樣子，表示你已走進他們的世界。"},
-    {term: "Emotional/Motivational CQ（情感動機型文化智商，「心」）", def: "相信自己能適應新文化的信心（自我效能），以及遇到挫折時願意再試的動力。"},
-    {term: "Provincial（鄉土型管理者，亦譯地方型）", def: "跟背景相似的人合作很順，但一離開熟悉環境就遇到困難。例：原本在 Chevy 表現很好的工程師，到作風完全不同的 Saturn 就不適應。"},
-    {term: "Analyst（分析型管理者）", def: "用有系統的方法一步步摸索陌生文化的規則，例如一對一訪談了解抗拒原因。"},
-    {term: "Natural（直覺型管理者）", def: "不靠系統方法，只憑直覺判斷，第一印象通常很準；但在複雜、模糊的多文化情境可能失靈。"},
-    {term: "Ambassador（大使型管理者）", def: "對新文化了解不多，但能很有自信地表現「我屬於這裡」。是最常見的類型，需要謙虛，避免低估文化差異。"},
-    {term: "Mimic（模仿型管理者）", def: "能控制並模仿對方的行為，讓人放鬆、建立信任，但不一定懂行為背後的意義。與「純粹照抄」不同，後者可能被當成嘲弄。"},
-    {term: "Chameleon（變色龍型管理者）", def: "頭、身體、心三項能力都高，非常罕見（約 5%）。可能被誤認為本地人，甚至做到本地人做不到的事。例：Nigel 在拉合爾。"}
+    {term: "Promotional appeal（促進型訴求）", def: "廣告強調「用了會得到什麼好處」，例如更有活力、好喝、有趣。實驗中，一般（Anglo）美國學生在快速瀏覽時覺得這類廣告較有效，因為美國文化重視成就與獨立。"},
+    {term: "Preventive appeal（預防型訴求）", def: "廣告強調「用了可以避免什麼壞事」，例如降低癌症、心臟病風險。實驗中，亞裔美國學生在快速瀏覽時覺得這類廣告較有效，因為其文化較重視安全與保護。"},
+    {term: "Cultural knowledge（文化知識）", def: "同一個社會的人大多共有的看法與預設（例如「美國人重個人成就」）。人在匆忙、直覺判斷時，會直接拿這種知識當預設答案。"},
+    {term: "Personal knowledge（個人知識）", def: "每個人自己獨特的經驗與想法，有時和所屬文化的規範相衝突。人仔細思考時才會用到，所以深思時文化差異會變小。"},
+    {term: "Cursory processing（粗略處理）", def: "只花很短時間、很少注意力去看資訊，例如開車時瞄一眼看板、略過網頁橫幅廣告。文化的影響在這種情境最強。"}
   ],
   sections: [
-    {title: "CQ 三要素與案例", html: `
-      <table class="t"><thead><tr><th>要素</th><th>關鍵能力</th><th>案例</th></tr></thead><tbody>
-      <tr><td><b>Head</b></td><td>學習策略；由觀察的個體歸納模式</td><td>Devin 觀察多位德國客戶代表，推論公司特質（準時、重期限、接受非傳統廣告）</td></tr>
-      <tr><td><b>Body</b></td><td>鏡像肢體與習慣</td><td>Henri 的貼面禮；Melanie 無法自在接受；洛杉磯社群領袖與近距離交談</td></tr>
-      <tr><td><b>Heart</b></td><td>自我效能、堅持</td><td>Hyong Moon 以過往成功經驗在跨部門團隊中堅持</td></tr></tbody></table>
-      <p>Peter（從加州被調到 Eli Lilly 印第安納波利斯總部）的三個困難：不了解環境改變（Head）、無法讓行為與周遭一致（Body）、受挫後氣餒（Heart）。</p>`},
-    {title: "Merrill Lynch × Mercury：三要素如何失敗", html: `
-      <p>Casual Friday 事件：抗拒的 Mercury 經理<b>不理解背後意圖（head）</b>、<b>無法改變穿著（body）</b>、<b>缺乏動機堅持（heart）</b>。</p>`},
-    {title: "六步驟培養 CQ", html: `
-      <ol>
-        <li>評估自己的 CQ 強弱（自評、模擬、360 度回饋）。</li>
-        <li>針對弱項選擇訓練（缺 physical → 表演課；缺 cognitive → 案例歸納）。</li>
-        <li>實際應用訓練（從簡單任務開始，如買報紙、問候）。</li>
-        <li>盤點個人資源與組織支持（可用的訓練人員、時間）。</li>
-        <li>進入實際文化情境，依自己的強項與他人協調行動。</li>
-        <li>重新評估成效（再次 360 回饋）。</li>
-      </ol>
-      <p>案例：Helmut（北德人，被派到南德的工廠）動機型 CQ 低；以異質小組討論與逐步升級的任務建立信心。</p>`}
+    {title: "實驗設計與結果", html: `
+      <p>對象：加州一所族群多元大學的<b>白人主流（Anglo）</b>與<b>亞裔美國</b>學生；材料：Welch's 葡萄汁廣告。</p>
+      <table class="t"><thead><tr><th>處理方式</th><th>白人主流（Anglo）美國學生</th><th>亞裔美國學生</th></tr></thead><tbody>
+      <tr><td>立即反應（快速）</td><td>覺得 <b>promotional</b> 廣告較有效</td><td>覺得 <b>preventive</b> 廣告較有效</td></tr>
+      <tr><td>仔細思考（深思）</td><td colspan="2" style="text-align:center">兩組評價<b>無顯著差異</b></td></tr></tbody></table>`},
+    {title: "行銷意涵", html: `
+      <ul>
+        <li>文化導向的訊息最適合<b>短暫、聚焦注意力</b>的媒體：線上橫幅廣告、路邊看板。</li>
+        <li>可解釋為何過去研究結果不一致：<b>回答條件</b>不同（有時間 vs. 沒時間）。</li>
+        <li>研究者應區分 personal vs. cultural knowledge，個人知識何時會凌駕文化規範仍待研究。</li>
+        <li>Nike、IBM、Google 皆投入大量資源理解細微文化差異。</li>
+      </ul>`}
   ],
   examTips: [
-    "Head / Body / Heart 對應 cognitive / physical / emotional-motivational。",
-    "六種類型的特徵是常見配對題；記住 chameleon 約 5%。",
-    "Mimic ≠ 純模仿；pure imitation 可能被視為嘲弄。",
-    "CQ vs. EQ：CQ 能區分「人類共通／個人／文化」。",
-    "CQ 強調「暫緩判斷」與避免刻板印象。"
+    "常考：「文化影響何時最強？」→ 快速、自發、粗略處理時。",
+    "注意區分 promotional（獲得）與 preventive（避免）對應的文化：白人主流美國人 → 促進型；亞裔 → 預防型。",
+    "結論不是「文化不重要」，而是文化的影響是<b>有條件的</b>。"
   ],
   quiz: [
-    {q: "一位經理能完美模仿客戶的肢體與說話方式，但不理解其文化意涵。他最像哪一型？", o: ["Analyst", "Mimic", "Provincial", "Chameleon"], a: 1, e: "Mimic 對行為有高度控制，但對線索意義缺乏洞察。"},
-    {q: "Earley & Mosakowski 的調查中，約多少比例的經理屬於 chameleon？", o: ["約 5%", "約 25%", "約 50%", "約 80%"], a: 0, e: "僅約 5% 具備三要素皆高。"},
-    {q: "CQ 的 'Heart' 成分主要指？", o: ["學習策略", "肢體鏡像", "自我效能與動機", "語言能力"], a: 2, e: "Emotional/motivational：相信自己能夠適應並堅持。"},
-    {q: "下列何者最能說明 CQ 與情緒智商（EQ）的差異？", o: ["CQ 只關於語言", "CQ 能區分哪些行為是人類共通、個人特有、或文化特有", "EQ 只用於國內", "CQ 無法培養"], a: 1, e: "CQ 在 EQ 不足處延伸：辨識文化層次的行為。"},
-    {q: "只依靠直覺、不使用系統學習策略，在模糊多文化情境可能失靈的類型是？", o: ["Natural", "Analyst", "Ambassador", "Mimic"], a: 0, e: "Natural 依賴直覺，不曾需要自創學習策略。"},
-    {q: "下列何者是培養 CQ 的第一步？", o: ["進入目標文化", "評估自己的 CQ 強弱", "購買語言課程", "組織團隊資源"], a: 1, e: "Step 1：檢視 CQ 強弱作為起點。"}
+    {q: "根據 Briley & Aaker 的研究，文化差異最可能在什麼情況下影響消費者判斷？", o: ["消費者長時間比較多個品牌時", "消費者以粗略、自發的方式處理資訊時", "消費者購買高涉入產品時", "消費者參考專家意見時"], a: 1, e: "文化被當作預設值，在快速、直覺處理時最明顯；深思時個人知識會介入。"},
+    {q: "在 Welch's 實驗中，立即反應的亞裔美國參與者較偏好哪種廣告？", o: ["Promotional 廣告", "Preventive 廣告", "價格導向廣告", "名人代言廣告"], a: 1, e: "亞裔重保護與安全、互賴，傾向 preventive（避免負面結果）訴求。"},
+    {q: "下列何種媒體最適合使用以文化價值為基礎的訊息？", o: ["詳細的產品評論網站", "長篇白皮書", "路邊看板與橫幅廣告", "產品比較表"], a: 2, e: "短暫聚焦注意力的媒體符合 cursory processing。"},
+    {q: "當參與者被要求仔細思考後再評價廣告，結果為何？", o: ["Anglo 組偏好更強", "亞裔組偏好更強", "兩組差異消失", "兩組都不評價"], a: 2, e: "深思時動用個人知識，文化差異不顯著。"},
+    {q: "本文用來解釋過去「文化差異有時出現、有時不出現」矛盾研究結果的關鍵因素是？", o: ["樣本數", "參與者回答時的處理條件", "產品價格", "研究者國籍"], a: 1, e: "回答條件（快速 vs. 深思）不同，造成結果不一致。"}
   ]
 });
