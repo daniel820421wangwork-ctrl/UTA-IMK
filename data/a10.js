@@ -4,7 +4,7 @@
   authors: "Jeanne M. Brett, Brian C. Gunia & Brosh M. Teucher", year: 2017, source: "Academy of Management Perspectives, 31(4), 288–308",
   pages: "21 頁（理論架構）", difficulty: 3,
   emphasis: "把文化差異連結到談判目標、權力的運用與資訊分享。",
-  fileNote: "注意：課綱寫的是 Brett (2000)〈Culture and Negotiation〉（International Journal of Psychology），但資料夾裡的 PDF 是 Brett, Gunia & Teucher (2017)。本頁依資料夾裡的檔案整理，兩篇作者相同、主題相近，建議向老師確認。",
+  fileNote: "注意：課綱寫的是 Brett (2000)〈Culture and Negotiation〉（International Journal of Psychology），但資料夾裡的 PDF 與老師投影片都是 Brett, Gunia & Teucher (2017)。本頁依 PDF 與投影片整理（Q&A vs. S&O、信任 × 緊密／鬆散、整體式 vs. 分析式思維）。",
   oneLiner: "談判策略分兩種：問答式（Q&A，分享資訊、創造價值）與主張出價式（S&O，以出價與理由爭取價值）；一個文化偏好哪種，取決於「信任 × 文化鬆緊度」，而策略能否帶來共同利益，取決於「整體式 vs. 分析式思維」。",
   summary: [
     "研究發現各文化偏好的談判策略不同：西方偏好<b>問答式（Questions & Answers, Q&A）</b>，東亞與中東／南亞偏好<b>主張與出價式（Substantiation & Offers, S&O）</b>。過去認為 Q&A 與高信任、高共同利益有關，S&O 與低信任、低共同利益有關，但有例外：東亞信任度不低卻偏好 S&O；日本人用 S&O 也能得到和美國人一樣高的共同利益。",

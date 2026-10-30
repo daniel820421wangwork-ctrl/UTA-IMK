@@ -3,6 +3,7 @@
   title: "Leveraging Digital Advertising Platforms for Consumer Research",
   authors: "Michael Braun, Bart de Langhe, Stefano Puntoni & Eric M. Schwartz", year: 2024, source: "Journal of Consumer Research, 51(1), 119–128",
   pages: "10 頁（方法論文）", difficulty: 3,
+  fileNote: "這次老師更新的教材資料夾裡沒有本篇的 PDF 與投影片，但課綱仍列為 Day 2 指定讀物；本頁保留先前依原 PDF 整理的筆記。",
   emphasis: "說明如何用廣告平台做消費者研究，以及平台演算法如何影響因果推論。",
   oneLiner: "Meta、Google 等廣告平台的「A/B 測試」並不是真正的隨機實驗：演算法決定誰看到哪則廣告（分歧投放），所以不能用來證明消費者心理的因果機制；作者比較四種資料蒐集方法並提出七項建議。",
   summary: [
