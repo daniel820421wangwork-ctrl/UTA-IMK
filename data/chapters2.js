@@ -27,7 +27,7 @@ window.CHAPTERS.push({
     {term: "Marketing research（行銷研究）", def: "規劃、蒐集與分析和行銷決策相關之資料，並把分析結果傳達給管理者的過程。"},
     {term: "Descriptive / diagnostic / predictive role（描述／診斷／預測角色）", def: "描述：蒐集並呈現事實；診斷：解釋資料或行動的影響；預測：回答「如果……會怎樣」。"},
     {term: "Marketing research problem（行銷研究問題）", def: "決定需要什麼資訊，以及如何有效率地取得這些資訊。"},
-    {term: "Management decision problem（管理決策問題）", def: "管理者面對的、以行動為導向的廣泛問題，通常聚焦於症狀。"},
+    {term: "Management decision problem（管理決策問題）", def: "管理者需要做決定、採取行動的廣泛問題（例：銷售下滑該怎麼辦）；行銷研究問題則是從它延伸出「需要哪些資訊」。"},
     {term: "Secondary data（次級資料）", def: "為其他目的已經蒐集好的資料；取得快速便宜，但不一定完全符合當前需求。"},
     {term: "Primary data（初級資料）", def: "為解決當前特定問題首次蒐集的資料；能回答特定問題，但成本較高、耗時較長。"},
     {term: "Research design（研究設計）", def: "指定要回答哪些研究問題、如何及何時蒐集資料，以及如何分析資料。"},

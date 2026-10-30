@@ -78,7 +78,7 @@
 
   // ---- sidebar ----
   function renderSide(cur) {
-    let h = '<div class="side-nav"><input id="search2" type="search" placeholder="搜尋…" aria-label="搜尋"><a href="#/">首頁</a><a href="#/syllabus">課綱與課表</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a></div>';
+    let h = '<div class="side-nav"><input id="search2" type="search" placeholder="搜尋…" aria-label="搜尋"><a href="#/">首頁</a><a href="#/syllabus">課綱與課表</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a><a href="#/exam">模擬考</a></div>';
     Object.keys(byDay).forEach((d) => {
       h += `<h4>${esc(C.days[d].label)}</h4>`;
       if (byDay[d].ch.length) {
@@ -111,7 +111,7 @@
       <p>已讀 ${d} / ${n}（${A.length} 篇文章＋${CH.length} 個教科書單元）　·　${terms.length} 個關鍵名詞　·　${questions.length} 題練習題（其中 ${sq} 題出自老師投影片）</p>
       <div class="sync"><span>SYNCHRONIZATION RATE</span><b>${(d / n * 100).toFixed(0)}%</b></div>
       <div class="bar"><i style="width:${(d / n * 100).toFixed(0)}%"></i></div></div>
-      <div class="row"><a class="btn primary" href="#/quiz">全題庫隨機測驗</a><a class="btn" href="#/cards">名詞閃卡</a><a class="btn" href="#/glossary">名詞索引</a><a class="btn" href="#/syllabus">課綱與課表</a></div>`;
+      <div class="row"><a class="btn primary" href="#/exam">模擬期末考</a><a class="btn" href="#/quiz">全題庫隨機測驗</a><a class="btn" href="#/cards">名詞閃卡</a><a class="btn" href="#/glossary">名詞索引</a><a class="btn" href="#/syllabus">課綱與課表</a></div>`;
     Object.keys(byDay).forEach((dk) => {
       h += `<h2 class="day-h">${esc(C.days[dk].label)}</h2><p class="day-n">${esc(C.days[dk].note)}</p>`;
       if (byDay[dk].ch.length) h += `<h3 class="topic-h">教科書與導論 <small style="color:var(--muted)">Textbook</small></h3><div class="grid">${byDay[dk].ch.map(card).join('')}</div>`;
@@ -284,9 +284,106 @@
     renderSide(null);
   }
 
+  // ---- mock exam ----
+  const EXAM = (window.EXAM || []).map((q, i) => {
+    const x = findItem(q.r);
+    const rnd = seeded('exam' + q.q), idx = q.o.map((_, k) => k);
+    for (let k = idx.length - 1; k > 0; k--) { const j = Math.floor(rnd() * (k + 1)); [idx[k], idx[j]] = [idx[j], idx[k]]; }
+    return { ...q, o: idx.map((k) => q.o[k]), a: idx.indexOf(q.a), i, x, day: x ? x.day : 0, group: x ? (x.kind === 'c' ? '教科書與導論' : (C.topics[x.topic] || x.topic)) : '其他' };
+  });
+  let examTimer = null;
+  const fmt = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+  const grade = (p) => (p >= 90 ? 'A' : p >= 80 ? 'B' : p >= 70 ? 'C' : p >= 60 ? 'D' : 'F');
+
+  function examSetup() {
+    clearInterval(examTimer);
+    const hist = store.get('examHist', []);
+    app.innerHTML = `<h1>模擬期末考</h1>
+      <p>依老師的出題方式設計：全英文選擇題、情境應用題、「Which is NOT…」、框架與數據題，範圍涵蓋教科書章節與 28 篇文章（題庫 ${EXAM.length} 題，與練習題庫不重複）。作答期間不顯示對錯，交卷後才看分數、各主題表現與詳解。</p>
+      <div class="tip">真實考試：${esc(C.exam)}</div>
+      <div class="row"><label>題數與時間 <select id="ex-n">
+        <option value="50|120">完整模擬：50 題 · 120 分鐘</option><option value="25|60">半場：25 題 · 60 分鐘</option><option value="15|30">快速：15 題 · 30 分鐘</option><option value="all|0">全部 ${EXAM.length} 題 · 不計時</option></select></label>
+        <label>範圍 <select id="ex-s"><option value="all">全部教材</option><option value="12">Day 1–2（導論、Ch.6/8/9、文章 1–15）</option><option value="3">Day 3（Ch.11/12、文章 16–28）</option></select></label>
+        <label><input type="checkbox" id="ex-zh"> 顯示中文題意</label>
+        <button class="btn primary" id="ex-go">開始考試</button></div>
+      ${hist.length ? `<h2>最近成績</h2><table class="t"><thead><tr><th>時間</th><th>範圍</th><th>得分</th><th>等第</th><th>用時</th></tr></thead><tbody>${hist.slice(-10).reverse().map((h) => `<tr><td>${esc(h.at)}</td><td>${esc(h.scope)}</td><td>${h.s} / ${h.n}（${h.p}%）</td><td>${grade(h.p)}</td><td>${esc(h.used)}</td></tr>`).join('')}</tbody></table>` : ''}`;
+    renderSide(null);
+    $('#ex-go').onclick = () => {
+      const [n, min] = $('#ex-n').value.split('|'), s = $('#ex-s').value;
+      let pool = EXAM.filter((q) => s === 'all' || (s === '12' ? q.day <= 2 : q.day === 3));
+      // spread questions across sources: shuffle each source's questions, then take round-robin
+      const bySrc = {};
+      shuffle(pool).forEach((q) => (bySrc[q.r] = bySrc[q.r] || []).push(q));
+      const order = shuffle(Object.keys(bySrc)), picked = [];
+      while (picked.length < pool.length) order.forEach((k) => { if (bySrc[k].length) picked.push(bySrc[k].shift()); });
+      const qs = shuffle(n === 'all' ? picked : picked.slice(0, +n));
+      examRun(qs, +min * 60, $('#ex-zh').checked, $('#ex-s').selectedOptions[0].textContent);
+    };
+  }
+
+  function examRun(qs, limit, zh, scope) {
+    const ans = {}, start = Date.now();
+    let left = limit;
+    app.innerHTML = `<h1>模擬期末考</h1><div class="exam-bar"><span id="ex-time">${limit ? '剩餘 ' + fmt(left) : '不計時'}</span><span id="ex-prog">已作答 0 / ${qs.length}</span><button class="btn primary" id="ex-submit">交卷</button></div>
+      ${qs.map((q, qi) => `<div class="q" id="eq${qi}"><div class="stem">${qi + 1}. ${esc(q.q)}</div>${zh ? `<div class="small">${esc(q.zh)}</div>` : ''}
+        ${q.o.map((o, oi) => `<button class="opt" data-q="${qi}" data-o="${oi}">${String.fromCharCode(65 + oi)}. ${esc(o)}</button>`).join('')}</div>`).join('')}
+      <div class="row"><button class="btn primary" id="ex-submit2">交卷</button></div>`;
+    renderSide(null);
+    app.querySelectorAll('.opt').forEach((b) => (b.onclick = () => {
+      ans[b.dataset.q] = +b.dataset.o;
+      b.parentNode.querySelectorAll('.opt').forEach((o) => o.classList.toggle('pick', o === b));
+      $('#ex-prog').textContent = `已作答 ${Object.keys(ans).length} / ${qs.length}`;
+    }));
+    const finish = () => { clearInterval(examTimer); examResult(qs, ans, Math.round((Date.now() - start) / 1000), scope); };
+    const submit = () => {
+      const miss = qs.length - Object.keys(ans).length;
+      if (miss && !confirm(`還有 ${miss} 題未作答，確定要交卷嗎？`)) return;
+      finish();
+    };
+    $('#ex-submit').onclick = submit; $('#ex-submit2').onclick = submit;
+    clearInterval(examTimer);
+    if (limit) examTimer = setInterval(() => {
+      left -= 1;
+      const el = $('#ex-time');
+      if (!el) { clearInterval(examTimer); return; }
+      el.textContent = '剩餘 ' + fmt(Math.max(left, 0));
+      if (left === 300) el.classList.add('warn');
+      if (left <= 0) { alert('時間到，自動交卷。'); finish(); }
+    }, 1000);
+    window.scrollTo(0, 0);
+  }
+
+  function examResult(qs, ans, used, scope) {
+    const s = qs.filter((q, qi) => ans[qi] === q.a).length, p = Math.round(s / qs.length * 100);
+    const hist = store.get('examHist', []);
+    const d = new Date();
+    hist.push({ at: `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`, scope, s, n: qs.length, p, used: fmt(used) });
+    store.set('examHist', hist.slice(-30));
+    const groups = {};
+    qs.forEach((q, qi) => { const g = (groups[q.group] = groups[q.group] || { n: 0, ok: 0 }); g.n++; if (ans[qi] === q.a) g.ok++; });
+    const wrong = qs.map((q, qi) => ({ q, qi })).filter(({ q, qi }) => ans[qi] !== q.a);
+    app.innerHTML = `<h1>模擬考成績</h1>
+      <div class="score">${s} / ${qs.length}（${p}%）· 等第 ${grade(p)}</div><p>用時 ${fmt(used)}。等第依課綱：A ≥ 90%、B ≥ 80%、C ≥ 70%、D ≥ 60%。</p>
+      <h2>各主題表現</h2><table class="t"><thead><tr><th>主題</th><th>答對</th><th>正確率</th></tr></thead><tbody>${Object.entries(groups).sort((a, b) => a[1].ok / a[1].n - b[1].ok / b[1].n).map(([g, v]) => `<tr><td>${esc(g)}</td><td>${v.ok} / ${v.n}</td><td>${Math.round(v.ok / v.n * 100)}%</td></tr>`).join('')}</tbody></table>
+      <div class="row"><button class="btn primary" id="ex-again">再考一次</button><button class="btn" id="ex-all">顯示全部題目詳解</button></div>
+      <h2 id="ex-h">答錯與未作答（${wrong.length}）</h2><div id="ex-list"></div>`;
+    renderSide(null);
+    const list = (items) => items.map(({ q, qi }) => {
+      const given = ans[qi];
+      return `<div class="q"><div class="stem">${qi + 1}. ${esc(q.q)}</div><div class="small">${esc(q.zh)}</div>
+        ${q.o.map((o, oi) => `<button class="opt ${oi === q.a ? 'ok' : oi === given ? 'no' : ''}" disabled>${String.fromCharCode(65 + oi)}. ${esc(o)}</button>`).join('')}
+        <div class="exp">${given === undefined ? '未作答' : given === q.a ? '✓ 答對' : '✗ 答錯'}。${esc(q.e)}${q.x ? ` <a href="${q.x.href}">→ ${esc(q.x.src)} 筆記</a>` : ''}</div></div>`;
+    }).join('');
+    $('#ex-list').innerHTML = wrong.length ? list(wrong) : '<p>全對，太強了！</p>';
+    $('#ex-again').onclick = examSetup;
+    $('#ex-all').onclick = () => { $('#ex-h').textContent = `全部題目詳解（${qs.length}）`; $('#ex-list').innerHTML = list(qs.map((q, qi) => ({ q, qi }))); };
+    window.scrollTo(0, 0);
+  }
+
   // ---- router ----
   function route() {
     document.body.classList.remove('menu');
+    clearInterval(examTimer);
     const h = location.hash.replace(/^#\/?/, '');
     document.querySelectorAll('.top-nav a').forEach((a) => a.classList.toggle('on', a.getAttribute('href') === '#/' + h || (h === '' && a.getAttribute('href') === '#/')));
     if (h.startsWith('a/')) { const x = findItem(+h.slice(2)); return x ? page(x) : home(); }
@@ -295,6 +392,7 @@
     if (h === 'cards') return cards();
     if (h === 'quiz') return quizPage();
     if (h === 'syllabus') return syllabus();
+    if (h === 'exam') return examSetup();
     if (h.startsWith('s/')) return searchPage(decodeURIComponent(h.slice(2)));
     home();
   }

@@ -129,7 +129,7 @@ window.CHAPTERS.push({
       <tr><td>4. 購後行為</td><td>認知失調；以購後溝通與優質售後服務降低疑慮</td></tr></tbody></table>`},
     {title: "三種購買決策類型", html: `
       <table class="t"><thead><tr><th></th><th>例行反應</th><th>有限決策</th><th>廣泛決策</th></tr></thead><tbody>
-      <tr><td>涉入</td><td>低</td><td>中</td><td>高</td></tr>
+      <tr><td>涉入</td><td>低</td><td>低到中</td><td>高</td></tr>
       <tr><td>決策時間</td><td>短</td><td>短到中</td><td>長</td></tr>
       <tr><td>成本</td><td>低</td><td>低到中</td><td>高</td></tr>
       <tr><td>資訊搜尋</td><td>只有內部</td><td>多為內部</td><td>內部與外部</td></tr>
@@ -219,7 +219,7 @@ window.CHAPTERS.push({
       <table class="t"><thead><tr><th>策略</th><th>優點</th><th>缺點</th></tr></thead><tbody>
       <tr><td>無差異</td><td>可能節省生產與行銷成本</td><td>產品設計乏味；易受競爭者攻擊</td></tr>
       <tr><td>集中（利基）</td><td>集中資源；能滿足明確定義的區隔；小企業也能與大企業競爭；定位強</td><td>區隔太小或改變時風險大；大競爭者可能更有效地進攻</td></tr>
-      <tr><td>多區隔</td><td>財務表現可能更好；分散風險；有機會擴大產品線</td><td>成本較高（產品設計、生產、推廣、庫存、行銷研究、管理）；可能自相殘食</td></tr></tbody></table>
+      <tr><td>多區隔</td><td>財務表現可能更好；生產與行銷的規模經濟</td><td>成本較高（產品設計、生產、推廣、庫存、行銷研究、管理）；可能自相殘食</td></tr></tbody></table>
       <p class="small">此表依教科書架構整理；投影片中這兩張為圖片。</p>`},
     {title: "定位基礎", html: `
       <ul>

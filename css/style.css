@@ -310,3 +310,14 @@ mark{background:#ffe38f;color:#222;padding:0 2px;border-radius:3px}
 #mpList .mp-x:hover{color:var(--bad)}
 #musicPanel textarea.f{width:100%;box-sizing:border-box;margin-top:6px;font-size:.8rem;resize:vertical}
 #musicPanel .mp-note{font-size:.72rem;color:var(--muted);margin-top:4px}
+
+/* mock exam */
+.exam-bar{position:sticky;top:var(--topH,58px);z-index:5;display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:8px 14px;margin:8px 0 4px;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-family:system-ui,"Microsoft JhengHei",sans-serif}
+.exam-bar #ex-time{font-weight:700;font-variant-numeric:tabular-nums}
+.exam-bar #ex-time.warn{color:var(--bad)}
+.exam-bar .btn{margin-left:auto}
+.opt.pick{border-color:var(--accent);background:var(--accent-soft)}
+[data-skin="eva"] .exam-bar{border-radius:0;border-color:var(--accent);background:#0f0819}
+[data-skin="eva"] .opt.pick{border-color:var(--accent);background:rgba(255,106,0,.14)}
+[data-skin="eva"][data-theme="light"] .exam-bar{background:#fffdf8;border-color:#1b1030}
+[data-skin="eva"][data-theme="light"] .opt.pick{background:#ffe3cc}
