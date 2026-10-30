@@ -76,6 +76,99 @@
   const itemOptions = () => CH.map((c) => `<option value="${c.key}">${esc(c.label)} ${esc(c.titleZh)}</option>`).join('') +
     A.map((a) => `<option value="${a.key}">#${a.id} ${esc(shortT(a.title, 38))}</option>`).join('');
 
+  // ---- vocabulary: tappable English key terms ----
+  const VEX = window.VOCAB_EX || {}, VLOC = window.VOCAB_LOC || {};
+  const hasCJK = (s) => /[一-鿿]/.test(s);
+  const VOC = [];
+  const vocByRef = {};
+  ITEMS.forEach((x) => (x.concepts || []).forEach((c) => {
+    const m = c.term.match(/^(.*?)（(.*)）\s*$/);
+    const raw = m ? m[1] : c.term;
+    const exRow = (VEX[x.key] || []).find((r) => r[0] === raw) || [];
+    const ov = exRow[3] || {};
+    let en = raw, zh = m ? m[2] : '';
+    if (hasCJK(en)) { zh = en; en = ''; }
+    if (zh && !hasCJK(zh)) zh = '';
+    en = ov.en || en; zh = (ov.zh || zh).split('，')[0];
+    const v = { id: VOC.length, ref: x.key, item: x, raw, en, zh, def: c.def, ex: exRow[1] || '', exZh: exRow[2] || '', loc: VLOC[x.key + '|' + raw] || {} };
+    // strings to look for in the notes: the Chinese name and its parts, the English name, the abbreviation
+    const pats = new Set();
+    if (zh) { pats.add(zh); zh.split(/／| vs\. /).forEach((p) => { p = p.trim(); if (p.length >= 3) pats.add(p); }); }
+    if (en) {
+      const head = en.split(',')[0].replace(/\(.*?\)/g, '').trim();
+      if (head.length >= 4) pats.add(head);
+      head.split(/ \/ | vs\. /).forEach((p) => { p = p.trim(); if (p.length >= 5 && !/[-—]$/.test(p)) pats.add(p); });
+      const ab = en.split(',')[1]; if (ab && /^[A-Z&]{2,6}$/.test(ab.trim())) pats.add(ab.trim());
+    }
+    v.pats = [...pats];
+    VOC.push(v); vocByRef[x.key + '|' + raw] = v;
+  }));
+  const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  function vocRegex(list) {
+    const map = new Map();
+    list.forEach((v) => v.pats.forEach((p) => { const k = p.toLowerCase(); if (!map.has(k)) map.set(k, v); }));
+    const keys = [...map.keys()].sort((a, b) => b.length - a.length);
+    if (!keys.length) return null;
+    const body = keys.map((k) => (hasCJK(k) ? reEsc(k) : '(?<![A-Za-z])' + reEsc(k) + '(?![A-Za-z])')).join('|');
+    return { re: new RegExp(body, 'gi'), map };
+  }
+  // Highlight the first occurrence of each term inside every .sec block.
+  // The page's own terms come first; terms from other readings are linked only when the match is long enough to be unambiguous.
+  function markVocab(rootEl, x) {
+    const own = VOC.filter((v) => v.ref === x.key);
+    const others = VOC.filter((v) => v.ref !== x.key && v.pats.some((p) => (hasCJK(p) ? p.length >= 4 : p.length >= 8)));
+    const R = vocRegex(own.concat(others));
+    if (!R) return;
+    rootEl.querySelectorAll('.sec').forEach((sec) => {
+      const used = new Set();
+      const walker = document.createTreeWalker(sec, NodeFilter.SHOW_TEXT, { acceptNode: (n) => (n.parentElement.closest('a,button,h2,h3,.vw,.vchips,dt,.opt') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT) });
+      const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach((node) => {
+        const text = node.nodeValue; R.re.lastIndex = 0;
+        let m, last = 0, changed = false; const frag = document.createDocumentFragment();
+        while ((m = R.re.exec(text))) {
+          const v = R.map.get(m[0].toLowerCase());
+          if (!v || used.has(v.id)) continue;
+          used.add(v.id); changed = true;
+          frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+          const s = document.createElement('span'); s.className = 'vw'; s.dataset.v = v.id; s.tabIndex = 0; s.setAttribute('role', 'button'); s.textContent = m[0];
+          frag.appendChild(s); last = m.index + m[0].length;
+        }
+        if (changed) { frag.appendChild(document.createTextNode(text.slice(last))); node.parentNode.replaceChild(frag, node); }
+      });
+    });
+  }
+  const vocChips = (x) => {
+    const own = VOC.filter((v) => v.ref === x.key && v.en);
+    return own.length ? `<div class="sec"><h2>本篇英文關鍵字 <small style="color:var(--muted);font-weight:400">點一下看中英對照與講義用法</small></h2><div class="vchips">${own.map((v) => `<span class="vw chipw" data-v="${v.id}" tabindex="0" role="button">${esc(v.en)}</span>`).join('')}</div></div>` : '';
+  };
+  const speak = (t) => { try { const u = new SpeechSynthesisUtterance(t); u.lang = 'en-US'; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {} };
+  const pop = document.createElement('div'); pop.id = 'vpop'; pop.hidden = true; document.body.appendChild(pop);
+  function showVoc(v) {
+    const where = [v.loc.p && `原文 PDF 第 ${v.loc.p} 頁`, v.loc.s && `老師投影片第 ${v.loc.s} 張`].filter(Boolean).join(' · ');
+    pop.innerHTML = `<div class="vp-card" role="dialog" aria-label="單字">
+      <button class="vp-x" aria-label="關閉">×</button>
+      <div class="vp-en">${esc(v.en || v.zh)} ${v.en ? '<button class="vp-say" aria-label="發音">🔊</button>' : ''}</div>
+      ${v.zh && v.en ? `<div class="vp-zh">${esc(v.zh)}</div>` : ''}
+      <div class="vp-def">${v.def}</div>
+      ${v.ex ? `<div class="vp-ex"><div class="vp-lab">講義中的用法（例句依講義內容改寫）</div><div class="vp-exen">${esc(v.ex)} <button class="vp-say2" aria-label="朗讀例句">🔊</button></div><div class="vp-exzh">${esc(v.exZh)}</div></div>` : ''}
+      <div class="vp-src">出處：<a href="${v.item.href}">${esc(v.item.src)} ${esc(shortT(v.item.titleZh || v.item.title, 34))}</a>${where ? `<br>${where}（可對照原句）` : ''}</div></div>`;
+    pop.hidden = false;
+    pop.querySelector('.vp-x').onclick = hideVoc;
+    const s1 = pop.querySelector('.vp-say'); if (s1) s1.onclick = () => speak(v.en);
+    const s2 = pop.querySelector('.vp-say2'); if (s2) s2.onclick = () => speak(v.ex);
+    pop.querySelector('.vp-src a').onclick = hideVoc;
+  }
+  function hideVoc() { pop.hidden = true; }
+  pop.addEventListener('click', (e) => { if (e.target === pop) hideVoc(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') hideVoc();
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('vw')) { e.preventDefault(); showVoc(VOC[+e.target.dataset.v]); }
+  });
+  document.addEventListener('click', (e) => { const w = e.target.closest && e.target.closest('.vw'); if (w) showVoc(VOC[+w.dataset.v]); });
+
+  terms.forEach((t) => { t.v = vocByRef[t.ref + '|' + ((t.term.match(/^(.*?)（/) || [0, t.term])[1])]; });
+
   // ---- sidebar ----
   function renderSide(cur) {
     let h = '<div class="side-nav"><input id="search2" type="search" placeholder="搜尋…" aria-label="搜尋"><a href="#/">首頁</a><a href="#/syllabus">課綱與課表</a><a href="#/glossary">名詞索引</a><a href="#/cards">單字閃卡</a><a href="#/quiz">測驗</a><a href="#/exam">模擬考</a></div>';
@@ -169,15 +262,15 @@
         <button data-t="quiz" class="${tab === 'quiz' ? 'on' : ''}">自我測驗（${x.quiz.length}）</button>
       </div>`;
     if (tab === 'preview') {
-      h += `<div class="sec"><h2>重點摘要</h2>${x.summary.map((p) => `<p>${p}</p>`).join('')}</div>
+      h += `${vocChips(x)}<div class="sec"><h2>重點摘要</h2>${x.summary.map((p) => `<p>${p}</p>`).join('')}</div>
         ${slidesHtml(x)}
         <div class="sec"><h2>必記重點</h2><ul>${x.keyPoints.map((k) => `<li>${k}</li>`).join('')}</ul></div>
         <div class="sec"><h2>預習時先想想</h2><ul>${x.examTips.slice(0, 2).map((k) => `<li>${k}</li>`).join('')}</ul></div>`;
     } else if (tab === 'review') {
-      h += `<div class="sec"><h2>摘要</h2>${x.summary.map((p) => `<p>${p}</p>`).join('')}</div>
+      h += `${vocChips(x)}<div class="sec"><h2>摘要</h2>${x.summary.map((p) => `<p>${p}</p>`).join('')}</div>
         ${slidesHtml(x)}
         <div class="sec"><h2>必記重點</h2><ul>${x.keyPoints.map((k) => `<li>${k}</li>`).join('')}</ul></div>
-        <div class="sec"><h2>關鍵名詞</h2><dl class="terms">${x.concepts.map((c) => `<dt>${esc(c.term)}</dt><dd>${c.def}</dd>`).join('')}</dl></div>
+        <div class="sec"><h2>關鍵名詞</h2><dl class="terms">${x.concepts.map((c) => { const v = vocByRef[x.key + '|' + (c.term.match(/^(.*?)（/) || [0, c.term])[1]]; return `<dt>${v ? `<span class="vw" data-v="${v.id}" tabindex="0" role="button">${esc(c.term)}</span>` : esc(c.term)}</dt><dd>${c.def}</dd>`; }).join('')}</dl></div>
         ${x.sections.map((s) => `<div class="sec"><h2>${esc(s.title)}</h2>${s.html}</div>`).join('')}
         <div class="sec"><h2>考試提示</h2><div class="tip"><ul>${x.examTips.map((k) => `<li>${k}</li>`).join('')}</ul></div></div>`;
     } else {
@@ -188,6 +281,7 @@
       <span>${nav(next, 'r')}</span></div>
       <p class="notice">以上為個人學習筆記（摘要與改寫），原文請見教授提供之 PDF、教科書與投影片。</p></article>`;
     app.innerHTML = h; renderSide(x.key);
+    if (tab !== 'quiz') markVocab(app, x);
     app.querySelectorAll('.tabs button').forEach((b) => (b.onclick = () => page(x, b.dataset.t)));
     $('#doneBtn').onclick = () => { markRead(x.key, !read[x.key]); page(x); };
     if (tab === 'quiz') runQuiz($('#qbox'), x.quiz.map((q, k) => ({ ...q, key: x.key + '-' + k })), String(x.key));
@@ -248,7 +342,7 @@
       if (!deck.length) { $('#fc').innerHTML = '<p>沒有資料。</p>'; return; }
       const c = deck[k];
       $('#fc').innerHTML = `<div class="flash"><div class="face" id="face">${show
-        ? `<small>${esc(c.term)}</small><div style="text-align:left;line-height:1.9">${c.def}</div>` : `<small>名詞 · 出自 ${esc(c.src)}《${esc(shortT(c.from, 46))}》</small><div class="term">${esc(c.term)}</div><small style="margin-top:14px">點擊翻面</small>`}</div></div>
+        ? `<small>${esc(c.term)}</small><div style="text-align:left;line-height:1.9">${c.def}</div>${c.v && c.v.ex ? `<div class="fc-ex"><b>例句：</b>${esc(c.v.ex)}<br><span>${esc(c.v.exZh)}</span></div>` : ''}` : `<small>名詞 · 出自 ${esc(c.src)}《${esc(shortT(c.from, 46))}》</small><div class="term">${esc(c.term)}</div><small style="margin-top:14px">點擊翻面</small>`}</div></div>
         <div class="row"><button class="btn" id="pv">← 上一張</button><span>${k + 1} / ${deck.length}</span><button class="btn" id="nx">下一張 →</button><button class="btn" id="sh">洗牌</button><a class="btn" href="${c.href}">看筆記</a></div>`;
       $('#face').onclick = () => { show = !show; draw(); };
       $('#pv').onclick = () => { k = (k - 1 + deck.length) % deck.length; show = false; draw(); };
@@ -267,7 +361,7 @@
     const f = (q || '').toLowerCase();
     const list = terms.filter((x) => !f || (x.term + strip(x.def)).toLowerCase().includes(f)).sort((a, b) => a.term.localeCompare(b.term));
     app.innerHTML = `<h1>名詞索引</h1><div class="row"><input class="f" id="gf" placeholder="篩選名詞…" value="${esc(q || '')}"><span>${list.length} 項</span></div>
-      <dl class="terms">${list.map((x) => `<dt>${esc(x.term)} <a class="chip" href="${x.href}">${esc(x.src)}</a></dt><dd>${x.def}</dd>`).join('')}</dl>`;
+      <dl class="terms">${list.map((x) => `<dt>${x.v ? `<span class="vw" data-v="${x.v.id}" tabindex="0" role="button">${esc(x.term)}</span>` : esc(x.term)} <a class="chip" href="${x.href}">${esc(x.src)}</a></dt><dd>${x.def}</dd>`).join('')}</dl>`;
     renderSide(null);
     const inp = $('#gf'); inp.oninput = () => { glossary(inp.value); const n = $('#gf'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); };
   }
